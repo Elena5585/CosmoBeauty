@@ -1,0 +1,98 @@
+@import '../../../styles/scss_common/mixins';
+
+.shop__view-categories{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    row-gap: 15px;
+    width: 88.5%;
+    z-index: 35;
+}
+.shop__view-categories--title{
+    margin: 0;
+    font-size: 24px;
+    line-height: 100%;
+    color: #222222;
+    text-transform: capitalize;
+    height: 41px;
+    width: 100%;
+    vertical-align: middle;
+    border-bottom: 2px solid #222222;
+    margin-bottom: 15px;
+}
+.shop__view-categories--item{
+    height: 41px; 
+    width: 100%;
+    border-bottom: 1px solid #EEEEEE;
+    padding-left: 15px;
+    vertical-align: middle;
+    font-size: 16px;
+    line-height: 170%;
+    color: #666666;
+    margin: 0;
+ }
+ .category__items-quantity{
+     display: inline-block;
+     font-size: 12px;
+     line-height: 170%;
+     color: #999999;
+     margin-left: 8px;
+ }
+
+ @media screen  and (max-width: 4800px){
+    .shop__view-categories{ row-gap: 30px; width: 88.5%;}    
+    .shop__view-categories--title{font-size: 46px; height: auto; width: 100%; border-bottom: 2px solid #222222; margin-bottom: 0; padding-bottom: 15px;}    
+    .shop__view-categories--item{ height: auto;  width: 100%; border-bottom: 1px solid #EEEEEE; font-size: 36px; padding-block: 20px;line-height: 170%;}
+    .category__items-quantity{ font-size: 30px; line-height: 170%; margin-left: 8px;}
+ }
+ @media screen  and (max-width: 3500px){     
+    .shop__view-categories--title{font-size: 40px;}    
+    .shop__view-categories--item{font-size: 32px;}    
+ }
+ @media screen  and (max-width: 3000px){    
+    .shop__view-categories--title{font-size: 36px;}    
+    .shop__view-categories--item{font-size: 30px;}
+    .category__items-quantity{font-size: 28px;}
+ }
+ @media screen  and (max-width: 2500px){
+    .shop__view-categories{ row-gap: 25px;}    
+    .shop__view-categories--title{font-size: 32px; border-bottom: 1px solid #222222; padding-bottom: 10px;}    
+    .shop__view-categories--item{border-bottom: 1px solid #EEEEEE; font-size: 26px; padding-block: 10px;}
+    .category__items-quantity{ font-size: 24px;}
+ }
+ @media screen  and (max-width: 2000px){
+    .shop__view-categories{ row-gap: 20px; width: 88.5%;}    
+    .shop__view-categories--title{font-size: 28px; height: auto; width: 100%; border-bottom: 1px solid #222222; margin-bottom: 0; padding-bottom: 15px;}    
+    .shop__view-categories--item{ height: auto;  width: 100%; border-bottom: 1px solid #EEEEEE; font-size: 24px; padding-block: 10px;line-height: 170%;}
+    .category__items-quantity{ font-size: 22px; line-height: 170%; margin-left: 8px;}
+ }
+ @media screen  and (max-width: 1560px){
+    .shop__view-categories{ row-gap: 20px; width: 88.5%;}    
+    .shop__view-categories--title{font-size: 24px; padding-bottom: 15px;}    
+    .shop__view-categories--item{font-size: 20px; padding-bottom: 16px; padding-top: 0; line-height: 170%;}
+    .category__items-quantity{ font-size: 18px; line-height: 170%; margin-left: 5px;}
+ }
+ @media screen  and (max-width: 1260px){
+    .shop__view-categories{ row-gap: 5px; width: 88.5%;}    
+    .shop__view-categories--title{font-size: 22px; padding-bottom: 10px;}    
+    .shop__view-categories--item{font-size: 18px; padding-bottom: 16px; padding-top: 14px; line-height: 170%;}
+    .category__items-quantity{ font-size: 16px; line-height: 170%; margin-left: 5px;}
+ }
+ @include adaptive(laptop){     
+    .shop__view-categories--title{font-size: 20px;}    
+    .shop__view-categories--item{font-size: 17px;}
+    .category__items-quantity{ font-size: 16px;}
+ }
+ @include adaptive(tablet){
+    .shop__view-categories{ row-gap: 5px; width: 100%;}    
+    .shop__view-categories--title{font-size: 18px; padding-bottom: 7px;}    
+    .shop__view-categories--item{font-size: 15px; padding-bottom: 16px; padding-top: 14px; line-height: 170%;}
+    .category__items-quantity{ font-size: 14px; line-height: 170%; margin-left: 3px;}
+ }
+ @include adaptive(phone){
+    .shop__view-categories{ row-gap: 5px; width: 100%;}    
+    .shop__view-categories--title{font-size: 16px; padding-bottom: 7px;}    
+    .shop__view-categories--item{font-size: 14px; padding-bottom: 16px; padding-top: 12px; line-height: 170%;}
+    .category__items-quantity{ font-size: 13px; line-height: 170%; margin-left: 3px;}
+ }

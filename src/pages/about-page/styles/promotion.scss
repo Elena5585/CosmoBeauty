@@ -1,0 +1,244 @@
+@import '../../../styles/scss_common/mixins';
+
+.about__promotion{
+    width: 100vw;    
+    background-color: #FFFFFF;
+    z-index: 15;
+    padding-block: 180px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 100px;   
+}
+
+.about__promotion-decor{
+    position: absolute;
+    top: 15%;
+    left: -5%;
+    height: 400px;
+    opacity: 70%;
+}
+
+.about__promotion-block{
+    width: 70vw;    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 50px;
+}
+
+.about__block-logo{
+    margin: 0;
+    font-size: 50px;
+    line-height: 100%;
+    text-align: center;
+    color: #D05278;
+    text-transform: capitalize;
+}
+
+.about__block-title{
+    margin: 0;
+    font-size: 54px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    color: #222222;
+    margin-top: -45px;
+}
+
+.small{font-size: 45px; margin-inline: 10px;}
+
+.about__block-text{
+    width: 70%;
+    font-size: 16px;
+    line-height: 170%;
+    text-align: center;
+    color: #666666;
+    margin-top: 30px;
+}
+
+.about__promotion-trackers{    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 134px;
+}
+
+.about__trackers-item{
+    width: 177px;
+    height: 141px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 38px;
+}
+.about__trackers-block--digit{
+    display: flex;  
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 95px;
+    width: 146px;
+    position: relative;
+    
+}
+.about__block-digit_info{   
+    font-size: 60px;
+    line-height: 100%;    
+    color: #D05278;
+    text-transform: capitalize;    
+    z-index: 15;
+    margin: 0;   
+}
+
+.add-padding{padding-top: 12px; padding-left: 10px;}
+
+.about__block-digit_img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 14;
+    width: 110px;
+    height: 95px;
+}
+
+.about__block-digit-text{
+    font-size: 24px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    color: #222222;
+    z-index: 16;
+    margin: 0;    
+}
+
+@media screen and (max-width: 4800px){
+    .about__promotion{padding-top: 220px; padding-bottom: 120px; row-gap: 100px;}
+    .about__promotion-decor{top: 15%; left: -7%; height: 1000px;}
+    .about__promotion-block{ width: 70vw; row-gap: 90px;}    
+    .about__block-logo{ font-size: 100px;}    
+    .about__block-title{font-size: 90px; margin-top: -55px;}
+    .small{font-size: 90px; margin-inline: 30px;}    
+    .about__block-text{width: 70%; font-size: 32px; margin-top: 30px; line-height: 200%;}    
+    .about__promotion-trackers{ width: 50vw; height: 282px; column-gap: 134px;}    
+    .about__trackers-item{row-gap: 38px; width: 354px; height: 242px;}
+    .about__trackers-block--digit{height: 95px; width: 242px;}
+    .about__block-digit_info{ font-size: 90px;}    
+    .add-padding{padding-top: 12px; padding-left: 10px;}    
+    .about__block-digit_img{ top: 0; width: 240px;}    
+    .about__block-digit-text{font-size: 42px;}    
+}
+@media screen and (max-width: 2800px){
+    .about__promotion{padding-block: 140px; padding-top: 180px;}
+    .about__promotion-decor{left: -8%; height: 850px;}
+    .about__promotion-block{ width: 70vw; row-gap: 60px;} 
+    .about__block-logo{ font-size: 70px;}    
+    .about__block-title{font-size: 60px; margin-top: -55px;}  
+    .small{margin-inline: 20px; font-size: 70px;}     
+    .about__promotion-trackers{ width: 50vw; justify-content: center;}    
+    .about__block-digit_info{ font-size: 60px;}       
+    .about__block-digit-text{font-size: 30px;}    
+}
+@media screen and (max-width: 2350px){    
+    .about__promotion-decor{top: 15%; left: -9%; height: 700px;}
+    .about__promotion-block{ width: 70vw;}    
+    .about__block-logo{ font-size: 80px;}    
+    .about__block-title{font-size: 70px;}
+    .small{font-size: 80px;}    
+    .about__block-text{font-size: 28px;}    
+    .about__promotion-trackers{column-gap: 90px;}    
+    .about__trackers-item{row-gap: 24px; width: 25%; flex-basis: 25%;}    
+    .about__block-digit_info{ font-size: 70px;}    
+    .add-padding{padding-top: 12px; padding-left: 10px;}    
+    .about__block-digit_img{ top: 0; width: 242px;}    
+    .about__block-digit-text{font-size: 38px;}    
+}
+@media screen and (max-width: 1800px){
+    .about__promotion{padding-block: 90px; padding-top: 140px;}
+    .about__promotion-decor{left: -10%; height: 600px;}
+    .about__promotion-block{row-gap: 60px;}   
+    .about__block-logo{ font-size: 60px;}    
+    .about__block-title{font-size: 55px;}  
+    .about__block-text{width: 80%; font-size: 20px;}  
+    .small{font-size: 60px; margin-inline: 15px;}     
+    .about__promotion-trackers{ width: 35vw; height: 250px;}     
+    .about__block-digit_info{ font-size: 50px;}   
+    .about__block-digit-text{font-size: 26px;}    
+}
+@media screen and (max-width: 1560px){  
+    .about__promotion{padding-block: 90px; padding-top: 120px;}  
+    .about__promotion-decor{left: -12%; height: 550px;}     
+    .about__block-logo{ font-size: 55px;}    
+    .about__block-title{font-size: 50px;}
+    .small{font-size: 55px; margin-inline: 15px;}    
+    .about__block-text{font-size: 20px;}    
+    .about__promotion-trackers{ width: 35vw; column-gap: 50px; height: 220px;} 
+    .about__block-digit_info{ font-size: 45px;}      
+    .about__block-digit-text{font-size: 24px;}    
+}
+@media screen and (max-width: 1200px){
+    .about__promotion{padding-top: 100px; padding-bottom: 40px; row-gap: 90px;}
+    .about__promotion-decor{left: -14%; height: 500px;}    
+    .about__block-logo{ font-size: 45px;}    
+    .about__block-title{font-size: 40px;}
+    .small{font-size: 45px;}    
+    .about__block-text{font-size: 18px; margin-top: 0;}    
+    .about__block-digit_info{ font-size: 35px;}       
+    .about__block-digit-text{font-size: 20px;}    
+}
+@include adaptive(laptop){
+    .about__promotion{padding-top: 100px; padding-bottom: 40px; row-gap: 60px;}
+    .about__promotion-decor{top: 15%; left: -15%; height: 400px;}
+    .about__promotion-block{ width: 70vw; row-gap: 60px;}    
+    .about__block-logo{ font-size: 45px;}    
+    .about__block-title{font-size: 35px; margin-top: -45px;}
+    .small{font-size: 45px; margin-inline: 15px;}    
+    .about__block-text{width: 100%; font-size: 18px; margin-top: 0;}    
+    .about__promotion-trackers{ width: 35vw; height: 202px; column-gap: 50px;}    
+    .about__trackers-item{row-gap: 20px; width: 25%; flex-basis: 25%; height: 152px;}
+    .about__trackers-block--digit{height: 95px; width: 182px;}
+    .about__block-digit_info{ font-size: 30px;}    
+    .add-padding{padding-top: 12px; padding-left: 10px;}    
+    .about__block-digit_img{ top: 0; width: 162px;}    
+    .about__block-digit-text{font-size: 18px;}    
+}
+@media screen and (max-width: 800px){
+    .about__promotion{padding-top: 100px; }
+    .about__promotion-decor{left: -15%; height: 350px;}        
+    .about__block-title{font-size: 30px; line-height: 150%;}
+    .about__block-digit_info{ font-size: 30px;}  
+    .about__trackers-item{row-gap: 20px;}    
+    .about__block-digit-text{font-size: 16px;}    
+}
+@include adaptive(tablet){
+    .about__promotion{padding-block: 100px; row-gap: 90px;}
+    .about__promotion-decor{display: none;}  
+    .about__block-logo{ font-size: 40px;}     
+    .small{font-size: 40px; margin-inline: 15px;}  
+    .about__block-text{width: 80%; font-size: 17px;}    
+    .about__promotion-trackers{ width: 50vw; height: auto; gap: 50px; flex-wrap: wrap;}
+    .about__trackers-item{height: 150px; flex-basis: 40%;}    
+    .about__block-digit-text{font-size: 20px;}    
+}
+@include adaptive(phone){  
+    .about__promotion{row-gap: 60px; padding-bottom: 60px;} 
+    .about__promotion-block{width: 85vw;}
+    .about__block-text{width: 100%;}  
+    .about__block-title{font-size: 26px; line-height: 150%;}
+    .about__promotion-trackers{row-gap: 30px;}
+    .about__block-digit-text{font-size: 18px; margin-top: -15px;}     
+}
+@media screen and (max-width: 420px){
+    .about__promotion{padding-top: 80px;}
+    .about__promotion-block{row-gap: 30px;}
+    .about__block-logo{ font-size: 35px;}     
+    .small{font-size: 35px; margin-inline: 15px;} 
+    .about__block-title{font-size: 24px; line-height: 150%; margin-top: -10px;}
+    .about__block-text{width: 80%; font-size: 14px;}   
+    .about__promotion-trackers{row-gap: 25px; column-gap: 50px;}
+    .about__block-digit_info{ font-size: 26px;}   
+}

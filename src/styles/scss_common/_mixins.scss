@@ -1,0 +1,23 @@
+@use "sass:map";
+@use '_variables.scss';  
+
+
+@mixin adaptive($media) {
+      @if ($media == laptop) {
+          @media screen and (max-width: 1024px) {
+              @content;
+          }
+      }@else if($media == tablet) {
+          @media screen and (max-width: 768px) {
+              @content; 
+          }
+      }@else if($media == phone) {
+          @media screen and (max-width: 576px) {
+              @content; 
+          }
+      }@else {
+          @media screen and (max-width: 360px) {
+              @content; 
+          }
+      }
+  }

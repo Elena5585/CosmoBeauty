@@ -1,0 +1,82 @@
+@import '../../styles/scss_common/mixins';
+
+.notfound-item{
+    width: 100vw;
+    height: 600px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 60px;
+    z-index: 1;    
+    background-color: #FFFFFF;
+}
+
+.notfound__title-item{
+    padding-top: 80px;
+    font-size: 44px;
+    font-style: italic;
+    line-height: 100%;   
+    color: #D05278;
+    z-index: 5;
+    margin: 0;
+}
+
+.notfound__item-loader{
+    width: 60px;
+    height: 60px;
+    z-index: 5;
+}
+
+@media screen and (max-width: 4800px){
+    .notfound-item{ height: 800px;  row-gap: 90px;}   
+    .notfound__title-item{padding-top: 160px; font-size: 64px;}    
+    .notfound__item-loader{width: 120px;  height: 120px;}
+}
+@media screen and (max-width: 3500px){
+    .notfound-item{ height: 800px;  row-gap: 90px;}   
+    .notfound__title-item{padding-top: 180px; font-size: 55px;}    
+    .notfound__item-loader{width: 100px;  height: 100px;}
+}
+@media screen and (max-width: 2500px){
+    .notfound-item{ height: 700px;  row-gap: 80px;}   
+    .notfound__title-item{padding-top: 160px; font-size: 50px;}    
+    .notfound__item-loader{width: 90px;  height: 90px;}
+}
+@media screen and (max-width: 2000px){
+    .notfound-item{ height: 650px;  row-gap: 70px;}   
+    .notfound__title-item{padding-top: 120px; font-size: 45px;}    
+    .notfound__item-loader{width: 80px;  height: 80px;}
+}
+@media screen and (max-width: 1560px){
+    .notfound-item{ height: 600px;  row-gap: 60px;}   
+    .notfound__title-item{padding-top: 100px; font-size: 44px;}    
+    .notfound__item-loader{width: 70px;  height: 70px;}
+}
+@media screen and (max-width: 1260px){
+    .notfound-item{ height: 500px;  row-gap: 40px;}   
+    .notfound__title-item{padding-top: 60px; font-size: 34px;}    
+    .notfound__item-loader{width: 60px;  height: 60px;}
+}
+
+@include adaptive(laptop){
+    .notfound-item{ height: 500px;  row-gap: 40px;}   
+    .notfound__title-item{padding-top: 30px; font-size: 30px;}    
+    .notfound__item-loader{width: 50px;  height: 50px;}
+}
+@include adaptive(tablet){
+    .notfound-item{ height: 450px;  row-gap: 40px;}   
+    .notfound__title-item{padding-top: 30px; font-size: 27px;}    
+    .notfound__item-loader{width: 50px;  height: 50px;}
+}
+@include adaptive(phone){
+    .notfound-item{ height: 350px;  row-gap: 30px;}   
+    .notfound__title-item{padding-top: 10px; font-size: 24px; width: 90%; text-align: center; line-height: 150%;}     
+    .notfound__item-loader{width: 40px;  height: 40px;}
+}
+
+@media screen and (max-width: 400px){
+    .notfound-item{ height: 350px;  row-gap: 30px;}   
+    .notfound__title-item{padding-top: 20px; font-size: 20px; width: 90%; text-align: center; line-height: 150%;}     
+    .notfound__item-loader{width: 40px;  height: 40px;}
+}

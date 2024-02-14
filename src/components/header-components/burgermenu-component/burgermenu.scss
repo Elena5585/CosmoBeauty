@@ -1,0 +1,169 @@
+@import '../../../styles/scss_common/mixins';
+
+.burger-menu__content{
+	width: 100.5vw;
+	background-color: #FCEDEA;
+	min-height: 670px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	row-gap: 40px;
+	padding-top: 82px;
+	padding-inline: 20px;
+	padding-bottom: 20px;	
+	box-sizing: border-box;
+	z-index: 65;	
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.burger-menu__content-logo{
+	width: 90%;	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	column-gap: 30px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #222222;
+}
+
+.burger-menu__logo-logo{
+	font-size: 56px; 
+	line-height: 100%; 
+	color: #222222;	
+	margin: 0;	
+}
+
+.burger-menu__logo-basket{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	column-gap: 15px;
+	margin-left: -70px;
+}
+
+.burger-menu__basket-item{	    
+    display: flex; 
+	flex-direction: row;   
+    justify-content: center;
+    align-items: center;  
+	column-gap: 3px; 
+	position: relative;
+}
+
+.burger-menu__basket-link{
+	height: 28px;
+	width: auto;
+}
+
+.burger-menu__basket-quantities{
+	width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #D05278;
+    display: flex;
+    justify-content: center;
+    align-items: center;	
+	position: absolute;
+	top: -8px;
+	right: -22px;
+}
+
+.burger-menu__quantities-link{
+	display: inline-block;
+    font-size: 14px;
+    line-height: 160%;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.burger-menu__logo-btn{
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	border: 2px solid #222222;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: transparent;
+	font-size: 16px;
+	color: #222222;
+	
+}
+
+.burger-menu__content-links{
+	padding-top: 30px;
+	width: 100vw;	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	row-gap: 20px;
+	text-align: justify;
+}
+
+.burger-menu__links-link{
+	text-decoration: none;
+	font-size: 19px;
+	line-height: 170%;
+	text-transform: uppercase;
+	color: #666666;
+	z-index: 45;
+}
+
+.burger-menu__links-link:hover{ color: #D05278; z-index: 45; transition: all 0.2s linear;}
+
+@include adaptive(laptop){
+	.burger-menu__content{
+		display: flex;
+		padding-inline: 60px;
+	}	
+	.burger-menu__content-logo{width: 100%; padding: 10px; padding-top: 0;}
+	.burger-menu__logo-logo{font-size: 40px;}
+}
+
+@media screen and (max-width: 900px){
+	.burger-menu__logo-logo{font-size: 38px;}
+}
+
+@include adaptive(tablet){
+	.burger-menu__content{padding-inline: 40px;}
+	.burger-menu__content-logo{column-gap: 20px;  padding-inline: 0;}
+	.burger-menu__logo-logo{font-size: 34px;} 		
+	.burger-menu__basket-link{height: 24px;}
+	.burger-menu__basket-quantities{width: 20px; height: 20px; right: -19px;}		
+	.burger-menu__quantities-link{font-size: 13px; padding: 2px;}
+	.burger-menu__logo-btn{width: 32px; height: 32px; font-size: 14px;}
+	.burger-menu__content-links{row-gap: 30px;}
+}
+
+@include adaptive(phone){	
+	.burger-menu__content{padding-inline: 30px;}
+	.burger-menu__content-logo{padding-bottom: 8px; }
+	.burger-menu__logo-logo{font-size: 31px;}	
+	.burger-menu__logo-basket{margin-left: -50px;}	
+	.burger-menu__basket-quantities{right:-18px}
+	.burger-menu__basket-link{height: 20px;	}	
+	.burger-menu__logo-btn{width: 30px; height: 30px; border: 2px solid #222222; font-size: 13.5px;}
+	.burger-menu__links-link{font-size: 16px;}
+}
+
+@media screen and (max-width: 400px) {
+	.burger-menu__content{padding-inline: 20px;	min-height: 630px;}	
+	.burger-menu__logo-logo{font-size: 28px;}
+	.burger-menu__logo-basket{margin-left: -40px;}
+	.burger-menu__basket-link{height: 19px;}
+	.burger-menu__basket-quantities{width: 18px; height: 18px; right: -16.5px;}		
+	.burger-menu__quantities-link{font-size: 12px; padding: 2px;}
+	.burger-menu__logo-btn{width: 28px; height: 28px; border: 2px solid #222222; font-size: 13px;}	
+	.burger-menu__content-links{row-gap: 25px;}
+	
+}

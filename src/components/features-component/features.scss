@@ -1,0 +1,139 @@
+@import '../../styles/scss_common/mixins';
+
+.new__features{
+    z-index: 15;
+    width: 80vw;    
+	margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    column-gap: 30px;
+    padding-top: 120px;    
+}
+
+.new__features-card{
+    z-index: 15;
+    width: 32vw;    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 20px;
+}
+.new__card-image{
+    width: 70px;
+    height: 70px;
+    position: relative;
+    z-index: 15;
+}
+.new__image-img{
+    z-index: 15;
+    width: 70px;
+    height: 100%;
+}
+.new__image-decorator{
+    z-index: 14;
+    position: absolute;
+    top: -15px;
+    bottom: -10px;
+    left: -15px;
+    right: -10px;
+    width: 106px;
+    height: 106px;
+}
+.new__card-title{
+    margin-top: 42px;
+    font-size: 32px;
+    line-height: 130%;
+    text-align: center;
+    color: #222222;
+    text-transform: capitalize;
+    margin: 0;
+    margin-left: -20px;   
+}
+.new__card-text{
+    font-size: 16px;
+    line-height: 170%;
+    text-align: center;
+    color: #666666;
+    width: 15vw;
+    text-align: justify;
+    margin: 0;
+}
+
+@media screen and (max-width: 4800px){
+    .new__features{width: 90vw; padding-top: 220px; padding-bottom: 20px;}
+    .new__card-title{font-size: 48px;}
+    .new__card-text{font-size: 30px; width: 20vw;}
+    .new__card-image{width: 90px; height: 90px;}
+    .new__image-img{width: 90px;}
+    .new__image-decorator{top: -15px; left: -15px; right: -10px; width: 106px; height: 106px;}
+
+}
+@media screen and (max-width: 2600px){   
+    .new__features{padding-top: 180px; padding-bottom: 80px; column-gap: 60px;}
+    .new__features-card{row-gap: 40px;}    
+    .new__card-title{font-size: 44px;}
+    .new__card-text{font-size: 30px; width: 22vw;}
+    .new__card-image{width: 70px; height: 70px;}
+    .new__image-img{width: 70px;}
+    .new__image-decorator{top: -15px; left: -15px; right: -10px; width: 106px; height: 106px;}
+}
+@media screen and (max-width: 2000px){ 
+    .new__features{width: 90vw; padding-top: 180px; padding-bottom: 80px;}   
+    .new__card-title{font-size: 38px;}
+    .new__card-text{font-size: 26px; width: 22vw;}
+}
+@media screen and (max-width: 1600px){
+    .new__features{padding-top: 120px; padding-bottom: 80px;}
+    .new__card-title{font-size: 34px;}
+    .new__card-text{font-size: 24px; width: 22vw;}
+    .new__card-image{width: 60px; height: 60px;}
+    .new__image-img{width: 60px;}
+    .new__image-decorator{top: -15px; left: -10px; right: 5px; width: 81px; height: 81px;}
+}
+@media screen and (max-width: 1200px){ 
+    .new__features{width: 90vw; flex-wrap: wrap; row-gap: 80px;  justify-content: center; padding-bottom: 80px; padding-top: 140px;}  
+    .new__features-card{flex-basis: 90vw; row-gap: 25px;} 
+    .new__card-title{font-size: 32px;}
+    .new__card-text{font-size: 22px; width: 65vw;}
+    .new__card-image{width: 55px; height: 55px;}
+    .new__image-img{width: 55px;}
+    .new__image-decorator{top: -15px; left: -10px; right: 5px; width: 76px; height: 76px;}
+}
+
+@include adaptive(laptop){    
+    .new__features{padding-top: 110px; padding-bottom: 80px; row-gap: 100px; } 
+    .new__features-card{ row-gap: 20px;}  
+    .new__card-title{font-size: 28px; margin-top: -10px;}  
+    .new__card-text{font-size: 20px; width: 60vw;}
+    .new__card-image{width: 50px; height: 50px;}
+    .new__image-img{width: 50px;}
+    .new__image-decorator{top: -15px; left: -10px; right: 5px; width: 76px; height: 76px;}
+}
+@include adaptive(tablet){ 
+    .new__features{padding-block: 90px; row-gap: 90px; } 
+    .new__features-card{ row-gap: 20px;}  
+    .new__card-title{font-size: 26px; margin-top: -10px;}  
+    .new__card-text{font-size: 16px; width: 65vw;}
+    .new__card-image{width: 45px; height: 45px;}
+    .new__image-img{width: 45px;}
+    .new__image-decorator{top: -15px; left: -10px; right: 5px; width: 71px; height: 71px;}
+}
+@include adaptive(phone){ 
+    .new__features{padding-block: 80px; row-gap: 80px; }  
+    .new__card-title{font-size: 24px;}
+    .new__card-text{font-size: 16px; width: 80vw;}
+    .new__card-image{width: 40px; height: 40px;}
+    .new__image-img{width: 40px;}
+    .new__image-decorator{top: -15px; left: -10px; right: 5px; width: 66px; height: 66px;}
+}
+
+@media screen and (max-width: 400px){
+    .new__features{ row-gap: 80px; padding-block: 70px;}
+    .new__features-card{ row-gap: 15px;} 
+    .new__card-title{font-size: 20px;}
+    .new__card-text{font-size: 14px; width: 80vw;}
+    
+}

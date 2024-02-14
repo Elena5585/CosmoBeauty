@@ -1,0 +1,71 @@
+@import '../../../styles/scss_common/mixins';
+
+.product-review{
+	padding-bottom: 180px;
+	width: 100vw;
+	position: relative;
+	background-color: #FFFFFF;
+	display: flex;	
+	justify-content: center;
+	align-items: center;		
+}
+
+.product-review__testimonials-block{
+	width: 70%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+	column-gap: 60px;
+}
+
+@media screen and (max-width: 4800px) {
+	
+  .product-review{padding-top: 100px;}
+  .product-review__testimonials-block{column-gap: 100px;}
+	
+}
+@media screen and (max-width: 3000px) {
+  .product-review{padding-top: 100px;}
+  .product-review__testimonials-block{column-gap: 100px;}	
+}
+@media screen and (max-width: 2500px) {
+  .product-review{padding-top: 80px;}
+  .product-review__testimonials-block{column-gap: 80px;}	
+}
+@media screen and (max-width: 2350px) {
+  .product-review{padding-top: 80px;}
+  .product-review__testimonials-block{column-gap: 40px; width: 80vw;}	
+}
+@media screen and (max-width: 1900px) {
+  .product-review{padding-top: 30px; padding-bottom: 205px;}
+  .product-review__testimonials-block{column-gap: 40px; width: 80vw;}	
+}
+@media screen and (max-width: 1560px) {
+  .product-review{padding-bottom: 180px;}  
+}
+@media screen and (max-width: 1360px) {
+  .product-review{padding-top: 30px; padding-bottom: 150px;}
+  .product-review__testimonials-block{column-gap: 30px; width: 85vw;}	
+}
+@media screen and (max-width: 1300px) {
+  .product-review{padding-top: 30px;}
+  .product-review__testimonials-block{column-gap: 30px; width: 85vw;}	
+}
+
+@include adaptive(laptop){
+  .product-review{padding-bottom: 100px;}
+  .product-review__testimonials-block{column-gap: 20px; width: 85vw;}	
+}
+@include adaptive(tablet){
+	.product-review{padding-top: 0; padding-bottom: 160px;} 
+}
+
+@media screen and (max-width:650px){
+	.product-review__testimonials-block{row-gap: 80px; width: 90vw; flex-direction: column; justify-content: flex-start;align-items: flex-start;}	
+}
+@include adaptive(phone){
+	.product-review{padding-top: 0; padding-bottom: 120px;}
+    .product-review__testimonials-block{row-gap: 80px; width: 90vw; flex-direction: column; justify-content: flex-start;align-items: flex-start;}	
+}
+

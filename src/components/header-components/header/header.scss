@@ -1,0 +1,138 @@
+@import '../../../styles/scss_common/mixins';
+
+header{
+    box-sizing: border-box;
+    width: 100vw;    
+    min-height: 40px;
+    position: fixed; 
+    top: 0;   
+    left: 0;
+    right: 0;
+    z-index: 40;
+}
+.header__discount-window{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;    
+    min-height: 40px;
+    background-color: #222222; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    row-gap: 3px;
+    z-index: 35;  
+}
+.header__window-title{
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 80%;
+    font-size: 14px;
+    line-height: 100%;
+    text-transform: uppercase; 
+    width: 85%;   
+}
+.header__window-btn{
+    position: absolute;
+    top: 14px;
+    right: 44px;
+    width: 12.25px;
+    height: 12px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;    
+}
+.header__window-btn:hover{border: 1px solid #FFFFFF;}
+.header__btn-icon{
+    width: 12.25px;
+    height: 12px;
+}
+
+@media screen and (max-width: 4800px){
+    .header, .header__discount-window{min-height: 80px;}
+    .header__window-title{font-size: 30px;}
+    .header__window-btn{top: 20px; right: 60px;}
+    .header__window-btn, .header__btn-icon{width: 40.5px; height: 40px;}
+}
+@media screen and (max-width: 3500px){
+    .header, .header__discount-window{min-height: 60px;}
+    .header__window-title{font-size: 24px; letter-spacing: 0.7px;}
+    .header__window-btn{top: 15px; right: 40px;}
+    .header__window-btn, .header__btn-icon{width: 30.5px; height: 30px;}
+}
+@media screen and (max-width: 2500px){    
+    .header__window-title{font-size: 20px;}   
+}
+@media screen and (max-width: 2000px){   
+    .header__window-title{font-size: 18px; letter-spacing: 0.7px;}   
+    .header__window-btn{top: 17px; right: 40px;}
+    .header__window-btn, .header__btn-icon{width: 25px; height: 25px;}
+}
+@media screen and (max-width: 1700px){ 
+    .header, .header__discount-window{min-height: 50px;}   
+    .header__window-title{font-size: 16px; letter-spacing: 1px;} 
+    .header__window-btn{top: 15px; right: 40px;}
+    .header__window-btn, .header__btn-icon{width: 20px; height: 20px;}  
+}
+@media screen and (max-width: 1560px){   
+    .header, .header__discount-window{min-height: 40px;}  
+    .header__window-title{font-size: 14px;} 
+    .header__window-btn{top: 10px; right: 40px;}
+    .header__window-btn, .header__btn-icon{width: 18px; height: 18px;}
+}
+@media screen and (max-width: 1440px){     
+    .header__window-title{font-size: 14px;}     
+}
+@media screen and (max-width: 1200px){     
+    .header__window-btn{top: 12px; right: 44px;}
+    .header__window-btn, .header__btn-icon{width: 16px; height: 16px;} 
+}
+@include adaptive(laptop){
+    .header__window-title{font-size: 13px;}     
+}
+@include adaptive(tablet){
+    .header, .header__discount-window{min-height: 36px;}  
+    .header__window-title{font-size: 12px;} 
+    .header__window-btn{top: 10px; right: 30px;}
+    .header__window-btn, .header__btn-icon{width: 15px; height: 15px;}  
+}
+@include adaptive(phone){
+    .header {
+        &__window-title{
+            letter-spacing: 0.5px;
+            font-size: 10px;
+            margin-right: 30px;           
+            width: 100%;
+        }
+        &__window-btn{
+            right: 15px;
+            top: 10px;
+        }
+    }
+    .header__btn-icon{width: 12px; height: 12px;}  
+}
+@media screen and (max-width: 400px){
+    .header{
+        &__window-title{            
+            font-size: 9px;           
+            line-height: 150%;
+        }
+        &__window-btn{
+            right: 15px;
+            top: 10px;
+        }
+    }
+}
+@media screen and (max-width: 360px){
+    .header__window-title{
+        font-size: 9px;           
+            line-height: 150%;
+            margin-right: 0;
+            width: 70%;
+    }  
+}

@@ -1,0 +1,75 @@
+// @import "~bootstrap";
+@import './styles/scss_common/mixins.scss';
+@import './styles/scss_common/variables';
+@import './pages/about-page/styles/about.scss';
+@import './pages/about-page/styles/promotion.scss';
+@import './pages/about-page/styles/success.scss';
+@import './pages/basket-page/basket.scss';
+@import './pages/basket-page/total-basket.scss';
+@import './pages/category-page/category.scss';
+@import './pages/contact-page/styles/connection.scss';
+@import './pages/contact-page/styles/contact.scss';
+@import './pages/contact-page/styles/map.scss';
+@import './pages/contact-page/styles/message.scss';
+@import './pages/home-page/trend.scss';
+@import './pages/home-page/styles/discount.scss';
+@import './pages/home-page/styles/home.scss';
+@import './pages/home-page/styles/new.scss';
+@import './pages/order-page/styles/delivery.scss';
+@import './pages/order-page/styles/order.scss';
+@import './pages/profile-navigation-pages/login-page/loginpage.scss';
+@import './pages/profile-navigation-pages/profile_info-page/profile-info.scss';
+@import './pages/profile-navigation-pages/profile_orders-page/profile-orders.scss';
+@import './pages/profile-navigation-pages/profile_subscribtion-page/profile-subscription.scss';
+@import './pages/profile-navigation-pages/profile_wishes-page/profile-wishes.scss';
+@import './pages/profile-navigation-pages/registration-page/registration.scss';
+@import './pages/shop_item-page/styles/shop-review.scss';
+@import './pages/shop_item-page/styles/shopitem.scss';
+@import './pages/shop-page/styles/shop.scss';
+@import './pages/shop-page/styles/view.scss';
+@import './pages/showroom-page/styles/showroom-body.scss';
+@import './pages/showroom-page/styles/showroom.scss';
+@import './pages/whoops404-page/whoops.scss';
+
+@import './components/brands-component/brands.scss';
+@import './components/features-component/features.scss';
+@import './components/footer-component/footer.scss';
+@import './components/gallery-component/gallery.scss';
+@import './components/header_intro-component/header-intro.scss';
+@import './components/header-components/header/header.scss';
+@import './components/leave_a_review-component/leaveReview.scss';
+@import './components/NotFound-component/notfound.scss';
+@import './components/order-components/amount-component/amount.scss';
+@import './components/order-components/basket-component/basketcomponent.scss';
+@import './components/order-components/delivery_info-component/delivery-info.scss';
+@import './components/order-components/order-component/order-view.scss';
+@import './components/order-components/payment-component/payment.scss';
+@import './components/profile-page-components/login-component/login.scss';
+@import './components/profile-page-components/myinfo-component/myinfo.scss';
+@import './components/profile-page-components/myorders-component/myorders.scss';
+@import './components/profile-page-components/mywish-component/mywish.scss';
+@import './components/profile-page-components/profile-component/profileComp.scss';
+@import './components/profile-page-components/registration-component/registration.scss';
+@import './components/profile-page-components/subscription-component/subscription.scss';
+@import './components/rating-components/rating_input-component/rating-input.scss';
+@import './components/rating-components/rating_output-component/rating_output.scss';
+@import './components/shop-components/shop-card-component/shopcard.scss';
+@import './components/shop-components/shop-category-component/shopCategory.scss';
+@import './components/shop-components/shop-price-component/shop-price.scss';
+@import './components/shop-components/shop-top-component/shopTop.scss';
+@import './components/shop-components/shop-viewed-component/shop-viewed.scss';
+@import './components/stay_intouch-component/stay_touch.scss';
+@import './components/subheader-component/subheader.scss';
+@import './components/testimonials_dashboard-component/testimonialsdashboard.scss';
+@import './components/testimonials-component/testimonials.scss';
+
+
+body, html {
+  margin: 0;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;  
+  width: 100vw;
+}
+
+

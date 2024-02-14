@@ -1,0 +1,313 @@
+@import '../../../styles/scss_common/mixins';
+
+.registration_form{
+    width: 50vw;
+    height: 700px;
+    position: relative;
+    background-color: #FAF9FF;
+    border: 2px solid #EEEEEE;
+    padding: 60px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    row-gap: 30px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.registration__form-decor{
+    width: 894px;
+    height: 820px;
+    position: absolute;
+    top: -21px;
+    bottom: -21px;
+    left: -62px;
+    right: -62px;
+    z-index: 10;
+}
+
+.registration__form-title{
+    font-style: 40px;
+    line-height: 140%;
+    text-transform: capitalize;
+    color: #222222;
+    text-align: center;
+    align-self: center;
+}
+
+.registration__form-block{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 10px;
+    z-index: 15;
+}
+
+.registration__block-input{
+    width: 320px;
+    height: 60px;
+    border: none;
+    outline: none;
+    padding: 18px 30px;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 170%;
+    color: #999999;
+    background-color: #FFFFFF;
+    z-index: 15;
+}
+
+.registration__block-input:placeholder{
+    font-size: 14px;
+    line-height: 170%;
+    color: #999999;
+}
+
+.registration__form-subtitle{
+    margin: 0;
+    font-size: 20px;
+    line-height: 120%;
+    text-transform: capitalize;
+    color: #222222;
+    margin-bottom: -20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.registration__form-remember{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.registration__remeber-status{
+    width: 15px;
+    height: 15px;
+    border: 1px solid #EEEEEE;
+    outline: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    z-index: 14;
+}
+
+.registration__remember-icon{
+    width: 15px;
+    height: 15px;
+    z-index: 15;
+}
+
+.registratiom__remember-title{
+    margin: 0;
+    font-size: 16px;
+    line-height: 170%;    
+    color: #666666;
+}
+
+.registration__form-btn{
+    width: 100%;
+    height: 60px;
+    background-color: #222222;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    line-height: 100%;    
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-block: 23px;
+    z-index: 25;
+}
+
+.registration__form-login{
+    font-size: 16px;
+    line-height: 170%;   
+    color: #666666;
+    z-index: 20;
+}
+
+.login__link-red{
+    color: #D05278;
+    padding: 5px;
+    display: inline-block;
+    text-decoration: none;
+    z-index: 20;
+}
+
+.registration__form-message{
+    text-align: center;
+    font-size: 14px;
+    line-height: 100%;
+    color: #D05278;
+    margin-block: -20px;
+}
+
+@media screen and (max-width: 4800px){
+    .registration_form{ width: 50vw; height: auto; border: 4px solid #EEEEEE; padding: 120px;  row-gap: 60px;}    
+    .registration__form-decor{ width: 110%; height: 110%; top: -21px; bottom: -21px; left: -62px; right: -62px;}    
+    .registration__form-title{font-size: 70px;}    
+    .registration__form-block{ height: 120px; column-gap: 20px;}    
+    .registration__block-input{ width: 23vw; height: 120px;  padding: 18px 30px; padding-left: 60px; font-size: 36px;}    
+    .registration__block-input:placeholder{font-size: 36px;}    
+    .registration__form-subtitle{font-size: 40px; margin-bottom: -20px;  margin-top: 10px; margin-left: 40px;}    
+    .registration__form-remember{column-gap: 40px;}    
+    .registration__remeber-status{ width: 60px; height: 60px;  border: 4px solid #EEEEEE; margin-left: 10px;}    
+    .registration__remember-icon{ width: 60px; height: 60px;}    
+    .registratiom__remember-title{font-size: 40px;}    
+    .registration__form-btn{ width: 100%; height: 120px; font-size: 36px; padding-block: 23px;}    
+    .registration__form-login{ font-size: 40px; margin-left: 10px;}    
+    .login__link-red{ padding: 12px;}    
+    .registration__form-message{ font-size: 40px; margin-block: -20px;}
+}
+@media screen and (max-width: 3700px){
+    .registration_form{ width: 60vw;} 
+    .registration__block-input{ width: 29vw;}     
+}
+@media screen and (max-width: 3000px){
+    .registration_form{ width: 60vw; padding: 90px; row-gap: 50px;}   
+    .registration__form-title{font-size: 60px;}     
+    .registration__block-input{ width: 29vw; height: 120px; padding-left: 40px; font-size: 32px;}    
+    .registration__block-input:placeholder{font-size: 32px;}    
+    .registration__form-subtitle{font-size: 36px; margin-left: 20px;}    
+    .registration__form-remember{column-gap: 30px;}     
+    .registratiom__remember-title{font-size: 36px;}    
+    .registration__form-btn{font-size: 32px;}    
+    .registration__form-login{ font-size: 36px;}        
+    .registration__form-message{ font-size: 36px;}
+}
+@media screen and (max-width: 2500px){
+    .registration_form{ width: 70vw; padding: 80px; row-gap: 50px;}   
+    .registration__form-title{font-size: 55px;}  
+    .registration__form-block{height: 100px;}   
+    .registration__block-input{ width: 34vw; height: 100px; padding-left: 30px; font-size: 30px;}    
+    .registration__block-input:placeholder{font-size: 30px;}    
+    .registration__form-subtitle{font-size: 32px; margin-left: 20px;}    
+    .registration__form-remember{column-gap: 30px;}     
+    .registratiom__remember-title{font-size: 32px;}    
+    .registration__remeber-status{ width: 40px; height: 40px;  border: 3px solid #EEEEEE;}    
+    .registration__remember-icon{ width: 40px; height: 40px;}  
+    .registratiom__remember-title{font-size: 32px;}  
+    .registration__form-btn{font-size: 30px; height: 100px;}    
+    .registration__form-login{ font-size: 32px;}        
+    .registration__form-message{ font-size: 32px;}
+}
+@media screen and (max-width: 2000px){
+    .registration_form{ width: 70vw; padding: 60px; row-gap: 45px;}   
+    .registration__form-title{font-size: 45px;}  
+    .registration__form-block{height: 80px;}   
+    .registration__block-input{ width: 37vw; height: 80px; padding-left: 30px; font-size: 26px;}    
+    .registration__block-input:placeholder{font-size: 26px;}    
+    .registration__form-subtitle{font-size: 28px; margin-left: 20px;}    
+    .registration__form-remember{column-gap: 20px;}     
+    .registratiom__remember-title{font-size: 28px;}    
+    .registration__form-btn{font-size: 26px; height: 80px;}    
+    .registration__form-login{ font-size: 28px; margin-left: 10px;}        
+    .registration__form-message{ font-size: 28px;}
+}
+@media screen and (max-width: 1560px){
+    .registration_form{ width: 70vw; padding: 40px; row-gap: 40px;}   
+    .registration__form-title{font-size: 36px;}  
+    .registration__form-block{height: 60px;}   
+    .registration__block-input{ width: 39vw; height: 60px; padding-left: 30px; font-size: 22px;}    
+    .registration__block-input:placeholder{font-size: 22px;}    
+    .registration__form-subtitle{font-size: 24px; margin-left: 20px;}    
+    .registration__form-remember{column-gap: 20px;}     
+    .registratiom__remember-title{font-size: 24px;}  
+    .registration__remeber-status{ width: 30px; height: 30px;  border: 2px solid #EEEEEE;}    
+    .registration__remember-icon{ width: 30px; height: 30px;}     
+    .registration__form-btn{font-size: 22px; height: 60px;}    
+    .registration__form-login{ font-size: 24px; margin-left: 10px;}        
+    .registration__form-message{ font-size: 24px;}
+}
+@media screen and (max-width: 1260px){
+    .registration_form{ width: 70vw; padding: 40px; row-gap: 35px;}   
+    .registration__form-title{font-size: 32px;}  
+    .registration__form-block{height: 55px;}   
+    .registration__block-input{ width: 34vw; height: 55px; padding-left: 20px; font-size: 16px;}    
+    .registration__block-input:placeholder{font-size: 16px;}    
+    .registration__form-subtitle{font-size: 18px; margin-left: 10px;}    
+    .registration__form-remember{column-gap: 15px;}     
+    .registratiom__remember-title{font-size: 18px; margin-top: 10px;}  
+    .registration__remeber-status{ width: 25px; height: 25px;  border: 2px solid #EEEEEE; margin-left: 0; margin-top: 10px;}    
+    .registration__remember-icon{ width: 25px; height: 25px;}     
+    .registration__form-btn{font-size: 18px; height: 55px;}    
+    .registration__form-login{ font-size: 18px; margin-left: 10px;}        
+    .registration__form-message{ font-size: 18px;}
+}
+@include adaptive(laptop){
+    .registration_form{ width: 70vw; padding: 30px; row-gap: 30px;}   
+    .registration__form-decor{ width: 110%; height: 110%; top: -21px; bottom: -21px; left: -22px; right: -22px;}  
+    .registration__form-title{font-size: 28px;}  
+    .registration__form-block{height: 50px;}   
+    .registration__block-input{ width: 34vw; height: 50px; padding-left: 20px; font-size: 14px;}    
+    .registration__block-input:placeholder{font-size: 14px;}    
+    .registration__form-subtitle{font-size: 16px; margin-left: 10px;}    
+    .registration__form-remember{column-gap: 10px;}     
+    .registratiom__remember-title{font-size: 16px;}  
+    .registration__remeber-status{ width: 25px; height: 25px;  border: 2px solid #EEEEEE;}    
+    .registration__remember-icon{ width: 25px; height: 25px;}     
+    .registration__form-btn{font-size: 16px; height: 50px;}    
+    .registration__form-login{ font-size: 16px; margin-left: 10px;}        
+    .registration__form-message{ font-size: 16px; margin-block: -15px; margin-left: 10px;}
+    .login__link-red{ padding: 12px;padding-left: 8px;}  
+}
+@media screen and (max-width: 850px){
+    .registration_form{row-gap: 27px;}
+    .registration__form-title{font-size: 24px; margin-bottom: 30px;}  
+    .registration__form-btn{font-size: 15px; letter-spacing: 0.8px;}
+}
+@include adaptive(tablet){
+    .registration_form{ width: 85vw; padding: 30px; row-gap: 25px;}   
+    .registration__form-decor{ width: 110%; height: 110%; top: -21px; bottom: -21px; left: -22px; right: -22px;}  
+    .registration__form-title{font-size: 20px; margin-bottom: 20px;}  
+    .registration__form-block{height: 40px;}   
+    .registration__block-input{ width: 42vw; height: 40px; padding-left: 20px; font-size: 13px;}    
+    .registration__block-input:placeholder{font-size: 13px;}    
+    .registration__form-subtitle{font-size: 15px; margin-left: 10px;}    
+    .registration__form-remember{column-gap: 10px;}     
+    .registratiom__remember-title{font-size: 15px;}  
+    .registration__remeber-status{ width: 20px; height: 20px;  border: 2px solid #EEEEEE;}    
+    .registration__remember-icon{ width: 20px; height: 20px;}     
+    .registration__form-btn{font-size: 14px; height: 40px;}    
+    .registration__form-login{ font-size: 15px; margin-left: 10px;}        
+    .registration__form-message{ font-size: 15px; margin-block: -15px; margin-left: 10px;}
+    .login__link-red{ padding: 12px;padding-left: 8px;}  
+}
+@include adaptive(phone){
+    .registration_form{ width: 100vw; padding: 50px 20px; row-gap: 25px; border: none;}   
+    .registration__form-decor{ width: 110%; height: 110%; top: -21px; bottom: -21px; left: -22px; right: -22px;}  
+    .registration__form-title{font-size: 24px; margin-bottom: 20px;}  
+    .registration__form-block{height: auto; column-gap: 10px;  flex-wrap: wrap; row-gap: 20px;}   
+    .registration__block-input{ width: 95vw; height: 40px; padding-left: 20px; font-size: 13px; text-align: center;}    
+    .registration__block-input:placeholder{font-size: 13px;}    
+    .registration__form-subtitle{font-size: 16px; margin-left: 10px; margin-top: 20px; margin-bottom: -7px; text-align: center; width: 100%;}    
+    .registration__form-remember{column-gap: 10px; justify-content: center; width: 100%; margin-block: 10px;}     
+    .registratiom__remember-title{font-size: 14px;}  
+    .registration__remeber-status{ width: 25px; height: 25px;  border: 2px solid #EEEEEE;margin-left: 0;}    
+    .registration__remember-icon{ width: 25px; height: 25px;}     
+    .registration__form-btn{font-size: 13px; height: 38px; padding-block: 18px;}    
+    .registration__form-login{ font-size: 15px; margin-left: 10px; text-align: center; width: 100%;}        
+    .registration__form-message{ font-size: 14px; margin-block: -15px; margin-left: 10px;}
+    .login__link-red{ padding: 12px;padding-left: 8px;}  
+}
+@media screen and (max-width: 420px){
+    .registration_form{padding-block: 40px;}
+    .registration__form-title{font-size: 22px; margin-bottom: 25px;}  
+     
+}
+@media screen and (max-width: 380px){
+    .registration_form{padding-block: 40px;}
+    .registration__form-title{font-size: 22px; margin-bottom: 25px;}  
+    
+}

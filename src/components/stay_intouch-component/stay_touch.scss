@@ -1,0 +1,283 @@
+@import '../../styles/scss_common/mixins';
+
+.touch{
+    width: 100vw;    
+    background-color: #FFFFFF;    
+    z-index: 14;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.touch__content{
+    width: 80vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background-color: #FCEDEA;
+}
+
+.touch__content-bg-image{
+    position: absolute;
+    top: -40px;
+    left: -14px;
+    width: 524px;
+    height: 450px;
+    z-index: 16;
+}
+.touch__content-img{
+    position: absolute;
+    top: 8px;
+    left: 60px;
+    width: auto;
+    height: 302px;
+    z-index: 17;
+    object-fit: cover;
+}
+
+.touch__content-block{
+    width: 60vw; 
+    height: 100%;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 30px;
+
+}
+.touch__block-title{    
+    font-size: 40px;
+    line-height: 140%;;
+    text-transform: capitalize;
+    color: #222222;
+    margin: 0;
+    z-index: 18;
+}
+
+.touch__block-text{
+    margin: 0;
+    margin-top: -28px;
+    font-size: 16px;
+    line-height: 170%;
+    color: #666666;
+    z-index: 18;
+    width: 90%;
+}
+
+.touch__block-subscription{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 10px;   
+    width: 565px;
+    z-index: 18;
+}
+.touch__subscription-input{
+    width: 380px;
+    height: 60px;
+    border: none;
+    outline: none;
+    color: #999999;
+    padding-block: 18px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 170%;  
+    z-index: 18;  
+}
+.touch__subscription-btn, .touch__subscription-btn--link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 175px;
+    height: 60px;
+    background-color: #222222;
+    padding: 23px 50px;
+    font-size: 14px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    z-index: 18;
+    box-sizing: border-box;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.touch__block-message{
+    font-size: 16px;
+    line-height: 100%;
+    color: #D05278;
+    z-index: 25;
+    margin-top: -5px;
+    width: 80%;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+}
+
+@media screen and (max-width: 4800px){
+    .touch{padding-block: 340px;}
+    .touch__content{min-height: 700px;}
+    .touch__content-bg-image{top: -40px; left: -34px; width: 1024px; height: 850px; }
+    .touch__content-img{ top: 105px; left: 140px;  height: 580px;}    
+    .touch__content-block{ width: 40vw; height: 100%;  row-gap: 50px;}
+    .touch__block-title{font-size: 90px;}    
+    .touch__block-text{ margin-top: -28px;font-size: 40px;}    
+    .touch__block-subscription{ column-gap: 20px; width: 40vw;}
+    .touch__subscription-input{width: 25vw; height: 120px; padding-block: 18px; padding-left: 30px;font-size: 34px;}
+    .touch__subscription-btn, .touch__subscription-btn--link{width: 7vw; height: 120px;padding: 23px 50px; font-size: 28px;}    
+    .touch__block-message{font-size: 28px;margin-top: -5px;}
+}
+@media screen and (max-width: 3000px){
+    .touch{padding-block: 300px;}
+    .touch__content{min-height: 650px;}
+    .touch__content-bg-image{top: -40px; left: -54px; width: 924px; height: 800px; }
+    .touch__content-img{ top: 85px; left: 70px;  height: 560px; width: auto;}    
+    .touch__content-block{ width: 43vw; height: 100%; row-gap: 50px;}
+    .touch__block-title{font-size: 80px;}    
+    .touch__block-text{ margin-top: -28px; font-size: 34px;}    
+    .touch__block-subscription{ column-gap: 20px; width: 40vw;}
+    .touch__subscription-input{width: 25vw; height: 120px; padding-block: 18px; padding-left: 30px;font-size: 34px;}
+    .touch__subscription-btn, .touch__subscription-btn--link{width: 8vw; height: 120px;padding: 23px 50px; font-size: 28px;}    
+    .touch__block-message{font-size: 28px;margin-top: -5px;}
+}
+@media screen and (max-width: 2500px){
+    .touch{padding-block: 280px; padding-top: 200px;} 
+    .touch__content{min-height: 600px;}   
+    .touch__content-bg-image{ left: -94px; width: 820px; height: 700px; }
+    .touch__content-img{ top: 70px; left: -20px;  height: 520px;}    
+    .touch__content-block{ width: 40vw; }
+    .touch__block-title{font-size: 70px;}    
+    .touch__block-text{ margin-top: -28px; font-size: 30px; }    
+    .touch__block-subscription{ column-gap: 20px; width: 40vw;}
+    .touch__subscription-input{width: 25vw; height: 120px; padding-block: 18px; padding-left: 30px;font-size: 30px;}
+    .touch__subscription-btn, .touch__subscription-btn--link{width: 8vw; height: 120px;padding: 23px 50px; font-size: 24px;}    
+    .touch__block-message{font-size: 28px;margin-top: -5px;}
+}
+@media screen and (max-width: 2000px){
+    .touch{padding-block: 0;}  
+    .touch__content{width: 100vw; min-height: 550px;}  
+    .touch__content-bg-image{ left: -74px; top: -150px; width: 700px; height: 750px; }
+    .touch__content-img{ top: 45px; left: -35px;  height: 480px;}    
+    .touch__content-block{ width: 55vw;}
+    .touch__block-title{font-size: 60px;}    
+    .touch__block-text{ margin-top: -28px; font-size: 26px; }    
+    .touch__block-subscription{ column-gap: 20px; width: 50vw;}
+    .touch__subscription-input{width: 30vw; height: 100px; padding-block: 18px; padding-left: 30px;font-size: 28px;}
+    .touch__subscription-btn, .touch__subscription-btn--link{width: 10vw; height: 100px;padding: 23px 50px; font-size: 22px;}    
+    .touch__block-message{font-size: 24px;margin-top: -5px;}
+}
+
+@media screen and (max-width: 1700px){   
+    .touch__content-img{ top: 50px; left: -35px;  height: 450px;}    
+    .touch__content-block{ width: 55vw;}
+}
+@media screen and (max-width: 1500px){ 
+    .touch__content{width: 100vw; min-height: 550px;}     
+    .touch__content-bg-image{ left: -34px; top: -60px; width: 530px; height: 600px; }
+    .touch__content-img{ top: 50px; left: -15px;  height: 440px;}  
+    .touch__content-block{ width: 58vw;} 
+    .touch__block-title{font-size: 54px;}    
+    .touch__block-text{ margin-top: -28px; font-size: 24px; }    
+    .touch__block-subscription{ column-gap: 20px; width: 50vw;}
+    .touch__subscription-input{width: 30vw; height: 80px; padding-block: 18px; padding-left: 30px;font-size: 24px;}
+    .touch__subscription-btn, .touch__subscription-btn--link{width: 12vw; height: 80px;padding: 18px 40px; font-size: 22px;}    
+    .touch__block-message{font-size: 24px;margin-top: -5px;}
+} 
+
+@media screen and (max-width: 1250px){
+    .touch__content{width: 100vw; min-height: 400px;}     
+    .touch__content-bg-image{ left: -54px; top: 0px; width: 380px; height: 380px; }
+    .touch__content-img{ top: 50px; left: -40px;  height: 280px;}  
+    .touch__content-block{ width: 63vw; row-gap: 25px;} 
+    .touch__block-title{width: 50vw; font-size: 36px; text-align: center; display: flex; justify-content: center; align-items: center;}    
+    .touch__block-text{ margin-top: -15px; font-size: 18px; width: 47vw;  text-align: center;}  
+    .touch__block-subscription{column-gap: 0; width: 50vw; flex-wrap: wrap; row-gap: 20px;} 
+    .touch__subscription-input{width: 50vw; height: 60px; padding-block: 18px; padding-left: 30px; font-size: 20px; text-align: center;}
+    .touch__subscription-btn, .touch__subscription-btn--link{width: 50vw; height: 60px;padding: 18px 30px; font-size: 18px;} 
+    .touch__block-message{font-size: 18px;}
+}
+
+@include adaptive(laptop){   
+    .touch__content-block{ width: 63vw;} 
+    .touch__content-bg-image{ left: -54px; top: 20px; width: 340px; height: 340px; }
+    .touch__content-img{ top: 70px; left: -40px;  height: 240px;} 
+    .touch__block-title{font-size: 34px; margin-top: 0px;}    
+    .touch__block-text{ margin-top: -15px; font-size: 16px; } 
+    .touch__subscription-input, .touch__subscription-btn {height: 60px;}
+    .touch__block-message{font-size: 16px; width: 70%;}  
+}
+@media screen and (max-width: 850px){
+    .touch__content-bg-image{ left: -54px; top: 20px; width: 320px; height: 320px; }
+    .touch__content-img{ top: 70px; left: -40px;  height: 220px;} 
+    .touch__content-block{ width: 63vw;} 
+    .touch__block-title{font-size: 32px; margin-top: 0px;}  
+    .touch__subscription-input{width: 50vw; height: 50px; padding-block: 15px; padding-left: 30px; font-size: 18px; text-align: center;}
+    .touch__subscription-btn, .touch__subscription-btn--link{width: 50vw; height: 50px;padding: 15px 30px; font-size: 16px;} 
+}
+@include adaptive(tablet){
+    .touch__content{min-height: 350px;}
+    .touch__content-bg-image{ left: -54px; top: 0px; width: 320px; height: 320px; }
+    .touch__content-img{ top: 60px; left: -20px;  height: 200px;} 
+    .touch__content-block{ width: 60vw;}
+    .touch__block-title{font-size: 32px; margin-top: 0px; width: 40vw;}   
+    .touch__block-text{ margin-top: -15px; font-size: 16px; width: 40vw;} 
+    .touch__subscription-input{width: 40vw; height: 50px; padding-block: 15px; padding-left: 30px; font-size: 16px; text-align: center;}
+    .touch__subscription-btn, .touch__subscription-btn--link{width: 40vw; height: 50px; padding: 15px 30px; font-size: 16px;} 
+}
+@media screen and (max-width: 630px){
+    .touch__content-bg-image{ left: -64px; top: 0px; width: 290px; height: 290px; }
+    .touch__content-img{ top: 60px; left: -30px;  height: 180px;} 
+    .touch__content-block{ width: 60vw;}
+}
+
+@include adaptive(phone){
+    .touch__content-bg-image{ left: -74px; top: 30px; width: 270px; height: 270px; }
+    .touch__content-img{ top: 80px; left: -30px;  height: 170px;} 
+    .touch__content-block{ width: 60vw;}
+    .touch__block-title{font-size: 27px; margin-top: 0px; width: 40vw;}   
+    .touch__block-text{ margin-top: -15px; font-size: 14px; width: 40vw;} 
+    .touch__subscription-input{width: 40vw; height: 50px; padding-block: 15px; padding-left: 30px; font-size: 14px; text-align: center;}
+    .touch__subscription-btn, .touch__subscription-btn--link{width: 40vw; height: 50px; padding: 15px 30px; font-size: 14px;} 
+    .touch__block-message{font-size: 14px; text-align: center;}
+}
+
+@media screen and (max-width: 480px){
+    .touch__content-bg-image{ left: -74px; top: 40px; width: 250px; height: 250px; }
+    .touch__content-img{ top: 90px; left: -30px;  height: 150px;} 
+    
+}
+@media screen and (max-width: 450px){
+    .touch__content-bg-image{ left: -54px; top: 150px; width: 250px; height: 250px; opacity: 50%; }
+    .touch__content-img{ top: 190px; left: -30px;  height: 165px; opacity: 50%;} 
+    .touch__content-block{ width: 70vw;}
+    .touch__block-title{font-size: 24px; margin-top: 0px; width: 50vw;} 
+    .touch__block-text{ margin-top: -15px; font-size: 14px; width: 50vw;} 
+    .touch__subscription-input{width: 50vw; height: 50px; padding-block: 15px; padding-left: 30px; font-size: 14px; text-align: center;}
+    .touch__subscription-btn, .touch__subscription-btn--link{width: 50vw; height: 50px; padding: 15px 30px; font-size: 14px;} 
+}
+
+@media screen and (max-width: 400px){
+    .touch__content-bg-image{ left: -54px; top: 150px; width: 230px; height: 230px; opacity: 50%; }
+    .touch__content-img{ top: 200px; left: -30px;  height: 150px; opacity: 50%;} 
+    .touch__content-block{ width: 75vw;}
+    .touch__block-title{font-size: 24px; margin-top: 0px; width: 60vw;} 
+    .touch__block-text{ margin-top: -15px; font-size: 14px; width: 60vw;} 
+    .touch__block-subscription{width: 60vw;}
+    .touch__subscription-input{width: 60vw; height: 45px; padding-block: 15px; padding-left: 10px; font-size: 14px; text-align: center;}
+    .touch__subscription-btn, .touch__subscription-btn--link{width: 60vw; height: 45px; padding: 15px 30px; font-size: 14px; margin-top: -10px;} 
+
+}
+
+@media screen and (max-width: 350px){
+    .touch__content-img{ top: 220px; left: -25px;  height: 135px; opacity: 50%;} 
+    .touch__block-message{line-height: 120%;}
+}
+
+

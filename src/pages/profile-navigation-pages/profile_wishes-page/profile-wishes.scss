@@ -1,0 +1,168 @@
+@import '../../../styles/scss_common/mixins';
+
+.profile-wishes{
+	width: 100vw;    
+    position: relative;
+    background-color: #FCEDEA;
+    z-index: 1;
+}
+
+.profile-wishes__body{
+	position: relative;
+    width: 100vw;
+    padding-bottom: 60px;   
+    z-index: 11;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    row-gap: 50px;
+    background-color: #FFFFFF;
+}
+
+.profile-wishes--decor{
+	position: absolute;
+    top: 0%;
+    left: -18%;
+    height: 500px;    
+    opacity: 65%;
+    z-index: 25;
+}
+
+.profile-wishes--decor2{
+	position: absolute;
+    bottom: 0%;
+    right: -6%;
+    height: 400px;
+    transform: rotate(-10deg);
+    opacity: 65%;
+    z-index: 25;
+}
+
+.profile-wishes__block{
+	width: 75vw;
+    min-height: 600px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    row-gap: 30px;     
+}
+
+.profile-wishes-components{
+	width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 65px;
+}
+
+.profile-wishes-components-gallery{
+    width: 100vw;    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 5px;
+}
+
+@media screen and (max-width: 4800px){
+    .profile-wishes__body{padding-block: 180px;}    
+    .profile-wishes--decor{top: 30%; left: -11%; height: 900px; opacity: 65%;}    
+    .profile-wishes--decor2{bottom: 0%; right: -2%; height: 500px; transform: rotate(0deg); opacity: 65%;}    
+    .profile-wishes__block{width: 75vw; min-height: 600px; row-gap: 180px;}   
+    .profile-wishes-components{width: 100vw; row-gap: 65px;}   
+    .profile-wishes-components-gallery{row-gap: 5px;}    
+}
+@media screen and (max-width: 4200px){
+    .profile-wishes--decor{left: -12%;} 
+}
+@media screen and (max-width: 3850px){
+    .profile-wishes--decor{left: -13%;}    
+}
+@media screen and (max-width: 3600px){
+    .profile-wishes--decor{left: -14%;}     
+}
+@media screen and (max-width: 3500px){
+    .profile-wishes--decor{left: -13%; height: 800px;}  
+    .profile-wishes__body{padding-block: 180px; padding-bottom: 130px;}       
+}
+@media screen and (max-width: 3000px){
+    .profile-wishes--decor{ top: 30%; left: -15%; height: 800px; opacity: 65%;}
+    .profile-wishes--decor2{bottom: 0%; right: -2%; height: 500px; transform: rotate(0deg); opacity: 65%;}  
+    .profile-wishes__body{padding-block: 180px; padding-bottom: 130px;}     
+}
+@media screen and (max-width: 2800px){
+    .profile-wishes--decor{ top: 30%; left: -15%; height: 700px; opacity: 65%;}
+    .profile-wishes--decor2{bottom: 0%; right: -2%; height: 450px; transform: rotate(0deg); opacity: 65%;} 
+}
+@media screen and (max-width: 2500px){ 
+    .profile-wishes--decor{ top: 30%; left: -16%; height: 700px; opacity: 65%;}
+    .profile-wishes--decor2{bottom: 0%; right: -3%; height: 400px; transform: rotate(0deg); opacity: 65%;}  
+    .profile-wishes__block{row-gap: 160px;}         
+}
+@media screen and (max-width: 2300px){
+    .profile-wishes--decor{ top: 30%; left: -18%; height: 650px; opacity: 65%;}
+    .profile-wishes__body{padding-block: 130px; padding-bottom: 110px;}      
+}
+@media screen and (max-width: 2000px){ 
+    .profile-wishes--decor{ top: 30%; left: -19%; height: 600px; opacity: 65%;}
+    .profile-wishes--decor2{bottom: 0%; right: -3%; height: 400px; transform: rotate(0deg); opacity: 65%;}    
+    .profile-wishes__block{width: 80vw; min-height: 600px; row-gap: 160px;}  
+}
+@media screen and (max-width: 1800px){
+    .profile-wishes--decor{ top: 30%; left: -20%; height: 600px; opacity: 65%;}
+    .profile-wishes--decor2{bottom: 0%; right: -4%; height: 350px; transform: rotate(0deg); opacity: 65%;}     
+}
+@media screen and (max-width: 1650px){
+    .profile-wishes--decor{ top: 30%; left: -22%; height: 600px; opacity: 65%;}
+    .profile-wishes--decor2{bottom: 0%; right: -4%; height: 350px; transform: rotate(0deg); opacity: 65%;}  
+    .profile-wishes__block{row-gap: 120px;} 
+    .profile-wishes__body{padding-bottom: 100px;}   
+}
+@media screen and (max-width: 1560px){
+    .profile-wishes--decor{ top: 30%; left: -21%; height: 500px; opacity: 65%;}
+    .profile-wishes--decor2{bottom: 0%; right: -5%; height: 350px; transform: rotate(0deg); opacity: 65%;}
+    .profile-wishes__block{row-gap: 110px;} 
+    .profile-wishes__body{padding-bottom: 80px; padding-top: 120px;}   
+}
+@media screen and (max-width: 1400px){   
+    .profile-wishes--decor{ top: 30%; left: -21.5%; height: 450px; opacity: 65%;}
+    .profile-wishes--decor2{bottom: 0%; right: -7%; height: 300px; transform: rotate(0deg); opacity: 65%;}   
+    .profile-wishes__body{padding-bottom: 60px; padding-top: 100px;}   
+}
+@media screen and (max-width: 1300px){ 
+    .profile-wishes--decor{ top: 28%; left: -20%; height: 400px; opacity: 65%;}
+    .profile-wishes--decor2{bottom: 0%; right: -7%; height: 300px; transform: rotate(0deg); opacity: 65%;}    
+}
+@media screen and (max-width: 1200px){
+    .profile-wishes--decor{ top: 20%; left: -21%; height: 400px; opacity: 65%;}
+    .profile-wishes--decor2{bottom: 0%; right: -8%; height: 300px; transform: rotate(0deg); opacity: 65%;} 
+    .profile-wishes__block{min-height: 650px; row-gap: 100px;}
+    .profile-wishes__body{padding-bottom: 30px; padding-top: 90px;}  
+}
+@media screen and (max-width: 1100px){
+    .profile-wishes--decor{ top: 20%; left: -23%; height: 400px; opacity: 65%;}
+    .profile-wishes--decor2{bottom: 0%; right: -8%; height: 280px; transform: rotate(0deg); opacity: 65%;} 
+}
+@include adaptive(laptop){
+    .profile-wishes--decor{ display: none;}
+    .profile-wishes--decor2{display: none;} 
+    .profile-wishes__body{padding-block: 80px; padding-bottom: 30px;}  
+    .profile-wishes__block{row-gap: 90px; width: 85vw; min-height: 550px;} 
+    .profile-wishes-components-gallery{margin-top: -30px;}
+}
+@media screen and (max-width: 860px){
+    .profile-wishes-components-gallery{margin-top: 20px;}
+}
+@include adaptive(tablet){   
+    .profile-wishes__block{row-gap: 80px; min-height: 500px;} 
+    .profile-wishes__body{padding-block: 70px; padding-bottom: 30px;}  
+    .profile-wishes-components-gallery{margin-top: 40px;}
+}
+@media screen and (max-width: 400px){
+    .profile-wishes__block{min-height: 450px;} 
+    .profile-wishes__body{padding-top: 50px;}
+}

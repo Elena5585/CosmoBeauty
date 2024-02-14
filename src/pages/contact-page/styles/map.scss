@@ -1,0 +1,85 @@
+@import '../../../styles/scss_common/mixins';
+
+.contact-map{
+	position: relative;
+	width: 100vw;	
+	background-color: #FAF9FF;	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	row-gap: 60px;
+	padding-block: 80px;
+}
+
+.contact-map__img{
+	border-radius: 25px;
+	border: 3px solid #666666;
+}
+
+.contact-map__title, .contact__map-text{margin: 0}
+.contact__map-text{margin-top: -50px; width: 70%; text-align: center;}
+
+@media screen and (max-width: 4800px){
+	.contact-map{padding-block: 240px; row-gap: 60px;}
+	.contact-map__title, .contact__map-text{margin: 0}
+	.contact-map__title{font-size: 100px;}
+	.contact__map-text{font-size: 48px; margin-top: -50px;}
+	.contact-map__img{width: 70vw; height: 600px; margin-top: 40px;}
+}
+@media screen and (max-width: 3000px){
+	.contact-map{padding-block: 200px; row-gap: 60px;}
+	.contact-map__title, .contact__map-text{margin: 0}
+	.contact-map__title{font-size: 90px;}
+	.contact__map-text{font-size: 44px; margin-top: -50px;}
+	.contact-map__img{width: 70vw; height: 550px; margin-top: 20px;}
+}
+@media screen and (max-width: 2500px){
+	.contact-map{padding-block: 180px; row-gap: 60px;}
+	.contact-map__title, .contact__map-text{margin: 0}
+	.contact-map__title{font-size: 70px;}
+	.contact__map-text{font-size: 40px; margin-top: -50px;}
+	.contact-map__img{width: 70vw; height: 450px; margin-top: 10px;}
+}
+@media screen and (max-width: 2000px){
+	.contact-map{padding-block: 180px;}
+	.contact-map__title, .contact__map-text{margin: 0}
+	.contact-map__title{font-size: 60px;}
+	.contact__map-text{font-size: 36px; margin-top: -50px;}
+	.contact-map__img{width: 70vw; margin-top: 0;}
+}
+@media screen and (max-width: 1500px){
+	.contact-map{padding-block: 120px; row-gap: 50px;}
+	.contact-map__title, .contact__map-text{margin: 0}
+	.contact-map__title{font-size: 60px;}
+	.contact__map-text{font-size: 32px; margin-top: -40px;}
+	.contact-map__img{width: 70vw; height: 400px; margin-top: 0;}
+}
+
+@include adaptive(laptop){
+	.contact-map{padding-bottom: 30px; padding-top: 140px;}
+	.contact-map__title{font-size: 55px;}
+	.contact__map-text{font-size: 28px; margin-top: -40px;}
+	.contact-map__img{width: 95vw; height: 400px; margin-top: 0;}
+}
+@media screen and (max-width: 900px){
+	.contact-map__title{font-size: 50px;}
+	.contact__map-text{font-size: 24px; margin-top: -40px;}
+}
+@include adaptive(tablet){
+	.contact-map{padding-bottom: 50px; padding-top: 140px; row-gap: 40px;}
+	.contact-map__title{font-size: 50px;}
+	.contact__map-text{font-size: 20px; margin-top: -30px;}
+	.contact-map__img{width: 95vw; height: 320px; margin-top: 0;}
+}
+@include adaptive(phone){
+	.contact-map{padding-bottom: 40px; padding-top: 100px; row-gap: 40px;}
+	.contact-map__title{font-size: 40px;}
+	.contact__map-text{font-size: 18px; margin-top: -30px;}
+	.contact-map__img{width: 92vw; height: 300px; margin-top: 0;}
+}
+
+@media screen and (max-width: 400px){
+	.contact-map{padding-top: 90px; padding-bottom: 30px;}
+	.contact__map-text{font-size: 16px;}
+}

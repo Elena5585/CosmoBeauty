@@ -1,0 +1,38 @@
+@import '../../../styles/scss_common/mixins';
+
+.rating-output{
+	width: 100%;	
+}
+
+.rating-output span {
+	padding: 0;
+	font-size: 20px;
+	margin: 0 3px;
+	line-height: 1;
+	color: lightgrey;
+	text-shadow: 1px 1px #bbb;
+}
+.rating-output > span:before {
+	content: '★';
+}
+.rating-output > span.active {
+	color: #CFC819;
+	text-shadow: 1px 1px rgb(204, 102, 0);
+}
+
+@media screen and (max-width: 4800px) {
+	.rating-output span {font-size: 30px; margin: 0 3px; text-shadow: 1px 1px #bbb;}
+}
+@media screen and (max-width: 3500px) {
+	.rating-output span {font-size: 26px; margin: 0 3px; text-shadow: 1px 1px #bbb;}
+}
+@media screen and (max-width: 2350px) {
+	.rating-output span {font-size: 24px; margin: 0 3px; text-shadow: 1px 1px #bbb;}
+}
+@media screen and (max-width: 1560px) {
+	.rating-output span {font-size: 20px; margin: 0 3px; text-shadow: 0.5px 0.5px #bbb;}
+}
+
+@include adaptive(laptop){
+	.rating-output span {font-size: 18px; margin: 0 2px; text-shadow: 0.5px 0.5px #bbb;}
+}

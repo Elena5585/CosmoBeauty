@@ -1,0 +1,59 @@
+@import '../../styles/scss_common/mixins';
+
+.brands__component{
+    width: 100vw; 
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 180px;
+}
+
+.trend__brands{	
+    width: 70vw;
+    height: 101px;    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;    
+}
+.trend__brands-item{
+    height: 101px;
+}
+
+@media screen and (max-width: 4800px){
+    .brands__component{padding-bottom: 280px; padding-top: 180px;}
+    .trend__brands{height: 200px; justify-content: space-between;;}
+    .trend__brands-item{height: 200px; flex-basis: 15%;}
+}
+
+@media screen and (max-width: 3000px){    
+    .trend__brands{height: 200px;}
+    .trend__brands-item{height: 200px;}
+}
+@media screen and (max-width: 2500px){
+    .brands__component{padding-bottom: 280px; padding-top: 120px;}
+    .trend__brands{height: 150px;}
+    .trend__brands-item{height: 150px;}
+}
+@media screen and (max-width: 2000px){
+    .brands__component{padding-bottom: 180px; padding-top: 80px;}
+    .trend__brands{height: 100px;}
+    .trend__brands-item{height: 100px;}
+}
+@media screen and (max-width: 1500px){
+    .brands__component{padding-bottom: 180px; padding-top: 0px;}
+    .trend__brands{height: 80px;}
+    .trend__brands-item{height: 80px;}
+}
+@media screen and (max-width: 1300px){ 
+    .brands__component{padding-bottom: 120px;}      
+    .trend__brands{flex-wrap: wrap; row-gap: 60px; height: auto; column-gap: 60px; justify-content: center}
+    .trend__brands-item{height: 80px; flex-basis: 25%; }
+    
+}
+
+@include adaptive(phone){
+    .brands__component{padding-bottom: 120px; padding-top: 80px;}
+    .trend__brands{row-gap: 80px; }
+}

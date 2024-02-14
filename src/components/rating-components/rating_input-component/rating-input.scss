@@ -1,0 +1,66 @@
+@import '../../../styles/scss_common/mixins';
+
+.rating-input{
+	width: 100%;	
+	margin-top: 10px;
+}
+
+.rating-input:not(:checked) > input  {	display: none;}
+.rating-input:not(:checked) > label  {	
+	float: right;
+	width: 42px;
+	padding: 0;
+	cursor: pointer;
+	font-size: 32px;
+	line-height: 32px;
+	color: lightgrey;
+	text-shadow: 1px 1px #bbb;
+}
+
+.rating-input:not(:checked) > label:before {
+	content: '★';
+}
+.rating-input > input:checked ~ label {
+	color: #CFC819;
+	text-shadow: 1px 1px #c60;
+}
+.rating-input:not(:checked) > label:hover,
+.rating-input:not(:checked) > label:hover ~ label {
+	color: #CFC819;
+}
+.rating-input > input:checked + label:hover,
+.rating-input > input:checked + label:hover ~ label,
+.rating-input > input:checked ~ label:hover,
+.rating-input > input:checked ~ label:hover ~ label,
+.rating-input > label:hover ~ input:checked ~ label {
+	color: #CFC819;
+	text-shadow: 1px 1px #CFC819;
+}
+.rate-input > label:active {
+	position: relative;
+}
+
+@media screen and (max-width: 4800px){
+	.rating-input:not(:checked) > label  {width: 52px; font-size: 38px; line-height: 38px;}
+} 
+@media screen and (max-width: 2350px){
+	.rating-input:not(:checked) > label  {width: 42px; font-size: 32px; line-height: 32px;}
+} 
+@media screen and (max-width: 1360px){
+	.rating-input:not(:checked) > label  {width: 28px; font-size: 26px; line-height: 26px;}
+} 
+
+@include adaptive(laptop){
+	.rating-input:not(:checked) > label  {width: 22px; font-size: 20px; line-height: 20px;}
+}
+
+@include adaptive(phone){
+	.rating-input:not(:checked) > label  {width: 26px; font-size: 24px; line-height: 24px;}
+}
+@media screen and (max-width: 400px){
+	.rating-input:not(:checked) > label  {width: 22px; font-size: 20px; line-height: 20px;}
+}
+
+
+
+	

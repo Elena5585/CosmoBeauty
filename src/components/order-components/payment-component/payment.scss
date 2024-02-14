@@ -1,0 +1,556 @@
+@import '../../../styles/scss_common/mixins';
+
+.payment{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;	
+	row-gap: 60px;	
+}
+
+.payment__item{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	row-gap: 15px;
+}
+
+.payment__item-title{
+	font-size: 32px;
+	line-height: 130%;
+	text-transform: capitalize;
+	color: #222222;
+	margin: 0;	
+}
+
+.payment__item-block{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	row-gap: 15px;
+	z-index: 25;
+}
+
+.payment__block-item{
+	width: 95%;
+	min-height: 100px;	
+	background-color: #FFFFFF;
+	border: 1px solid #EEEEEE;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	row-gap: 25px;
+	box-sizing: border-box;
+	padding: 30px;	
+}
+
+.payment__block-title--block{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	column-gap: 20px;	
+}
+
+.payment__block-item--check{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #FFFFFF;
+	border: 2px solid #999999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: -10px;
+}
+
+.payment__item-check--checked{
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	 background-color: #D05278;
+}
+
+.payment__block-item--title{
+	width: 80%;
+	font-size: 20px;
+	line-height: 120%;
+	text-transform: capitalize;
+	color: #222222;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	column-gap: 8px;
+
+}
+
+.payment-indicator{
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;	
+	border: 2px solid #D05278;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;	
+	color: #D05278;
+	text-transform: none;
+}
+
+.payment__block-item--form-block{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	row-gap: 30px;
+}
+
+.payment__block-item--card{align-self: start;}
+
+.payment__form-input--block{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+	column-gap: 30px;
+}
+.payment__block-item-form{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	row-gap: 30px;	
+}
+
+.payment__form-input, .payment__form-input--half{
+	outline: none;
+	width: 100%;
+	height: 60px;
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	border: 2px solid #999999;	
+	box-sizing: border-box;
+	font-size: 16px;
+	line-height: 170%;
+	color: #666666;
+	letter-spacing: 1.5px;
+} 
+
+.payment__form-input{padding: 18px 30px;}
+
+.payment__form-input--half{flex-basis: 50%; padding-inline: 18px 40px;}
+
+.payment__form-btn{
+	width: 100%;
+	height: 60px;
+	background-color: #222222;
+	color: #FFFFFF;
+	outline: none;
+	border: none;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
+	line-height: 120%;
+	letter-spacing: 1px;
+}
+
+input[type="text"]:focus, input[type="text"]:active, input[type="text"]:-webkit-autofill{background-color: #FFFFFF; color: #999999; outline: none}
+
+.payment__block-item--paypal{
+	width: 80%;
+	align-self: center;
+}
+
+.paypal-button-container:last-of-type{display: none;}
+
+.payment__form-message{
+	font-size: 20px;
+	color: #D05278;
+	text-align: center;
+	width: 100%;
+}
+
+@media screen and (max-width: 4800px){
+	.payment{width: 50%; row-gap: 100px;}	
+	.payment__item{row-gap: 60px;}	
+	.payment__item-title{font-size: 64px; line-height: 130%;}	
+	.payment__item-block{row-gap: 40px;}	
+	.payment__block-item{width: 95%; min-height: 150px; border: 3px solid #EEEEEE; row-gap: 50px; padding: 60px;}	
+	.payment__block-title--block{column-gap: 40px;}	
+	.payment__block-item--check{width: 40px; height: 40px; border: 3px solid #999999; margin-top: -10px;}	
+	.payment__item-check--checked{ width: 24px; height: 24px;}	
+	.payment__block-item--title{width: 80%; font-size: 40px; line-height: 120%; column-gap: 16px;}	
+	.payment-indicator{width: 32px; height: 32px; font-size: 28px;}	
+	.payment__block-item--form-block{row-gap: 60px; position: relative;}	
+	.payment__block-item--cards{height: 450px; position: relative;}
+	.payment__block-item--card, .rccs__card--front, .rccs__card--back{align-self: start; height: 450px; width: 690px;}
+	.rccs__card--back{ margin-left: -670px;}
+	.rccs__card--front{ margin-left: 310px;}		
+	.rccs__chip{width: 80px; height: 60px;}
+	.rccs__issuer{width: 160px; height: 110px;}
+	.rccs__number, .rccs--filled{font-size: 42px;}
+	.rccs__name{font-size: 30px; line-height: 120%;}
+	.rccs__cvc{font-size: 36px; margin-left: -20px;}
+	.rccs__expiry__value{font-size: 36px;}
+	.rccs__expiry__valid{font-size: 28px;letter-spacing: 0.5px;}	
+	.payment__form-input--block{column-gap: 30px; width: 100%; justify-content: space-between;}
+	.payment__block-item-form{row-gap: 40px;}	
+	.payment__form-input, .payment__form-input--half{height: 100px; padding: 18px 30px; font-size: 36px; line-height: 170%; padding-left: 50px;}	
+	.payment__form-input::placeholder, .payment__form-input--half::placeholder{font-size: 36px;}
+	.payment__form-input--half{flex-basis: 50%; width: 100%;}	
+	.payment__form-btn{width: 100%; height: 100px; font-size: 36px; line-height: 120%; letter-spacing: 1px;}
+	.payment__block-item--paypal{width: 80%; height: 300px; overflow: hidden;}	
+	
+	.paypal-button-container, .paypal-button-layout-vertical, .paypal-button-shape-rect, .paypal-button-number-multiple, .paypal-button-env-sandbox{display: none;}
+	.paypal-button-clicked, .paypal-button-clicked:focus, .paypal-button-clicked:focus::after{display: none;}
+	.payment__form-message{font-size: 36px;}
+}
+
+@media screen and (max-width: 4000px){
+	.rccs__card--back{ margin-left: -610px;}
+	.rccs__card--front{ margin-left: 180px;}
+}
+
+@media screen and (max-width: 3500px){
+	.payment__item-title{font-size: 54px;}	
+	.rccs__card--back{ margin-left: -500px;}
+	.rccs__card--front{ margin-left: 150px;}
+	.rccs__name{font-size: 28px; line-height: 120%;}	
+	.rccs__expiry__valid{font-size: 24px; letter-spacing: 0.5px;}
+	.payment__form-message{font-size: 32px;}
+}
+@media screen and (max-width: 3000px){
+	.payment__item-title{font-size: 50px;}	
+	.payment__block-item--cards{height: 370px;}
+	.payment__block-item--card, .rccs__card--front, .rccs__card--back{align-self: start; height: 370px; width: 570px;}
+	.rccs__card--back{ margin-left: -400px;}
+	.rccs__card--front{ margin-left: 130px;}
+	.rccs__chip{width: 75px; height: 57px;}
+	.rccs__issuer{width: 130px; height: 90px;}
+	.rccs__name{font-size: 28px; line-height: 120%;}	
+	.rccs__cvc{font-size: 36px; margin-left: -10px;}
+	.rccs__expiry__value{font-size: 33px;}
+	.payment__form-input, .payment__form-input--half{font-size: 28px;}
+	.payment__form-input::placeholder, .payment__form-input--half::placeholder{font-size: 28px;}
+	.payment__form-btn{font-size: 32px; height: 80px;} 
+	.payment__form-message{font-size: 30px;}
+}
+@media screen and (max-width: 2800px){
+	.rccs__card--back{ margin-left: -370px;}
+	.rccs__card--front{ margin-left: 90px;}
+}
+@media screen and (max-width: 2500px){
+	.payment__item-title{font-size: 46px;}	
+	.payment__block-item{width: 100%;}
+	.payment__block-item--cards{height: 350px;}
+	.payment__block-item--check{width: 35px; height: 35px; border: 2px solid #999999;}	
+	.payment__item-check--checked{ width: 25px; height: 25px;}	
+	.payment__block-item--title{width: 80%; font-size: 38px; line-height: 120%; column-gap: 12px; margin-top: 30px;}	
+	.payment-indicator{width: 28px; height: 28px; font-size: 26px;}	
+	.payment__block-item--cards{height: 350px;}
+	.payment__block-item--card, .rccs__card--front, .rccs__card--back{align-self: flex-start; height: 350px; width: 520px;}
+	.rccs__card--back{ margin-left: -300px;}
+	.rccs__card--front{ margin-left: 70px;}
+	.rccs__chip{width: 75px; height: 57px;}
+	.rccs__issuer{width: 120px; height: 78px;}
+	.rccs__number, .rccs--filled{font-size: 34px; margin-top: -10px;}
+	.rccs__cvc{font-size: 30px; margin-left: -10px;}
+	.rccs__name{font-size: 28px; line-height: 120%;}
+	.rccs__expiry__value{font-size: 28px;}
+	.rccs__expiry__valid{font-size: 28px;letter-spacing: 0.4px;}	
+	.payment__form-input, .payment__form-input--half{font-size: 26px;}
+	.payment__form-input::placeholder, .payment__form-input--half::placeholder{font-size: 26px;}
+	.payment__block-item--paypal{width: 90%;}	
+	.payment__form-message{font-size: 28px;}
+}
+@media screen and (max-width: 2200px){
+	.rccs__card--back{ margin-left: -250px;}
+	.rccs__card--front{ margin-left: 40px;}
+}
+
+@media screen and (max-width: 2000px){
+	.payment__item-title{font-size: 40px;}	
+	.payment__block-title--block{column-gap: 30px;}	
+	.payment__block-item{row-gap: 40px;}
+	.payment__block-item--check{width: 30px; height: 30px; border: 2px solid #999999;}	
+	.payment__item-check--checked{ width: 22px; height: 22px;}	
+	.payment__block-item--title{width: 80%; font-size: 32px; line-height: 120%; column-gap: 12px; margin-top: 25px;}	
+	.payment-indicator{width: 24px; height: 24px; font-size: 22px;}	
+	.payment__block-item-form{row-gap: 30px;}	
+	.payment__block-item--cards{height: 300px;}
+	.payment__block-item--card, .rccs__card--front, .rccs__card--back{height: 300px; width: 480px;}
+	.rccs__card--back{ margin-left: -230px;}
+	.rccs__card--front{ margin-left: 30px;}
+	.rccs__chip{width: 75px; height: 57px;}
+	.rccs__issuer{width: 100px; height: 72px;}
+	.rccs__number, .rccs--filled{font-size: 32px; margin-top: -10px;}
+	.rccs__cvc{font-size: 28px; margin-left: -10px;}
+	.rccs__name{font-size: 25px; line-height: 120%;}
+	.rccs__expiry__value{font-size: 24px;}
+	.rccs__expiry__valid{font-size: 24px;letter-spacing: 0.4px;}	
+	.payment__form-input, .payment__form-input--half{height: 70px; padding: 10px 20px; font-size: 24px; padding-left: 30px;}	
+	.payment__form-input::placeholder, .payment__form-input--half::placeholder{font-size: 24px;}	
+	.payment__form-btn{font-size: 26px; height: 70px;} 
+	.payment__form-message{font-size: 26px;}
+}
+
+@media screen and (max-width: 1800px){
+	.rccs__card--back{ margin-left: -190px;}
+	.rccs__card--front{ margin-left: 20px;}
+	.payment__block-item--cards{height: 290px;}
+	.payment__block-item--card, .rccs__card--front, .rccs__card--back{ width: 450px; height: 290px;}	
+	.rccs__cvc{font-size: 24px; margin-left: -15px;}
+	.rccs__number, .rccs--filled{font-size: 28px; margin-top: -10px;}
+	.rccs__name{font-size: 24px;}
+	.rccs__expiry__value{font-size: 24px;}
+	.rccs__expiry__valid{font-size: 22px;letter-spacing: 0.4px;}
+	.rccs__chip{width: 50px; height: 40px;}
+	.rccs__issuer{width: 80px; height: 62px;}	
+	.payment__form-input, .payment__form-input--half{height: 70px; padding: 10px 20px; font-size: 22px; padding-left: 30px;}	
+	.payment__form-input::placeholder, .payment__form-input--half::placeholder{font-size: 22px;}	
+	.payment__form-btn{width: 100%; height: 65px; font-size: 24px; line-height: 120%; letter-spacing: 1px;}	
+	.payment__block-item--paypal{width: 80%; height: 250px; overflow: hidden;}	
+	.payment__form-message{font-size: 24px;}
+}
+@media screen and (max-width: 1650px){
+	.rccs__card--back{ margin-left: -170px;}
+	.payment__block-item--cards{height: 290px;}
+	.payment__block-item--card, .rccs__card--front, .rccs__card--back{ width: 450px; height: 290px;}	
+	.rccs__number, .rccs--filled{font-size: 28px;}
+	.rccs__chip{width: 50px; height: 40px;}
+	.rccs__issuer{width: 70px; height: 52px;}	
+	.rccs__name{font-size: 22px;}
+		
+}
+@media screen and (max-width: 1560px){
+	.payment__item{row-gap: 40px;}	
+	.payment__item-title{font-size: 30px;}	
+	.payment__item-block{row-gap: 20px;}
+	.payment__block-item{min-height: 100px; border: 2px solid #EEEEEE; row-gap: 30px; padding: 40px;}
+	.payment__block-title--block{column-gap: 20px;}	
+	.payment__block-item--check{width: 22px; height: 22px; border: 2px solid #999999;}	
+	.payment__item-check--checked{ width: 14px; height: 14px;}	
+	.payment__block-item--title{width: 80%; font-size: 24px; column-gap: 12px; margin-top: 15px;}	
+	.payment-indicator{width: 18px; height: 18px; font-size: 14px;}		
+	.payment__block-item--cards{height: 260px;}
+	.payment__block-item--card, .rccs__card--front, .rccs__card--back{ width: 400px; height: 260px;}	
+	.rccs__card--back{ margin-left: -140px;}	
+	.rccs__card--front{ margin-left: 40px;}	
+	.rccs__chip{width: 40px; height: 30px;}
+	.rccs__issuer{width: 65px; height: 50px;}
+	.rccs__number, .rccs--filled{font-size: 28px; margin-top: -10px;}
+	.rccs__name{font-size: 21px;}
+	.rccs__cvc{font-size: 26px; margin-left: -10px;}
+	.rccs__expiry__value{font-size: 20px;}
+	.rccs__expiry__valid{font-size: 20px;letter-spacing: 0.4px;}	
+	.payment__form-input--block{column-gap: 20px;}
+	.payment__block-item-form{row-gap: 30px;}		
+	.payment__block-item--paypal{width: 90%;}	
+	.payment__form-message{font-size: 22px;}
+}
+
+@media screen and (max-width: 1300px){
+	.rccs__card--back{ margin-left: -110px;}	
+	.rccs__card--front{margin-left: 7px;}	
+	.rccs__issuer{width: 55px; height: 45px;}
+	.rccs__number, .rccs--filled{font-size: 26px;}
+	.rccs__cvc{font-size: 24px; }
+	.rccs__name{font-size: 18px;}
+	.rccs__expiry__value{font-size: 18px;}	
+	.rccs__expiry__valid{font-size: 18px;letter-spacing: 0.3px;}
+	.payment__form-input, .payment__form-input--half{height: 70px; padding: 10px 20px; font-size: 20px; padding-left: 30px;}	
+	.payment__form-input::placeholder, .payment__form-input--half::placeholder{font-size: 20px;}		
+	.payment__form-btn{width: 100%; height: 60px; font-size: 20px; line-height: 120%; letter-spacing: 1px;}
+}
+@media screen and (max-width: 1220px){
+	.payment__block-item--cards{height: 230px;}
+	.rccs__card--back{ margin-left: -70px;}	
+	.rccs__card--front{margin-left: 0px;}
+	.payment__block-item--card, .rccs__card--front, .rccs__card--back{ width: 350px; height: 230px;}	
+	.rccs__chip{width: 40px; height: 30px;}
+	.rccs__number, .rccs--filled{margin-top: -10px; font-size: 22px;}	
+	.rccs__cvc{font-size: 22px; }
+	.rccs__name{font-size: 17px;}
+	.rccs__expiry__value{font-size: 17px;}	
+	.rccs__expiry__valid{font-size: 15px;letter-spacing: 0.3px;}
+	.payment__form-input, .payment__form-input--half{height: 60px; padding: 10px 20px; font-size: 19px; padding-left: 30px;}	
+	.payment__form-input::placeholder, .payment__form-input--half::placeholder{font-size: 19px;}	
+	.payment__form-btn{width: 100%; height: 60px; font-size: 19px; line-height: 120%; letter-spacing: 1px;}
+	.payment__form-message{font-size: 20px;}
+}
+
+@media screen and (max-width: 1120px){
+	.rccs__card--back{ margin-left: -30px;}	
+	.rccs__card--front{margin-left: 10px;}
+	.payment__block-item--cards{height: 200px;}
+	.payment__block-item--card, .rccs__card--front, .rccs__card--back{ width: 300px; height: 200px;}
+	.rccs__issuer{width: 55px; height: 45px;}
+	.rccs__chip{width: 40px; height: 30px;}
+	.rccs__number, .rccs--filled{margin-top: -10px; font-size: 20px;}	
+	.rccs__cvc{font-size: 20px; }
+	.rccs__name{font-size: 16px;}
+	.rccs__expiry__value{font-size: 16px;}	
+	.rccs__expiry__valid{font-size: 14px;letter-spacing: 0.3px;}
+	.payment__form-input, .payment__form-input--half{height: 50px; padding: 10px 20px; font-size: 18px; padding-left: 30px;}	
+	.payment__form-input::placeholder, .payment__form-input--half::placeholder{font-size: 18px;}	
+}
+
+@media screen and (max-width: 1051px){.payment__block-item--paypal{width: 80%; height: 200px; overflow: hidden;}	}
+
+@include adaptive(laptop){
+	.payment{width: 100%;}
+	.payment__block-item{align-items: center; width: 100%;}
+	.payment__item-title{font-size: 26px; align-self: center;}	
+	.payment__block-title--block{column-gap: 20px;}	
+	.payment__block-item--check{width: 18px; height: 18px; border: 2px solid #999999;}	
+	.payment__item-check--checked{ width: 11px; height: 11px;}	
+	.payment__block-item--title{width: 80%; font-size: 22px; column-gap: 9px; margin: 0; margin-top: -8px;}	
+	.payment-indicator{width: 16px; height: 16px; font-size: 15px;}		
+	.rccs__card--back{ margin-left: -40px;}	
+	.rccs__card--front{margin-left: -50px;}
+	.rccs__issuer{width: 60px; height: 45px;}
+	.rccs__number, .rccs--filled{margin-top: -10px; font-size: 24px;}
+	.rccs__cvc{font-size: 22px; }	
+	.rccs__name{font-size: 16px;}
+	.rccs__expiry__value{font-size: 16px;}	
+	.rccs__expiry__valid{font-size: 14px;letter-spacing: 0.3px;}
+	.payment__block-item--form-block{width: 65%; row-gap: 40px;}
+	.payment__block-item--cards{height: 230px; width: 100%; }
+	.payment__block-item--card, .rccs__card--front, .rccs__card--back{width: 40vw; height: 230px; align-self: center;}	
+	.payment__block-item-form{row-gap: 20px;}
+	.payment__form-input, .payment__form-input--half{height: 50px; padding: 5px 10px; font-size: 16px; padding-left: 30px;}	
+	.payment__form-input::placeholder, .payment__form-input--half::placeholder{font-size: 16px;}
+	.payment__form-btn{width: 100%; height: 50px; font-size: 20px; line-height: 120%; letter-spacing: 1px; margin-top: 10px;}	
+	.payment__block-item--paypal{width: 80%; height: 300px; overflow: hidden;}	
+	.payment__form-message{font-size: 18px;}
+}
+
+@media screen and (max-width: 850px){
+	.rccs__card--back{ margin-left: -40px;}	
+	.rccs__card--front{margin-left: -45px;}
+	.payment__block-item--card, .rccs__card--front, .rccs__card--back{width: 46vw; height: 230px; align-self: center;}		
+}
+@media screen and (max-width: 833px){	
+	.payment__block-item--paypal{width: 80%; height: 250px; overflow: hidden;}		
+}
+
+
+
+@include adaptive(tablet){	
+	.payment__block-item{padding-inline: 30px;}
+	.rccs__card--back{ margin-left: -35px;}	
+	.rccs__card--front{margin-left: -50px;}
+	.rccs__chip{width: 40px; height: 30px;}
+	.rccs__issuer{width: 55px; height: 40px;}
+	.rccs__number, .rccs--filled{margin-top: -10px; font-size: 22px;}
+	.rccs__cvc{font-size: 22px; }	
+	.rccs__name{font-size: 16px;}
+	.rccs__expiry__value{font-size: 16px;}	
+	.rccs__expiry__valid{font-size: 14px;letter-spacing: 0.3px;}
+	.payment__block-item--form-block{width: 75%; row-gap: 40px;}
+	.payment__block-item--cards{height: 220px; width: 100%; }
+	.payment__block-item--card, .rccs__card--front, .rccs__card--back{width: 50vw; height: 220px; align-self: center;}	
+	.payment__block-item-form{row-gap: 20px;}
+	.payment__form-input, .payment__form-input--half{height: 50px; padding: 5px 10px; font-size: 16px; padding-left: 30px;}	
+	.payment__form-input::placeholder, .payment__form-input--half::placeholder{font-size: 16px;}
+	.payment__form-btn{width: 100%; height: 40px; font-size: 18px; line-height: 120%; letter-spacing: 1px; margin-top: 10px;}	
+}
+
+@media screen and (max-width: 700px){
+	.rccs__card--back{ margin-left: -25px;}	
+	.rccs__card--front{margin-left: -40px;}
+	.payment__block-item--cards{height: 200px; width: 100%; }
+	.payment__block-item--card, .rccs__card--front, .rccs__card--back{width: 53vw; height: 200px; align-self: center;}	
+	.rccs__number, .rccs--filled{margin-top: -10px; font-size: 20px;}
+	.rccs__cvc{font-size: 20px; }	
+	.rccs__name{font-size: 15px;}
+	.rccs__expiry__value{font-size: 15px;}	
+	.rccs__expiry__valid{font-size: 13px;letter-spacing: 0.3px;}
+}
+
+@media screen and (max-width: 650px){
+	.rccs__card--back{ margin-left: -15px;}	
+	.rccs__card--front{margin-left: -26px;}
+	.rccs__chip{width: 35px; height: 27px;}
+	.rccs__issuer{width: 45px; height: 36px;}
+	.payment__block-item--cards{height: 200px; width: 100%; }
+	.payment__block-item--card, .rccs__card--front, .rccs__card--back{width: 53vw; height: 200px; align-self: center;}	
+}
+@media screen and (max-width: 600px){
+	.rccs__card--back{ margin-left: -10px;}	
+	.rccs__card--front{margin-left: -10px;}
+	.rccs__chip{width: 35px; height: 27px;}
+	.rccs__issuer{width: 45px; height: 36px;}
+	.payment__block-item--cards{height: 200px; width: 100%; }
+	.payment__block-item--card, .rccs__card--front, .rccs__card--back{width: 52vw; height: 200px; align-self: center;}	
+}
+
+@include adaptive(phone){	
+	.payment__item-check--checked{ width: 11px; height: 11px;}	
+	.payment__block-item--title{width: 80%; font-size: 20px; column-gap: 9px; margin: 0; margin-top: -8px;}	
+	.payment-indicator{width: 14px; height: 14px; font-size: 12px;}	
+	.rccs__card--back{ margin-left: 10px;}	
+	.rccs__card--front{margin-left: 0px;}	
+	.payment__block-item{padding: 30px;}
+	.payment__block-item--cards{height: 180px; width: 100%; }
+	.payment__block-item--card, .rccs__card--front, .rccs__card--back{width: 280px; height: 180px; align-self: center;}	
+	.rccs__chip{width: 25px; height: 17px;}
+	.rccs__issuer{width: 40px; height: 30px;}	
+	.rccs__number, .rccs--filled{margin-top: -10px; font-size: 16px;}
+	.rccs__cvc{font-size: 16px; }	
+	.rccs__name{font-size: 14px;}
+	.rccs__expiry__value{font-size: 14px; margin-left: 20px;}	
+	.rccs__expiry__valid{font-size: 12px;letter-spacing: 0.3px; margin-left: 15px;}
+	.payment__block-item--form-block{width: 85%; row-gap: 40px;}
+	.payment__form-input, .payment__form-input--half{height: 40px; padding: 5px 10px; font-size: 14px; padding-left: 20px;}	
+	.payment__form-input::placeholder, .payment__form-input--half::placeholder{font-size: 14px;}
+	.payment__form-btn{width: 100%; height: 40px; font-size: 16px; line-height: 120%; letter-spacing: 1px; margin-top: 10px;}	
+	.payment__form-message{font-size: 16px;}
+}
+@media screen and (max-width: 515px){	
+	.payment__block-item--paypal{width: 90%; height: 200px; overflow: hidden;}		
+}
+
+@media screen and (max-width: 480px){
+	.payment__block-item--form-block{width: 95%; row-gap: 40px;}	
+	.rccs__card--back{ margin-left: 10px;}	
+	.rccs__card--front{margin-left: 0px;}	
+	.payment__block-item--card, .rccs__card--front, .rccs__card--back{width: 280px; height: 180px; align-self: center;}	
+}
+@media screen and (max-width: 420px){
+	.payment__block-item--form-block{width: 100%; row-gap: 40px;}
+	.payment__block-item--cards{height: 170px; width: 100%; }
+	.rccs__card--back{ margin-left: 30px;}	
+	.rccs__card--front{margin-left: 10px;}	
+	.payment__block-item--card, .rccs__card--front, .rccs__card--back{width: 240px; height: 170px; align-self: center;}	
+	.rccs__name{font-size: 13px;}
+}
+@media screen and (max-width: 380px){
+	.payment__block-item{padding-inline: 20px;}
+	.rccs__card--back{ margin-left: 60px;}	
+	.rccs__card--front{margin-left: 10px;}
+	.payment__block-item--cards{height: 150px; width: 100%; }
+	.payment__block-item--card, .rccs__card--front, .rccs__card--back{width: 220px; height: 150px; align-self: center;}	
+	.payment__form-input, .payment__form-input--half{height: 40px; padding: 5px 10px; font-size: 13px; padding-left: 20px;}	
+	.payment__form-input::placeholder, .payment__form-input--half::placeholder{font-size: 14px;}
+	.payment__form-btn{width: 100%; height: 40px; font-size: 15px; line-height: 120%; letter-spacing: 1px; margin-top: 10px;}
+	.payment__form-message{font-size: 15px;}	
+}
+@media screen and (max-width: 340px){	
+	.rccs__card--back{ margin-left: 65px;}	
+	.rccs__card--front{margin-left: 0px;}	
+	
+}
