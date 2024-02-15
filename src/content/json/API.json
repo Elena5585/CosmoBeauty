@@ -147,7 +147,7 @@
         "brand": "RAHUA", "price": 51, "category": "Hair care", "sale": 10, "quantity": 23, 
         "description": "Refreshing blend of spearmint, eucalyptus, and peppermint oils for quickly easing stress and tension – in an easy to apply rollerball formula.For all hair types. Benefits - Rejuvenates damaged, dull hair- Strengthens to ensure hair and scalp health- Creates shine", 
         "trend": true, "new": false, "weight": "120ml", "new_collection": false},
-    {"id": 38, "image": "../../../src/assets/hair_care/repair-hair-mask-for-damaged-hair-with-honey-hibiscus-john-masters-organics.png", "title": "REPAIR HAIR MASK FOR DAMAGED HAIR", 
+    {"id": 38, "image": "../../../src/assets/hair_care/repair-hair-mask-for-damaged-hair.png", "title": "REPAIR HAIR MASK FOR DAMAGED HAIR", 
         "brand": "JOHN MASTERS ORGANICS", "price": 51, "category": "Hair care", "sale": 0, "quantity": 27, 
         "description": "This Repair Hair Mask for Damaged Hair with Honey & Hibiscus is a rich and decadent silicone-free hair mask that puts hair into rehab.", 
         "trend": true, "new": false, "weight": "125gr", "new_collection": false},

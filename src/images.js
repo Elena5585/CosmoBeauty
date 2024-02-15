@@ -34,7 +34,7 @@ import '../src/assets/hair_care/luxury-oval-brush-with-long-pins-tek.png';
 import '../src/assets/hair_care/multi-vitamin_healthy_hair_conditioner.png';
 import '../src/assets/hair_care/multi-vitamin_healthy_hair_shampoo.png';
 import '../src/assets/hair_care/omega-9-hair-mask-rahua.png';
-import '../src/assets/hair_care/repair-hair-mask-for-damaged-hair-with-honey-hibiscus-john-masters-organics.png';
+import '../src/assets/hair_care/repair-hair-mask-for-damaged-hair.png';
 import '../src/assets/hair_care/serum-to-nourish-hair-and-smooth-frizz-cut-by-fred.png';
 import '../src/assets/hair_care/surf-mist-for-wavy-hair-cut-by-fred.png';
 
