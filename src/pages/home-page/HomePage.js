@@ -127,7 +127,7 @@ export default function HomePage() {
     <div className="home">
       <SubHeaderComponent />      
       <section className="intro">
-        <img src="../../../src/assets/woman_home3.png" alt="" className="intro__decor"/>
+        <img src="./assets/woman_home3.png" alt="" className="intro__decor"/>
         <div className="intro__content">
           <p className="intro__content-logo" style={styles.logoStyle}>Professional</p>
           <h2 className="intro__content-title" style={styles.title}>Beauty & Care</h2>
