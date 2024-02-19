@@ -23,7 +23,7 @@ export default function ProfileWishesPage() {
 				<ProfileComponent/>
 				<div className='profile-wishes-components'>
 	          		<MyWishcomponent/>
-	            	{viewed_items.length > 0 && (
+	            	{viewed_items?.length > 0 && (
 						<div className='profile-wishes-components-gallery'>                  
 							<GalleryComponent/>                 
 						</div>

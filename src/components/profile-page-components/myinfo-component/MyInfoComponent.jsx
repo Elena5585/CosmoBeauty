@@ -11,7 +11,7 @@ export default function MyInfoComponent() {
 
     const dispatch = useDispatch();
     const [user, setUser] = useState ({name: "", lastName: "", phone: "", email: "", address: "", city: "", region: "", country: "", gender: ""}); 
-    const avatar = '../../../../src/assets/profile/avatar.webp';    
+    const avatar = './assets/profile/avatar.webp';    
     const [selectedImage, setSelectedImage] = useState(null);
     const [profileMessage, setProfileMessage] = useState("");
     const [cityMessage, setCityMessage] = useState("");
