@@ -104,19 +104,19 @@ export default function HomePage() {
     setPageInfo('discount');
     window.scrollTo(0,0);
   } 
+
+  async function getApi(){  
+    try{        
+      const response = await axios.get(API);
+      const data = response.data;  
+      dispatch(getCardsAction(data));        
+      dispatch(getTrendsAction(data)); 
+      dispatch(setPageQuantityAction());            
+  } 
+  catch(e){ console.log(e);}
+}
   
-  useEffect(() =>  {    
-    async function getApi(){  
-        try{        
-          const response = await axios.get(API);
-          const data = response.data;  
-          dispatch(getCardsAction(data));        
-          dispatch(getTrendsAction(data)); 
-          dispatch(setPageQuantityAction());            
-      } 
-      catch(e){ console.log(e);}
-    }
-     getApi();}, []);
+  useEffect(() => { getApi();}, []);
 
   function updateGallery(){localStorage.setItem('viewed', JSON.stringify(viewed_items))}
 
@@ -127,7 +127,7 @@ export default function HomePage() {
     <div className="home">
       <SubHeaderComponent />      
       <section className="intro">
-        <img src="../../../src/assets/woman_home3.png" alt="" className="intro__decor"/>
+        <img src="./static/media/woman_home3.png" alt="" className="intro__decor"/>
         <div className="intro__content">
           <p className="intro__content-logo" style={styles.logoStyle}>Professional</p>
           <h2 className="intro__content-title" style={styles.title}>Beauty & Care</h2>

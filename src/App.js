@@ -15,22 +15,22 @@ import './images.js';
 
 function App() {
   const dispatch = useDispatch();
+
+  async function getApi(){ 
+    try{        
+      const response = await axios.get(API);
+      const data = response.data;
+      const responseTestimonials = await axios.get(Testimonials);
+      const dataTestimonials = responseTestimonials.data;  
+      dispatch(getCardsAction(data));        
+      dispatch(getTrendsAction(data)); 
+      dispatch(getTestimonialsAction(dataTestimonials));  
+      dispatch(setPageQuantityAction());   
+    } 
+    catch(e){ console.log(e);}  
+  } 
   
-  useEffect(() =>  {    
-    async function getApi(){ 
-      try{        
-        const response = await axios.get(API);
-        const data = response.data;
-        const responseTestimonials = await axios.get(Testimonials);
-        const dataTestimonials = responseTestimonials.data;  
-        dispatch(getCardsAction(data));        
-        dispatch(getTrendsAction(data)); 
-        dispatch(getTestimonialsAction(dataTestimonials));  
-        dispatch(setPageQuantityAction());   
-      } 
-      catch(e){ console.log(e);}    
-     } 
-     getApi();}, []);
+  useEffect(() =>  {getApi();}, []);
 
      
   useEffect(() => {

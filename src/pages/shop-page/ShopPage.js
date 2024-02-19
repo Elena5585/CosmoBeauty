@@ -163,6 +163,19 @@ function setNewAndSale(){
   useEffect(() => {    
     countPage(1);   
     setStartPage(1)}, [shopCards.length]);
+
+    async function getApi(){  
+      try{        
+        const response = await axios.get(API);
+        const data = response.data;  
+        dispatch(getCardsAction(data));        
+        dispatch(getTrendsAction(data)); 
+        dispatch(setPageQuantityAction());            
+    } 
+    catch(e){ console.log(e);}
+  }
+    
+    useEffect(() => { getApi();}, []);
   
   return (    
       <div className='shop'>         
