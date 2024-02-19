@@ -40,10 +40,10 @@ export default function FooterComponent() {
           <div className='footer__header-payment'>
             <p className='footer__payment-title' style={styles.headerText}>Payment methods:</p>
             <div className='footer__payment-ways'>
-              <img src="../../../src/assets/cards/visa.svg" alt="" className='footer__ways-card--type'/>
-              <img src="../../../src/assets/cards/master_card.svg" alt="" className='footer__ways-card--type'/>
-              <img src="../../../src/assets/cards/pay_pal.svg" alt="" className='footer__ways-card--type'/>
-              <img src="../../../src/assets/cards/payoneer.svg" alt="" className='footer__ways-card--type'/>
+              <img src="./assets/cards/visa.svg" alt="" className='footer__ways-card--type'/>
+              <img src="./assets/cards/master_card.svg" alt="" className='footer__ways-card--type'/>
+              <img src="./assets/cards/pay_pal.svg" alt="" className='footer__ways-card--type'/>
+              <img src="./assets/cards/payoneer.svg" alt="" className='footer__ways-card--type'/>
             </div>
           </div>
         </div>      
@@ -100,17 +100,17 @@ export default function FooterComponent() {
             <h3 className='footer__block-title' style={styles.titleStyle}>Contact</h3>
             <div className='footer__block-contacts'>
               <div className='footer__contacts-item'>
-                <img src="../../../src/assets/icons/geo_position.svg" alt="" className='footer__item-img'/>
+                <img src="./assets/icons/geo_position.svg" alt="" className='footer__item-img'/>
                 <p className='footer__item-text' style={styles.headerText}>27 Division St, New York,
                   NY 10002, USA</p>
               </div>
               <div className='footer__contacts-item'>
-                <img src="../../../src/assets/icons/phone.svg" alt="" className='footer__item-img'/>
+                <img src="./assets/icons/phone.svg" alt="" className='footer__item-img'/>
                 <p className='footer__item-phone' style={styles.headerMessage}>+1 345 99 71 345
                     +1 345 74 64 975</p>
               </div>
               <div className='footer__contacts-item'>
-                <img src="../../../src/assets/icons/mail.svg" alt="" className='footer__item-img'/>
+                <img src="./assets/icons/mail.svg" alt="" className='footer__item-img'/>
                 <p className='footer__item-text' style={styles.headerText}>info@cosmobeauty.com</p>
               </div>
             </div>

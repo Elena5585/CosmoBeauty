@@ -77,7 +77,7 @@ export default function LoginComponent() {
 
   return (
     <form className="login_form" onSubmit={loginAccount}>
-      <img src="../../../src/assets/icons/registration-decor.svg" alt=""className="login__form-decor" />
+      <img src="./assets/icons/registration-decor.svg" alt=""className="login__form-decor" />
       <h2 className="login__form-title" style={styles.titleStyle}>log in</h2>
       <input type="email" className="login__input" style={styles.headerText} placeholder={localStorage["email"]?.length === 0 ? "Enter your email..." : ""}
         value={email} onChange={(e) => setEmail(e.target.value)}/>
@@ -87,7 +87,7 @@ export default function LoginComponent() {
       <div className="login__form-remember">
         <button type="button" className="login__remeber-status" onClick={() => setRemember(!remember)}>
           {remember === true && (
-            <img src="../../../../src/assets/icons/ok-remember.svg" alt="" className="login__remember-icon" />
+            <img src="./assets/icons/ok-remember.svg" alt="" className="login__remember-icon" />
           )}
         </button>
         <p className="login__remember-title" style={styles.headerText} onClick={() => setRemember(!remember)}>Remember me</p>

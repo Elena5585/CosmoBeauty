@@ -15,8 +15,8 @@ export default function ProfileSubscriptionPage() {
 		<SubHeaderComponent/>
 		<HeaderIntroComponent/>
 		<section className="profile-subscription__body">
-			<img src="../../../src/assets/Depositphotos_127946766_XL-PhotoRoom.png-PhotoRoom.png" alt="" className="profile-subscription--decor"/>        
-			<img src="../../../src/assets/shutterstock_pink-blush-PhotoRoom.png-PhotoRoom.png" alt="" className="profile-subscription--decor2"/>       
+			<img src="./assets/Depositphotos_127946766_XL-PhotoRoom.png-PhotoRoom.png" alt="" className="profile-subscription--decor"/>        
+			<img src="./assets/shutterstock_pink-blush-PhotoRoom.png-PhotoRoom.png" alt="" className="profile-subscription--decor2"/>       
 			<div className='profile-subscription-block'>
 				<div className='profile-subscription--links'>
 					<ProfileComponent/>   

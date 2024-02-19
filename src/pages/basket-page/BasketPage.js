@@ -15,28 +15,18 @@ import './total-basket.scss';
 
 export default function BasketPage() {
 
-  const dispatch = useDispatch();  
-  // const {product} = useSelector(state => state.cardsReducer);
-  const {basket} = useSelector(state => state.basketReducer);
-
-  // const baskets = localStorage.getItem('basket_storage');
-  // const basketlist = JSON.parse(baskets);
+  const dispatch = useDispatch(); 
+  const {basket} = useSelector(state => state.basketReducer); 
   const [basketMessage, setBasketMessage] = useState('Your cart is empty');  
   
   function incrementOrderItem(item){    
-    // if(item.id !== product.id){
-    //   setProductAction(item);       
-    // }     
     if(item.quantity > item.order){          
       dispatch(incrementBasketItemAction(item));
       dispatch(basketIncrementItemAction(item));      
     }
   };
 
-  function decrementOrderItem(item){
-    // if(item.id !== product.id){
-    //   setProductAction(item);
-    // }      
+  function decrementOrderItem(item){    
     if(item.order > 0){               
       dispatch(decrementBasketItemAction(item));
       dispatch(basketDecrementItemAction(item));           
@@ -63,7 +53,7 @@ export default function BasketPage() {
     <div className='cart'>     
       <SubHeaderComponent/>
       <HeaderIntroComponent/>
-      <img src="../../../src/assets/Depositphotos_127946766_XL-PhotoRoom.png-PhotoRoom.png" alt="" className='cart__card-decor' />     
+      <img src="./assets/Depositphotos_127946766_XL-PhotoRoom.png-PhotoRoom.png" alt="" className='cart__card-decor' />     
       <section className='cart__content'>                     
         <div className='cart__content-block'>
           <div className='cart__block-head'>
@@ -129,7 +119,7 @@ export default function BasketPage() {
               <AmountComponent/>
             </div>
           </div>
-          <img src="../../../src/assets/shutterstock_pink-blush-PhotoRoom.png-PhotoRoom.png" alt="" className='cart__card-decor2' /> 
+          <img src="./assets/shutterstock_pink-blush-PhotoRoom.png-PhotoRoom.png" alt="" className='cart__card-decor2' /> 
       </section>
     </div>
   )

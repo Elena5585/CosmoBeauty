@@ -83,8 +83,8 @@ export default function LeaveAReviewComponent() {
 			<button type="submit" className='leave-comment__form-btn' style={styles.headerMessage}>SEND</button>		
 			<p className='leave-comment__form-message' style={styles.headerMessage}>{formMessage}</p>				
 		</form>
-		<img src="../../../src/assets/icons/leave_review.svg" alt="" className='leave-comment__icon'/>
-		<img src="../../../src/assets/bodycare/GiardinoAgrumiCremaManiPiedi.png" alt="" className='leave-comment__image'/>		
+		<img src="./assets/icons/leave_review.svg" alt="" className='leave-comment__icon'/>
+		<img src="./assets/bodycare/GiardinoAgrumiCremaManiPiedi.png" alt="" className='leave-comment__image'/>		
 	</div>
   )
 }

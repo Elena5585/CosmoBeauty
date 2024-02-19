@@ -21,8 +21,8 @@ export default function LoginPage() {
 		<SubHeaderComponent />
      	<HeaderIntroComponent/>
 		 <section className="login-page__body">
-			<img src="../../../../src/assets/Depositphotos_127946766_XL-PhotoRoom.png-PhotoRoom.png" alt="" className="login-page__body--decor"/>        
-			<img src="../../../../src/assets/shutterstock_pink-blush-PhotoRoom.png-PhotoRoom.png" alt="" className="login-page__body--decor2"/>		
+			<img src="./assets/Depositphotos_127946766_XL-PhotoRoom.png-PhotoRoom.png" alt="" className="login-page__body--decor"/>        
+			<img src="./assets/shutterstock_pink-blush-PhotoRoom.png-PhotoRoom.png" alt="" className="login-page__body--decor2"/>		
 			<div className="login-page__body-block">				
 				<div className='login-page__body-block--component'>
 					<LoginComponent/>

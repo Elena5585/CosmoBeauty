@@ -17,8 +17,8 @@ export default function ProfileOrdersPage() {
 		<SubHeaderComponent />
       	<HeaderIntroComponent/>
 		<section className="profile-orders__body">
-			<img src="../../../src/assets/Depositphotos_127946766_XL-PhotoRoom.png-PhotoRoom.png" alt="" className="profile-orders--decor"/>        
-			<img src="../../../src/assets/shutterstock_pink-blush-PhotoRoom.png-PhotoRoom.png" alt="" className="profile-orders--decor2"/>       
+			<img src="./assets/Depositphotos_127946766_XL-PhotoRoom.png-PhotoRoom.png" alt="" className="profile-orders--decor"/>        
+			<img src="./assets/shutterstock_pink-blush-PhotoRoom.png-PhotoRoom.png" alt="" className="profile-orders--decor2"/>       
 			<div className='profile-orders-block'>
 				<ProfileComponent/>
 				<div className='profile-orders-components'>

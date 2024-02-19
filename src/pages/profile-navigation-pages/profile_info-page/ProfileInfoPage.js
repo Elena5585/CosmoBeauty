@@ -20,8 +20,8 @@ export default function ProfileInfoPage() {
 		<SubHeaderComponent />
       	<HeaderIntroComponent/>
 		<section className="profile-info__body">
-			<img src="../../../src/assets/Depositphotos_127946766_XL-PhotoRoom.png-PhotoRoom.png" alt="" className="profile__info--decor"/>        
-			<img src="../../../src/assets/shutterstock_pink-blush-PhotoRoom.png-PhotoRoom.png" alt="" className="profile__info--decor2"/>       
+			<img src="./assets/Depositphotos_127946766_XL-PhotoRoom.png-PhotoRoom.png" alt="" className="profile__info--decor"/>        
+			<img src="./assets/shutterstock_pink-blush-PhotoRoom.png-PhotoRoom.png" alt="" className="profile__info--decor2"/>       
 			<div className='profile__info-block'>
 				<div className='profile-info--links'>
 					<ProfileComponent/>

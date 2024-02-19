@@ -164,33 +164,21 @@ function setNewAndSale(){
     countPage(1);   
     setStartPage(1)}, [shopCards.length]);
 
-    async function getApi(){  
-      try{        
-        const response = await axios.get(API);
-        const data = response.data;  
-        dispatch(getCardsAction(data));        
-        dispatch(getTrendsAction(data)); 
-        dispatch(setPageQuantityAction());            
-    } 
-    catch(e){ console.log(e);}
-  }
     
-    useEffect(() => { getApi();}, []);
-  
   return (    
       <div className='shop'>         
         <SubHeaderComponent/>       
         <HeaderIntroComponent/>
         {searchedCards?.length > 0 ? (
           <section className='shop__view'>  
-            <img src="../../../src/assets/Depositphotos_127946766_XL-PhotoRoom.png-PhotoRoom.png" alt="" className='shop__view-image--decor'/>                  
+            <img src="./assets/Depositphotos_127946766_XL-PhotoRoom.png-PhotoRoom.png" alt="" className='shop__view-image--decor'/>                  
             <div className='shop__view-block'>
               <div className='shop__view-block--cards'>
                 <div className='shop__view-cards--trackers'>
                   <div className='shop__view-trackers--search'>
                     <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search..."
                       className='shop__view-trackers--input' style={styles.headerText}/>
-                    <img src="../../../src/assets/icons/search.svg" alt="" className='shop__view-trackers-icon'/>
+                    <img src="./assets/icons/search.svg" alt="" className='shop__view-trackers-icon'/>
                   </div>
                   <ShopCategoryComponent/>
                   <ShopPriceComponent currentPage={currentPage} setCurrentPage={setCurrentPage}/>

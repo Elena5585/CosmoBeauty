@@ -127,17 +127,17 @@ export default function ShopItemPage() {
       </div>     
       <SubHeaderComponent/>
       <section className='product__intro'>       
-        <img src="../../../src/assets/damask_rose-background.png" alt="" className='product_bg-decor'/>
-        <img src="../../../src/assets/damask_rose-background.png" alt="" className='product_bg-decor shopitem__second-left'/>        
-        <img src="../../../src/assets/damask_rose-background.png" alt="" className='product__bg-decor shopitem__left-right' />
-        <img src="../../../src/assets/damask_rose-background.png" alt="" className='product__bg-decor shopitem__right' />
+        <img src="./assets/damask_rose-background.png" alt="" className='product_bg-decor'/>
+        <img src="./assets/damask_rose-background.png" alt="" className='product_bg-decor shopitem__second-left'/>        
+        <img src="./assets/damask_rose-background.png" alt="" className='product__bg-decor shopitem__left-right' />
+        <img src="./assets/damask_rose-background.png" alt="" className='product__bg-decor shopitem__right' />
         <div className='product__intro-content'>
               <h3 className='product__content-title' style={styles.titleStyle}>Shop</h3>
               <p className='product__content-tracker' style={styles.headerText}>Home - Shop<br></br><span className='shop__item-tracker-red'>{product.title}</span></p>
         </div>       
       </section>
       <section className='product__card'>
-        <img src="../../../src/assets/Depositphotos_127946766_XL-PhotoRoom.png-PhotoRoom.png" alt="" className='product__card-decor'/>            
+        <img src="./assets/Depositphotos_127946766_XL-PhotoRoom.png-PhotoRoom.png" alt="" className='product__card-decor'/>            
         <div className='product__card-block'>          
           <div className='product__block-image--block'>
             <img src={product?.image} alt="" className='product__block-image'/>            
@@ -177,27 +177,27 @@ export default function ShopItemPage() {
                   <div className='product__block-btns'>
                     {localStorage?.getItem('isAuth') === 'true' ? (
                       <button className='product__block-btns--btn cart-btn' style={styles.headerMessage} onClick={() => addToBasket(product)}>
-                      <img src="../../../src/assets/icons/shopItem_cart.svg" alt="" className='product__block-btn-image'/>
+                      <img src="./assets/icons/shopItem_cart.svg" alt="" className='product__block-btn-image'/>
                       Cart
                     </button>
                     ):(
                       <Link to="/login" onClick={() => setPageInfo('profile form')} className='product__block-btns--btn cart-btn' style={styles.headerMessage} >
-                        <img src="../../../src/assets/icons/shopItem_cart.svg" alt="" className='product__block-btn-image'/>
+                        <img src="./assets/icons/shopItem_cart.svg" alt="" className='product__block-btn-image'/>
                         Cart
                       </Link>
                     )}
                       {localStorage?.getItem('isAuth') === 'true' ? (
                         <button className='product__block-btns--btn wish' style={styles.headerMessage} onClick={() => addToWishList(product)}>
                         { wish === true ? (
-                          <img src="../../../src/assets/icons/heart-wish.svg" alt="" className='product__block-btn-image wish-image' />
+                          <img src="./assets/icons/heart-wish.svg" alt="" className='product__block-btn-image wish-image' />
                         ): (
-                          <img src="../../../src/assets/icons/shopItem_wish.svg" alt="" className='product__block-btn-image wish-image' />
+                          <img src="./assets/icons/shopItem_wish.svg" alt="" className='product__block-btn-image wish-image' />
                         )}
                         Wish
                       </button>  
                       ):(
                         <Link to="/profile" onClick={() => setPageInfo('profile form')} className='product__block-btns--btn wish' style={styles.headerMessage}>                        
-                          <img src="../../../src/assets/icons/shopItem_wish.svg" alt="" className='product__block-btn-image wish-image' />                        
+                          <img src="./assets/icons/shopItem_wish.svg" alt="" className='product__block-btn-image wish-image' />                        
                           Wish
                       </Link>  
                       )}
@@ -214,7 +214,7 @@ export default function ShopItemPage() {
         </div>      
       </section>
       <GalleryComponent/>
-      <img src="../../../src/assets/shutterstock_pink-blush-PhotoRoom.png-PhotoRoom.png" alt="" className='product__card-decor2'/>  
+      <img src="./assets/shutterstock_pink-blush-PhotoRoom.png-PhotoRoom.png" alt="" className='product__card-decor2'/>  
     </div>
   )
 }

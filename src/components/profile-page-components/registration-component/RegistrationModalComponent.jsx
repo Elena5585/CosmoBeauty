@@ -169,7 +169,7 @@ export default function RegistrationModalComponent() {
 
   return (
     <form className="registration_form">
-      <img  src="../../../src/assets/icons/registration-decor.svg"  alt=""  className="registration__form-decor" />
+      <img  src="./assets/icons/registration-decor.svg"  alt=""  className="registration__form-decor" />
       <h2 className="registration__form-title" style={styles.titleStyle}>register now </h2>
       <div className="registration__form-message">{formMessage}</div>
       <div className="registration__form-block">
@@ -193,7 +193,7 @@ export default function RegistrationModalComponent() {
       <div className="registration__form-remember">
         <button type="button" className="registration__remeber-status"  onClick={() => setRemember(!remember)}>
           {remember === true && (
-            <img src="../../../../src/assets/icons/ok-remember.svg" alt="" className="registration__remember-icon"/>
+            <img src="./assets/icons/ok-remember.svg" alt="" className="registration__remember-icon"/>
           )}
         </button>
         <p className="registratiom__remember-title" style={styles.headerText}>Remember me</p>

@@ -101,10 +101,10 @@ export default function ShowRoomPage() {
 	<div className='showroom'>
 		<SubHeaderComponent/>
 		<section className='showroom__intro'> 
-		    <img src="../../../src/assets/damask_rose-background.png" alt="" className='showroom_bg-decor'/>
-			<img src="../../../src/assets/damask_rose-background.png" alt="" className='showroom_bg-decor showroom-second-left'/>        
-			<img src="../../../src/assets/damask_rose-background.png" alt="" className='showroom__bg-decor showroom-left-right' />
-			<img src="../../../src/assets/damask_rose-background.png" alt="" className='showroom__bg-decor showroom-right' />			
+		    <img src="./assets/damask_rose-background.png" alt="" className='showroom_bg-decor'/>
+			<img src="./assets/damask_rose-background.png" alt="" className='showroom_bg-decor showroom-second-left'/>        
+			<img src="./assets/damask_rose-background.png" alt="" className='showroom__bg-decor showroom-left-right' />
+			<img src="./assets/damask_rose-background.png" alt="" className='showroom__bg-decor showroom-right' />			
 			<div className='showroom__intro-content'>
 				<h3 className='showroom__content-title' style={styles.titleStyle}>{showroom_title.toLowerCase()}</h3>
 				<p className='showroom__content-tracker' style={styles.headerText}>Home - {showroom_status.toLowerCase()} - <span className='tracker-red-style'>{showroom_title.toLowerCase()}</span></p>
@@ -112,8 +112,8 @@ export default function ShowRoomPage() {
 			</div>
       	</section>
 		<section className='showroom-body'>
-			<img src="../../../src/assets/pink_powder.png" alt="" className='showroom-body__decor'/>
-			<img src="../../../src/assets/pink.png" alt="" className='showroom-body__decor-2'/>            
+			<img src="./assets/pink_powder.png" alt="" className='showroom-body__decor'/>
+			<img src="./assets/pink.png" alt="" className='showroom-body__decor-2'/>            
 			{showroom_items?.length > 0 ? (
                 <div className='showroom__body-shop'>
                     {showroom_items?.map((card) => (

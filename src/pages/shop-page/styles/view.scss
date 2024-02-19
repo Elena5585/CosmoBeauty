@@ -224,7 +224,11 @@
     .shop__view-item--text{font-size: 32px; line-height: 170%;}        
     .shop__view-block--pagination{width: 120%; height: 120px; column-gap: 20px; display: flex; flex-direction: row; justify-content: center; align-items: center;}     
     .shop__view-pagination-item{border: 3px solid #EEEEEE; width: 100px; height: 120px; font-size: 36px; line-height: 170%;}   
-    .shop__view-pagination-button{ width: 100px; height: 100%; font-size: 36px;}     
+    .shop__view-pagination-button{ width: 100px; height: 100%; font-size: 36px;}  
+    .shop-view__notfound{min-height: 400px; row-gap: 30px;}    
+    .shop-view__notfound-message{font-size: 32px; letter-spacing: 2px;}    
+    .shop-view__notfound-navigators{column-gap: 30px;}    
+    .shop-view__notfound-navigator{width: 10vw; height: 70px; border-radius: 20px; padding: 20px; font-size: 32px;}   
 }
 @media screen and (max-width: 4000px){
     .shop__view-image--decor{ top: 15%; left: -15%; height: 1000px; opacity: 75%;}    
@@ -241,7 +245,8 @@
     .shop__view-item--text{font-size: 30px;}        
     .shop__view-block--pagination{height: 100px;}     
     .shop__view-pagination-item{width: 90px; height: 100px; font-size: 32px;}    
-    .shop__view-pagination-button{ width: 90px; height: 100%; font-size: 32px;}       
+    .shop__view-pagination-button{ width: 90px; height: 100%; font-size: 32px;}
+    .shop-view__notfound-navigator{width: 14vw; height: 50px; border-radius: 20px; padding: 20px; font-size: 32px;}       
 }
 @media screen and (max-width: 3200px){
     .shop__view-image--decor{ top: 15%; left: -19%; height: 1000px; opacity: 75%;}  
@@ -256,7 +261,10 @@
     .shop__view-trackers--input::placeholder{font-size: 30px;}   
     .shop__view-trackers-icon{width: 30px;  height: 30px;}    
     .shop__view-block--form{column-gap: 65px;}        
-    .shop__view-pagination-item{border: 3px solid #EEEEEE; width: 90px; height: 100px; font-size: 32px; line-height: 170%;}        
+    .shop__view-pagination-item{border: 3px solid #EEEEEE; width: 90px; height: 100px; font-size: 32px; line-height: 170%;} 
+    .shop-view__notfound-message{font-size: 30px; letter-spacing: 2px;}    
+    .shop-view__notfound-navigators{column-gap: 25px;}    
+    .shop-view__notfound-navigator{width: 15vw; height: 60px; border-radius: 20px; padding: 20px; font-size: 30px;}         
 }
 @media screen and (max-width: 2750px){
     .shop__view-image--decor{ top: 10%; left: -21%; height: 900px; opacity: 75%;}  
@@ -276,7 +284,11 @@
     .shop__view-item--text{font-size: 26px;}        
     .shop__view-block--pagination{height: 90px; column-gap: 10px;}     
     .shop__view-pagination-item{border: 2px solid #EEEEEE; width: 80px; height: 80px; font-size: 30px; }  
-    .shop__view-pagination-button{ width: 80px; height: 100%; font-size: 28px;}        
+    .shop__view-pagination-button{ width: 80px; height: 100%; font-size: 28px;} 
+    .shop-view__notfound{min-height: 400px; row-gap: 25px;}    
+    .shop-view__notfound-message{font-size: 28px; letter-spacing: 2px;}    
+    .shop-view__notfound-navigators{column-gap: 25px;}    
+    .shop-view__notfound-navigator{width: 20vw; height: 50px; border-radius: 20px; padding: 15px; font-size: 28px;}          
 }
 @media screen and (max-width: 2250px) {
     .shop__view-image--decor{ top: 10%; left: -24%; height: 800px; opacity: 50%;}  
@@ -297,7 +309,11 @@
     .shop__view-item--text{font-size: 22px; line-height: 170%;}        
     .shop__view-block--pagination{height: 70px; column-gap: 10px;}     
     .shop__view-pagination-item{border: 2px solid #EEEEEE; width: 70px; height: 70px; font-size: 26px; line-height: 170%;}  
-    .shop__view-pagination-button{ width: 70px; height: 100%; font-size: 26px;}        
+    .shop__view-pagination-button{ width: 70px; height: 100%; font-size: 26px;}     
+    .shop-view__notfound{min-height: 400px; row-gap: 20px;}    
+    .shop-view__notfound-message{font-size: 26px; letter-spacing: 2px;}    
+    .shop-view__notfound-navigators{column-gap: 25px;}    
+    .shop-view__notfound-navigator{width: 20vw; height: 50px; border-radius: 20px; padding: 15px; font-size: 26px;}    
 }
 @media screen and (max-width: 1800px){
     .shop__view-image--decor{ top: 7%; left: -28%; height: 700px; opacity: 50%;}   
@@ -324,7 +340,11 @@
     .shop__view-item--text{font-size: 18px;}        
     .shop__view-block--pagination{height: 50px; column-gap: 7px;}     
     .shop__view-pagination-item{ width: 50px; height: 50px; font-size: 20px;} 
-    .shop__view-pagination-button{ width: 50px; height: 100%; font-size: 20px;}         
+    .shop__view-pagination-button{ width: 50px; height: 100%; font-size: 20px;}
+    .shop-view__notfound{min-height: 400px; row-gap: 20px;}    
+    .shop-view__notfound-message{font-size: 22px; letter-spacing: 2px;}    
+    .shop-view__notfound-navigators{column-gap: 20px;}    
+    .shop-view__notfound-navigator{width: 25vw; height: 50px; border-radius: 15px; padding: 10px; font-size: 20px;}           
 }
 @media screen and (max-width: 1460px) {
     .shop__view-image--decor{ top: 7%; left: -27%; height: 600px;}     
@@ -348,7 +368,11 @@
     .shop__view-item--text{font-size: 16px; line-height: 170%;}        
     .shop__view-block--pagination{width: 120%; height: 50px; column-gap: 5px;}     
     .shop__view-pagination-item{border: 1px solid #EEEEEE; width: 40px; height: 50px; font-size: 17px; line-height: 170%;}  
-    .shop__view-pagination-button{ width: 40px; height: 100%; font-size: 17px;}        
+    .shop__view-pagination-button{ width: 40px; height: 100%; font-size: 17px;} 
+    .shop-view__notfound{min-height: 400px; row-gap: 20px;}    
+    .shop-view__notfound-message{font-size: 18px; letter-spacing: 1.5px;}    
+    .shop-view__notfound-navigators{column-gap: 20px;}    
+    .shop-view__notfound-navigator{width: 28vw; height: 45px; border-radius: 15px; padding: 10px; font-size: 18px;}       
 }
 @media screen and (max-width: 1160px){
     .shop__view-image--decor{ top: 5%; left: -31%; height: 500px; opacity: 40%;}  
@@ -369,7 +393,11 @@
     .shop__view-item--text{font-size: 16px; line-height: 170%;}        
     .shop__view-block--pagination{width: 130%; height: 40px; column-gap: 5px;}     
     .shop__view-pagination-item{border: 1px solid #EEEEEE; width: 40px; height: 40px; font-size: 17px; line-height: 170%;} 
-    .shop__view-pagination-button{ width: 40px; height: 100%; font-size: 17px;}   
+    .shop__view-pagination-button{ width: 40px; height: 100%; font-size: 17px;}  
+    .shop-view__notfound{min-height: 400px; row-gap: 20px;}    
+    .shop-view__notfound-message{font-size: 18px; letter-spacing: 1.5px;}    
+    .shop-view__notfound-navigators{column-gap: 20px;}    
+    .shop-view__notfound-navigator{width: 28vw; height: 40px; border-radius: 10px; padding: 10px; font-size: 18px;}   
 }
 @include adaptive(tablet){
     .shop__view{row-gap: 40px; padding-block: 80px;}    
@@ -388,6 +416,10 @@
     .shop__view-block--pagination{width: 150%; height: 37px; column-gap: 4px;}     
     .shop__view-pagination-item{border: 1px solid #EEEEEE; width: 37px; height: 37px; font-size: 16px; line-height: 170%;}  
     .shop__view-pagination-button{ width: 37px; height: 100%; font-size: 16px;}   
+    .shop-view__notfound{min-height: 400px; row-gap: 20px;}    
+    .shop-view__notfound-message{font-size: 16px; letter-spacing: 1px;}    
+    .shop-view__notfound-navigators{column-gap: 15px;}    
+    .shop-view__notfound-navigator{width: 30vw; height: 40px; border-radius: 10px; padding: 10px; font-size: 15px;}  
 }
 @include adaptive(phone){
     .shop__view{row-gap: 40px; padding-block: 70px;}    
@@ -406,6 +438,10 @@
     .shop__view-block--pagination{width: 150%; height: 32px; column-gap: 4px; justify-content: center;}     
     .shop__view-pagination-item{border: 1px solid #EEEEEE; width: 32px; height: 32px; font-size: 15px; line-height: 170%;}  
     .shop__view-pagination-button{ width: 32px; height: 100%; font-size: 15px;}   
+    .shop-view__notfound{min-height: 400px; row-gap: 15px;}    
+    .shop-view__notfound-message{font-size: 16px; letter-spacing: 1px;}    
+    .shop-view__notfound-navigators{column-gap: 15px;}    
+    .shop-view__notfound-navigator{width: 40vw; height: 40px; border-radius: 7px; padding: 7px; font-size: 14px;}  
 }
 @media screen and (max-width: 450px){
     .shop__view{row-gap: 40px; padding-block: 70px;}    

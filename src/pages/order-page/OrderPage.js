@@ -145,28 +145,28 @@ export default function OrderPage() {
   return (
     <div className='order'>        
         <SubHeaderComponent/>
-        <img src="../../../src/assets/Depositphotos_127946766_XL-PhotoRoom.png-PhotoRoom.png" alt="" className='order-bg1'/>
+        <img src="./assets/Depositphotos_127946766_XL-PhotoRoom.png-PhotoRoom.png" alt="" className='order-bg1'/>
         <section className='order__intro'>
             <HeaderIntroComponent/>        
             <div className='order__intro-steps'>
                 <div className='order__intro-steps--item'>
                     <div className='order__steps-item--image-block'>
-                        <img src="../../../src/assets/icons/checkout_step1.svg" alt="" className='order__steps-image--block-img'/>
-                        <img src="../../../src/assets/icons/checkout-vector-done.svg" alt="" className='order__steps-image--block-vector'/>
+                        <img src="./assets/icons/checkout_step1.svg" alt="" className='order__steps-image--block-img'/>
+                        <img src="./assets/icons/checkout-vector-done.svg" alt="" className='order__steps-image--block-vector'/>
                     </div>
                     <div className='order__steps-item--info-block'></div>
                 </div>
                 <div className='order__intro-steps--item'>
                     <div className='order__steps-item--image-block'>
-                        <img src={ confirm >= 1 ? '../../../src/assets/icons/checkout_step2_done.svg' : '../../../src/assets/icons/checkout_step2.svg'} alt="" className='order__steps-image--block-img'/>
-                        <img src={ confirm >= 1 ? '../../../src/assets/icons/checkout-vector-done.svg': '../../../src/assets/icons/checkout-vector-grey.svg'} alt="" className='order__steps-image--block-vector'/>
+                        <img src={ confirm >= 1 ? './assets/icons/checkout_step2_done.svg' : './assets/icons/checkout_step2.svg'} alt="" className='order__steps-image--block-img'/>
+                        <img src={ confirm >= 1 ? './assets/icons/checkout-vector-done.svg': './assets/icons/checkout-vector-grey.svg'} alt="" className='order__steps-image--block-vector'/>
                     </div>
                     <div className='order__steps-item--info-block'></div>
                 </div>
                 <div className='order__intro-steps--item'>
                     <div className='order__steps-item--image-block'>
-                        <img src={ confirm >= 2 ? '../../../src/assets/icons/checkout_step3_done.svg' : '../../../src/assets/icons/checkout_step3.svg'} alt="" className='order__steps-image--block-img'/>
-                        <img src={ confirm >= 2 ? '../../../src/assets/icons/checkout-vector-done.svg': '../../../src/assets/icons/checkout-vector-grey.svg'} alt="" className='order__steps-image--block-vector'/>
+                        <img src={ confirm >= 2 ? './assets/icons/checkout_step3_done.svg' : './assets/icons/checkout_step3.svg'} alt="" className='order__steps-image--block-img'/>
+                        <img src={ confirm >= 2 ? './assets/icons/checkout-vector-done.svg': './assets/icons/checkout-vector-grey.svg'} alt="" className='order__steps-image--block-vector'/>
                     </div>
                     <div className='order__steps-item--info-block'></div>
                 </div>
@@ -246,7 +246,7 @@ export default function OrderPage() {
                 </div>
             )}
         </section>
-        <img src="../../../src/assets/shutterstock_pink-blush-PhotoRoom.png-PhotoRoom.png" alt="" className='order-bg2'/>
+        <img src="./assets/shutterstock_pink-blush-PhotoRoom.png-PhotoRoom.png" alt="" className='order-bg2'/>
     </div>
   )
 }

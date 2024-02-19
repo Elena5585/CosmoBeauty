@@ -38,8 +38,8 @@ export default function SubscriptionComponent() {
         </div>
         <div className='subcription__block'>
         <div className='subscription__touch-content'>          
-          <img src="../../../../src/assets/icons/touch_bg-image.svg" alt="" className='subscription__touch-content--bg-image' />
-          <img src="../../../../src/assets/icons/touch_img.svg" alt="" className='subscription__touch-content--img' />
+          <img src="./assets/icons/touch_bg-image.svg" alt="" className='subscription__touch-content--bg-image' />
+          <img src="./assets/icons/touch_img.svg" alt="" className='subscription__touch-content--img' />
           <div className='subscription__touch-content--block'>
             <h3 className='subscription__touch-block--title' style={styles.titleStyle}>Stay in touch</h3>
             <p className='subscription__touch-block--text' style={styles.headerText}>Nourish your skin with toxin-free cosmetic  products</p>

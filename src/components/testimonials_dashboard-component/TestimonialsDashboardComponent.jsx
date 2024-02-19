@@ -19,7 +19,7 @@ import '../../../src/assets/profile/avatar.webp'
 
 export default function TestimonialsDashboardComponent() {
 	const {testimonials} = useSelector(state => state.testimonialReducer);
-	const avatar = '../../../src/assets/profile/avatar.webp';
+	const avatar = './assets/profile/avatar.webp';
 	
   return (
 	<div className='testimonials-dashboard'>

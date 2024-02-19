@@ -22,8 +22,8 @@ export default function RegistrationPage() {
 		<SubHeaderComponent />
      	<HeaderIntroComponent/>
 		<section className="registration-page__body">
-			<img src="../../../../src/assets/Depositphotos_127946766_XL-PhotoRoom.png-PhotoRoom.png" alt="" className="registration-page__body--decor"/>        
-			<img src="../../../../src/assets/shutterstock_pink-blush-PhotoRoom.png-PhotoRoom.png" alt="" className="registration-page__body--decor2"/>		
+			<img src="./assets/Depositphotos_127946766_XL-PhotoRoom.png-PhotoRoom.png" alt="" className="registration-page__body--decor"/>        
+			<img src="./assets/shutterstock_pink-blush-PhotoRoom.png-PhotoRoom.png" alt="" className="registration-page__body--decor2"/>		
 			<div className="registration-page__body-block">			
 				<div className='registration-page__body-block--component'>
 					<RegistrationModalComponent />

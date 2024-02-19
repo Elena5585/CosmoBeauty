@@ -26,9 +26,9 @@ export default function CategoryPage() {
           <Link to="/showroom" className='category__body-block' onClick={() => getCategory(bodycare, 
             'BODY CARE', 'CATEGORY', 
             "Natural cosmetics for the care of the body, the result of the most advanced research. Natural body creams and products with organic ingredients that contain the most effective elements and the best plant extracts selected from all over the world. Natural products to hydrate, cleanse and perfume with tenderness.")}>          
-              <img src="../../../src/assets/bodycare/body_care2.jpg" alt="" className='category__block-item category-extra-picture'/>
-              <img src="../../../src/assets/bodycare/bodycare.png" alt="" className='category__block-item special-category-img' />
-              <img src="../../../src/assets/bodycare/body_care3.webp" alt="" className='category__block-item'/> 
+              <img src="./assets/bodycare/body_care2.jpg" alt="" className='category__block-item category-extra-picture'/>
+              <img src="./assets/bodycare/bodycare.png" alt="" className='category__block-item special-category-img' />
+              <img src="./assets/bodycare/body_care3.webp" alt="" className='category__block-item'/> 
               <div className='category__block-bg'>
                 <div className='category__bg-title'> 
                   <svg xmlns="http://www.w3.org/2000/svg" width="86" height="60" viewBox="0 0 86 60" fill="none" className='category__title-decor'>
@@ -42,9 +42,9 @@ export default function CategoryPage() {
             'SKIN CARE', 'CATEGORY', 
             "Natural products for the beauty of the face, developed with the most advanced cosmetic technologies and the best ingredients. Natural creams for the face, face serums and masks formulated with the most effective natural and organic extracts, such as Blueberry, Unicellular Waters, Argan oil, Chianti wine and Hyaluronic Acid, to better meet the requirements of every type of skin"
             )}>          
-              <img src="../../../src/assets/skin_care/skin_care2.webp" alt="" className='category__block-item category-extra-picture'/>
-              <img src="../../../src/assets/skin_care/skin-care.png" alt="" className='category__block-item special-category-img' />
-              <img src="../../../src/assets/skin_care/skincare3.jpg" alt="" className='category__block-item'/> 
+              <img src="./assets/skin_care/skin_care2.webp" alt="" className='category__block-item category-extra-picture'/>
+              <img src="./assets/skin_care/skin-care.png" alt="" className='category__block-item special-category-img' />
+              <img src="./assets/skin_care/skincare3.jpg" alt="" className='category__block-item'/> 
               <div className='category__block-bg'>
                 <div className='category__bg-title'>
                   <svg xmlns="http://www.w3.org/2000/svg" width="86" height="60" viewBox="0 0 86 60" fill="none" className='category__title-decor'>
@@ -57,9 +57,9 @@ export default function CategoryPage() {
           <Link to="/showroom" className='category__body-block' onClick={() => getCategory(makeup, 
             'MAKE UP', 'CATEGORY', 
             "Clean, cruelty-free face makeup that's powered by plants and loved by all.")}>          
-              <img src="../../../src/assets/make_up/makeup2.webp" alt="" className='category__block-item category-extra-picture'/>
-              <img src="../../../src/assets/make_up/makeup.png" alt="" className='category__block-item special-category-img' />
-              <img src="../../../src/assets/make_up/makeup3.jpeg" alt="" className='category__block-item'/> 
+              <img src="./assets/make_up/makeup2.webp" alt="" className='category__block-item category-extra-picture'/>
+              <img src="./assets/make_up/makeup.png" alt="" className='category__block-item special-category-img' />
+              <img src="./assets/make_up/makeup3.jpeg" alt="" className='category__block-item'/> 
               <div className='category__block-bg'>
                 <div className='category__bg-title'> 
                   <svg xmlns="http://www.w3.org/2000/svg" width="86" height="60" viewBox="0 0 86 60" fill="none" className='category__title-decor'>
@@ -72,9 +72,9 @@ export default function CategoryPage() {
           <Link to="/showroom" className='category__body-block' onClick={() => getCategory(spa, 
             'SPA', 'CATEGORY',           
             "Natural body creams and products with organic ingredients that contain the most effective ingredients and the best and selected plant extracts from around the world. Natural body products to gently moisturize, cleanse and scent.")}>          
-              <img src="../../../src/assets/spa/spa2.webp" alt="" className='category__block-item category-extra-picture'/>
-              <img src="../../../src/assets/spa/spa.webp" alt="" className='category__block-item special-category-img' />
-              <img src="../../../src/assets/spa/spa3.png" alt="" className='category__block-item'/> 
+              <img src="./assets/spa/spa2.webp" alt="" className='category__block-item category-extra-picture'/>
+              <img src="./assets/spa/spa.webp" alt="" className='category__block-item special-category-img' />
+              <img src="./assets/spa/spa3.png" alt="" className='category__block-item'/> 
               <div className='category__block-bg'>
                 <div className='category__bg-title'> 
                   <svg xmlns="http://www.w3.org/2000/svg" width="86" height="60" viewBox="0 0 86 60" fill="none"  className='category__title-decor'>
@@ -87,9 +87,9 @@ export default function CategoryPage() {
           <Link to="/showroom" className='category__body-block' onClick={() => getCategory(haircare, 
             'HAIR CARE', 'CATEGORY', 
             "Naturally beautiful, strong and shiny hair. A complete range of natural hair products formulated with organic ingredients and phytoextracts to guarantee effectiveness and gentleness. Natural treatments specific for any type of hair and any requirement, also for the little ones.")}>          
-              <img src="../../../src/assets/hair_care/hair_care2.jpg" alt="" className='category__block-item category-extra-picture'/>
-              <img src="../../../src/assets/hair_care/hair_care.png" alt="" className='category__block-item special-category-img' />
-              <img src="../../../src/assets/hair_care/hair_care3.jpg" alt="" className='category__block-item'/> 
+              <img src="./assets/hair_care/hair_care2.jpg" alt="" className='category__block-item category-extra-picture'/>
+              <img src="./assets/hair_care/hair_care.png" alt="" className='category__block-item special-category-img' />
+              <img src="./assets/hair_care/hair_care3.jpg" alt="" className='category__block-item'/> 
               <div className='category__block-bg'>
                 <div className='category__bg-title'>  
                   <svg xmlns="http://www.w3.org/2000/svg" width="86" height="60" viewBox="0 0 86 60" fill="none"  className='category__title-decor'>

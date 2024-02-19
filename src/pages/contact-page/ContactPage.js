@@ -74,8 +74,8 @@ export default function ContactPage() {
         <div className='contact__intro-advantages'>
             <div className='contact__advantages-item'>
               <div className='contact__item-image--block'>
-                <img src="../../../src/assets/icons/contact-address.svg" alt=""  className='contact__block-img'/>
-                <img src="../../../src/assets/icons/about/bg_advantages.svg" alt="" className='contact__block-img--background'/>              
+                <img src="./assets/icons/contact-address.svg" alt=""  className='contact__block-img'/>
+                <img src="./assets/icons/about/bg_advantages.svg" alt="" className='contact__block-img--background'/>              
               </div>
               <div className='contact__item-info'>                
                   <p className='contact__info-text' style={styles.headerText}>27 Division St, New York, NY 10002, USA</p>                
@@ -83,8 +83,8 @@ export default function ContactPage() {
             </div>
             <div className='contact__advantages-item phone-email-contacts'>
               <div className='contact__item-image--block'>
-                <img src="../../../src/assets/icons/contact-tel.svg" alt=""  className='contact__block-img'/>
-                <img src="../../../src/assets/icons/about/bg_advantages.svg" alt="" className='contact__block-img--background'/>              
+                <img src="./assets/icons/contact-tel.svg" alt=""  className='contact__block-img'/>
+                <img src="./assets/icons/about/bg_advantages.svg" alt="" className='contact__block-img--background'/>              
               </div>
               <div className='contact__item-info'>                
                   <div className='contact__info-text' style={styles.headerText}>
@@ -96,8 +96,8 @@ export default function ContactPage() {
             </div>
             <div className='contact__advantages-item'>
               <div className='contact__item-image--block'>
-                <img src="../../../src/assets/icons/contact-worktime.svg" alt=""  className='contact__block-img'/>
-                <img src="../../../src/assets/icons/about/bg_advantages.svg" alt="" className='contact__block-img--background'/>              
+                <img src="./assets/icons/contact-worktime.svg" alt=""  className='contact__block-img'/>
+                <img src="./assets/icons/about/bg_advantages.svg" alt="" className='contact__block-img--background'/>              
               </div>
               <div className='contact__item-info'>                
                   <p className='contact__info-text' style={styles.headerText}>Mon - Fri: 9 am - 6 pm</p>
@@ -116,22 +116,22 @@ export default function ContactPage() {
               <div className='contact__connection-social--links'>
                 <div className='contact__links-block'>
                   <a href="true" alt="" className='contact__links-item--link' onClick={(e) => {e.preventDefault(); window.scrollTo(0,0);}}>
-                    <img src="../../../src/assets/icons/contact-fb.svg" alt="" className='contact__links-block--img'/>
+                    <img src="./assets/icons/contact-fb.svg" alt="" className='contact__links-block--img'/>
                   </a>
                 </div>
                 <div className='contact__links-block'>
                   <a href="true" alt="" className='contact__links-item--link' onClick={(e) => {e.preventDefault(); window.scrollTo(0,0);}}>
-                    <img src="../../../src/assets/icons/contact-twitter.svg" alt="" className='contact__links-block--img'/>
+                    <img src="./assets/icons/contact-twitter.svg" alt="" className='contact__links-block--img'/>
                     </a>
                 </div>
                 <div className='contact__links-block'>
                   <a href="true" alt="" className='contact__links-item--link' onClick={(e) => {e.preventDefault(); window.scrollTo(0,0);}}>
-                    <img src="../../../src/assets/icons/contact-instagram.svg" alt="" className='contact__links-block--img'/>
+                    <img src="./assets/icons/contact-instagram.svg" alt="" className='contact__links-block--img'/>
                   </a>
                 </div>
                 <div className='contact__links-block'>
                   <a href="true" alt="" className='contact__links-item--link' onClick={(e) => {e.preventDefault(); window.scrollTo(0,0);}}>
-                    <img src="../../../src/assets/icons/contact-linkedin.svg" alt="" className='contact__links-block--img'/>
+                    <img src="./assets/icons/contact-linkedin.svg" alt="" className='contact__links-block--img'/>
                   </a>
                 </div>
               </div>
@@ -140,7 +140,7 @@ export default function ContactPage() {
         </section>
       <BrandsComponent/>
       <section className='contact-message'>          
-          <img src="../../../src/assets/contact-bg-section.png" alt="" className='contact-message__image-block'/>
+          <img src="./assets/contact-bg-section.png" alt="" className='contact-message__image-block'/>
           <div className='contact-message__block'>
             <h3 className='contact-message__logo' style={styles.fullLogoStyle}>write to us</h3>
             <h3 className='contact-message__title' style={styles.fullTitleStyle}>leave a message</h3>
@@ -156,7 +156,7 @@ export default function ContactPage() {
               <button type="submit" className='contact-message__btn' style={styles.headerMessage}>SEND</button>
             </form>
           </div> 
-          <img src="../../../src/assets/eye-shadow-crushed-samples-isolated-on-white.png" alt="" className='contact-message__decorator'/>          
+          <img src="./assets/eye-shadow-crushed-samples-isolated-on-white.png" alt="" className='contact-message__decorator'/>          
       </section>
       <section className='contact-map'>         
             <h3 className='contact-map__title' style={styles.fullLogoStyle}>Find us here</h3> 

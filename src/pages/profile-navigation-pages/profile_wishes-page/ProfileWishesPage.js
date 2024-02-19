@@ -17,8 +17,8 @@ export default function ProfileWishesPage() {
 		<SubHeaderComponent />
       	<HeaderIntroComponent/>
 		<section className="profile-wishes__body">
-			<img src="../../../src/assets/Depositphotos_127946766_XL-PhotoRoom.png-PhotoRoom.png" alt="" className="profile-wishes--decor"/>        
-			<img src="../../../src/assets/shutterstock_pink-blush-PhotoRoom.png-PhotoRoom.png" alt="" className="profile-wishes--decor2"/>       
+			<img src="./assets/Depositphotos_127946766_XL-PhotoRoom.png-PhotoRoom.png" alt="" className="profile-wishes--decor"/>        
+			<img src="./assets/shutterstock_pink-blush-PhotoRoom.png-PhotoRoom.png" alt="" className="profile-wishes--decor2"/>       
 			<div className='profile-wishes__block'>
 				<ProfileComponent/>
 				<div className='profile-wishes-components'>

@@ -12,7 +12,7 @@ export default function Whoops404() {
 		<SubHeaderComponent/>
 		<HeaderIntroComponent/>		
 	  <section className='whoops__body'>		
-		<img src="../../../src/assets/young-beautiful-sexy-hipster-woman-eating-candy-lollipop.png" alt="" className='whoops__body-img'/>
+		<img src="./assets/young-beautiful-sexy-hipster-woman-eating-candy-lollipop.png" alt="" className='whoops__body-img'/>
 		<div className='whoops__body-block'>
 			<h3 className='whoops__body-block--title' style={styles.titleStyle}>
 				404

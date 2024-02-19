@@ -31,11 +31,11 @@ export default function WishPage() {
 
   return (
     <div className='wish'>
-      <img src="../../../src/assets/shutterstock_pink-blush-PhotoRoom.png-PhotoRoom.png" alt="" className='wish__card-decor2' />  
+      <img src="./assets/shutterstock_pink-blush-PhotoRoom.png-PhotoRoom.png" alt="" className='wish__card-decor2' />  
       <SubHeaderComponent/>      
       <HeaderIntroComponent/>
       <section className='wish__content'>
-        <img src="../../../src/assets/Depositphotos_127946766_XL-PhotoRoom.png-PhotoRoom.png" alt="" className='wish__card-decor' />             
+        <img src="./assets/Depositphotos_127946766_XL-PhotoRoom.png-PhotoRoom.png" alt="" className='wish__card-decor' />             
         <MyWishcomponent/>      
         <div className='wish__content-btns'>
           <button className='wish__content-btns--item' style={styles.headerMessage} 

@@ -196,7 +196,7 @@ export default function MyInfoComponent() {
                     className="profile-component__item-input"  style={styles.titleStyle}/>
                     <button className='profile-component__item-btn' style={styles.headerMessage} onClick={(e) => changeName(e)}>Edit name</button>
                     <button className='profile-adaptive-btn' onClick={(e) => changeName(e)}>
-                        <img src="../../../../src/assets/icons/edit-icon.png" alt="" className='profile-adaptive-btn--img'/>
+                        <img src="./assets/icons/edit-icon.png" alt="" className='profile-adaptive-btn--img'/>
                     </button>
                 </div>            
                 <div className='profile-component__body-item'>
@@ -207,7 +207,7 @@ export default function MyInfoComponent() {
                         className="profile-component__item-input"  style={styles.titleStyle}/>
                     <button className='profile-component__item-btn' style={styles.headerMessage} onClick={(e) => changeLastName(e)}>Edit lastname</button>
                     <button className='profile-adaptive-btn' onClick={(e) => changeLastName(e)}>
-                        <img src="../../../../src/assets/icons/edit-icon.png" alt="" className='profile-adaptive-btn--img'/>
+                        <img src="./assets/icons/edit-icon.png" alt="" className='profile-adaptive-btn--img'/>
                     </button>
                 </div>
                 <div className='profile-component__body-item'>
@@ -222,7 +222,7 @@ export default function MyInfoComponent() {
                     </select>
                     <button className='profile-component__item-btn' style={styles.headerMessage} onClick={(e) => changeGender(e)}>Edit gender</button>
                     <button className='profile-adaptive-btn' onClick={(e) => changeGender(e)}>
-                        <img src="../../../../src/assets/icons/edit-icon.png" alt="" className='profile-adaptive-btn--img'/>
+                        <img src="./assets/icons/edit-icon.png" alt="" className='profile-adaptive-btn--img'/>
                     </button>
                 </div>  
                 <div className='profile-component__body-item'>
@@ -233,7 +233,7 @@ export default function MyInfoComponent() {
                         className="profile-component__item-input"  style={styles.titleStyle}/>
                     <button className='profile-component__item-btn' style={styles.headerMessage} onClick={(e) => changePhone(e)}>Edit phone</button>
                     <button className='profile-adaptive-btn' onClick={(e) => changePhone(e)}>
-                        <img src="../../../../src/assets/icons/edit-icon.png" alt="" className='profile-adaptive-btn--img'/>
+                        <img src="./assets/icons/edit-icon.png" alt="" className='profile-adaptive-btn--img'/>
                     </button>
                 </div>
                 <div className='profile-component__body-item'>
@@ -244,7 +244,7 @@ export default function MyInfoComponent() {
                         className="profile-component__item-input"  style={styles.titleStyle}/>
                     <button className='profile-component__item-btn' style={styles.headerMessage} onClick={(e) => changeEmail(e)}>Edit email</button>
                     <button className='profile-adaptive-btn' onClick={(e) => changeEmail(e)}>
-                        <img src="../../../../src/assets/icons/edit-icon.png" alt="" className='profile-adaptive-btn--img'/>
+                        <img src="./assets/icons/edit-icon.png" alt="" className='profile-adaptive-btn--img'/>
                     </button>
                 </div>
                 <div className='profile-component__body-item'>
@@ -259,7 +259,7 @@ export default function MyInfoComponent() {
                     </select>                                   
                     <button className='profile-component__item-btn' style={styles.headerMessage} onClick={(e) => changeCountry(e)}>Edit country</button>
                     <button className='profile-adaptive-btn' onClick={(e) => changeCountry(e)}>
-                        <img src="../../../../src/assets/icons/edit-icon.png" alt="" className='profile-adaptive-btn--img'/>
+                        <img src="./assets/icons/edit-icon.png" alt="" className='profile-adaptive-btn--img'/>
                     </button>
                 </div>           
                 <div className='profile-component__body-item'>
@@ -292,7 +292,7 @@ export default function MyInfoComponent() {
                     )}                    
                     <button className='profile-component__item-btn' style={styles.headerMessage} onClick={(e) => {changeRegion(e);}}>Edit region</button>
                     <button className='profile-adaptive-btn' onClick={(e) => {changeRegion(e);}}>
-                        <img src="../../../../src/assets/icons/edit-icon.png" alt="" className='profile-adaptive-btn--img'/>
+                        <img src="./assets/icons/edit-icon.png" alt="" className='profile-adaptive-btn--img'/>
                     </button>
                 </div>           
                 <div className='profile-component__body-item'>
@@ -303,7 +303,7 @@ export default function MyInfoComponent() {
                     className="profile-component__item-input long-input"  style={styles.titleStyle}/>
                     <button className='profile-component__item-btn' style={styles.headerMessage} onClick={(e) => changeCity(e)}>Edit city</button>
                     <button className='profile-adaptive-btn' onClick={(e) => changeCity(e)}>
-                        <img src="../../../../src/assets/icons/edit-icon.png" alt="" className='profile-adaptive-btn--img'/>
+                        <img src="./assets/icons/edit-icon.png" alt="" className='profile-adaptive-btn--img'/>
                     </button>
                 </div>   
                 { cityMessage?.length > 0 && (
@@ -317,7 +317,7 @@ export default function MyInfoComponent() {
                         className="profile-component__item-input long-input"  style={styles.titleStyle}/>
                     <button className='profile-component__item-btn' style={styles.headerMessage} onClick={(e) => changeAddress(e)}>Edit address</button>
                     <button className='profile-adaptive-btn' onClick={(e) => changeAddress(e)}>
-                        <img src="../../../../src/assets/icons/edit-icon.png" alt="" className='profile-adaptive-btn--img'/>
+                        <img src="./assets/icons/edit-icon.png" alt="" className='profile-adaptive-btn--img'/>
                     </button>
                 </div>                         
             </form>            
