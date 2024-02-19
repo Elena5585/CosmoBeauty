@@ -50,6 +50,8 @@ export default function ShopPage() {
   
    function setAll(){   
     dispatch(getSearchedCardsAction(cards));
+    dispatch(changeNewStatusAction());
+    dispatch(changeSaleStatusAction());
     setIsNew(false);
     setIsSale(false);
     dispatch(setPageQuantityAction());
