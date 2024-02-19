@@ -16,7 +16,7 @@ import './images.js';
 function App() {
   const dispatch = useDispatch();
 
-  async function getApi(){ 
+   function getApi(){ 
   //   try{        
   //     const response = await axios.get(API);
   //     const data = response.data;
