@@ -9,6 +9,7 @@ import API from '../src/content/json/API.json';
 import Testimonials from './content/json/Testimonials.json';
 import Promo_codes from './content/json/Promo_codes.json';
 import { getCardsAction, setPageQuantityAction} from "./store/cardsReducer.js";
+import { getPromoCodesAction, getTotalAmountAction, renewBasketAction } from './store/basketReducer.js';
 import { getTrendsAction } from './store/trendReducer.js';
 import { getTestimonialsAction } from './store/testimonialReducer.js';
 import './App.scss';
