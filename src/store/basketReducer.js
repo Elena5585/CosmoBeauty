@@ -41,7 +41,7 @@ export const basketReducer = (state=defaultState, action) => {
         case GET_PROMOCODES: return {...state, promo_codes: action.payload};
         
 
-        default:return state;
+        default: return state;
     }
 }
 
