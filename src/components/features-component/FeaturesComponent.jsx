@@ -13,8 +13,8 @@ export default function FeaturesComponent() {
       <div className="new__features">
         <div className="new__features-card">
           <div className="new__card-image">
-            <img src="../../../src/assets/icons/natural.svg" alt="" className="new__image-img"/>
-            <img src="../../../src/assets/icons/features_divider.svg" alt="" className="new__image-decorator"/>
+            <img src="./assets/icons/natural.svg" alt="" className="new__image-img"/>
+            <img src="./assets/icons/features_divider.svg" alt="" className="new__image-decorator"/>
           </div>
           <h5 className="new__card-title" style={styles.titleStyle}>Natural</h5>
           <p className="new__card-text" style={styles.headerText}>
@@ -23,8 +23,8 @@ export default function FeaturesComponent() {
         </div>
         <div className="new__features-card">
           <div className="new__card-image">
-            <img  src="../../../src/assets/icons/quality.svg"  alt=""  className="new__image-img" />
-            <img src="../../../src/assets/icons/features_divider.svg" alt="" className="new__image-decorator"/>
+            <img  src="./assets/icons/quality.svg"  alt=""  className="new__image-img" />
+            <img src="./assets/icons/features_divider.svg" alt="" className="new__image-decorator"/>
           </div>
           <h5 className="new__card-title" style={styles.titleStyle}>
             Quality
@@ -35,8 +35,8 @@ export default function FeaturesComponent() {
         </div>
         <div className="new__features-card">
           <div className="new__card-image">
-            <img src="../../../src/assets/icons/organic.svg" alt=""  className="new__image-img"  />
-            <img src="../../../src/assets/icons/features_divider.svg" alt=""  className="new__image-decorator" />
+            <img src="./assets/icons/organic.svg" alt=""  className="new__image-img"  />
+            <img src="./assets/icons/features_divider.svg" alt=""  className="new__image-decorator" />
           </div>
           <h5 className="new__card-title" style={styles.titleStyle}>Organic</h5>
           <p className="new__card-text" style={styles.headerText}>

@@ -11,7 +11,7 @@ export default function NotFound() {
         Upps...! 
         <span className='notfound__title-span'> We try to solve the problem!</span>
       </h1>
-      <img src="../../../src/assets/icons/loader2.gif" alt="notfound" className='notfound__item-loader'/>
+      <img src="./assets/icons/loader2.gif" alt="notfound" className='notfound__item-loader'/>
     </div>
   )
   

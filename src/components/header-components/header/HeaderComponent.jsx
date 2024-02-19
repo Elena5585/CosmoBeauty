@@ -16,7 +16,7 @@ export default function HeaderComponent() {
         <div className='header__discount-window'>
             <h4 className='header__window-title' style={styles.headerMessage}>{discountMessage}</h4>
             <button className='header__window-btn' onClick={hideDiscountBlock}>
-              <img src="../../../../src/assets/icons/header_close.svg" alt="" className='header__btn-icon'/>
+              <img src="./assets/icons/header_close.svg" alt="" className='header__btn-icon'/>
             </button>
         </div>        
       )}      

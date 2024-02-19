@@ -37,10 +37,10 @@ export default function BurgerMenuComponent() {
 							<div className='burger-menu__basket-item'>
 								{basket?.length > 0 ? (
 									<Link to="/basket" onClick={() => { setPageInfo('cart')}} className="burger-menu__basket-link">
-										<img src="../../../../src/assets/icons/header_basket.svg" alt="" className='burger-menu__basket-link'/>									
+										<img src="./assets/icons/header_basket.svg" alt="" className='burger-menu__basket-link'/>									
 									</Link>
 								): (
-									<img src="../../../../src/assets/icons/header_basket.svg" alt="" className='burger-menu__basket-link'/>
+									<img src="./assets/icons/header_basket.svg" alt="" className='burger-menu__basket-link'/>
 								)}
 								<div className='burger-menu__basket-quantities'>
 									{basket?.length > 0 ? (

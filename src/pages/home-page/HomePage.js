@@ -138,7 +138,7 @@ export default function HomePage() {
           <button className="intro__content-btn" style={styles.headerMessage}>
             <Link to="shop" className="intro__btn-link" onClick={() => setPageInfo('shop')}>Shop now</Link>
           </button>          
-          <img src="../../../src/assets/powder_home.png" alt="" className="intro__background-effect"/>
+          <img src="./assets/powder_home.png" alt="" className="intro__background-effect"/>
         </div>
       </section>
       {cards?.length > 0 ? (
@@ -204,7 +204,7 @@ export default function HomePage() {
        <BrandsComponent/>
       <section className="discount">        
         <div className="discount__content">
-          <img src="../../../src/assets/eating-candy-lollupop.png" alt="" className="discount__content-img" />
+          <img src="./assets/eating-candy-lollupop.png" alt="" className="discount__content-img" />
           <div className="discount__content-info">
             <p className="discount__content-logo" style={styles.logoStyle}>Discount</p>
             <h2 className="discount__content-title" style={styles.titleStyle}>Get Your<span id="red-title" style={styles.redTitle}>50%</span>Off</h2>
@@ -217,7 +217,7 @@ export default function HomePage() {
             </Link>
           </div>
         </div>        
-        <img src="../../../src/assets/eye-shadow-crushed-samples-isolated-on-white.png" alt="" className='discount__decorator'/>
+        <img src="./assets/eye-shadow-crushed-samples-isolated-on-white.png" alt="" className='discount__decorator'/>
       </section>
       {cards.length ? (
         <section className="new-arrival">          
@@ -243,7 +243,7 @@ export default function HomePage() {
                 </div>
               </div>
               <div className='new-collection__image-item image-item'>
-                <img src="../../../src/assets/skin_care/Leahlani/leahlani_home.jpg" alt="" className='new-collection__item-image'/>
+                <img src="./assets/skin_care/Leahlani/leahlani_home.jpg" alt="" className='new-collection__item-image'/>
               </div>             
             </div>
           </div>

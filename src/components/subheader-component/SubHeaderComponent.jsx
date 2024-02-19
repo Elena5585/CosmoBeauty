@@ -94,11 +94,11 @@ export default function SubHeaderComponent() {
                     <div className='header__item-wish specialPosition'>
                     {wishlists?.length ? (
                         <Link to="/wish" onClick={() => {setPageInfo('wishlist')}} className="header__indicators-item--link">
-                          <img src="../../../src/assets/icons/header_heart.svg" alt="" className='header__item-icon specialSize' />
-                          <img src="../../../src/assets/icons/hover_img.svg"  alt="" className={pathname === "/wish" ? 'header__item-icon--icon-active' : 'header__item-icon--icon'} style={styles.headerMessage} />
+                          <img src="./assets/icons/header_heart.svg" alt="" className='header__item-icon specialSize' />
+                          <img src="./assets/icons/hover_img.svg"  alt="" className={pathname === "/wish" ? 'header__item-icon--icon-active' : 'header__item-icon--icon'} style={styles.headerMessage} />
                         </Link>
                       ): (
-                        <img src="../../../src/assets/icons/header_heart.svg" alt="" className='header__item-icon specialSize' />
+                        <img src="./assets/icons/header_heart.svg" alt="" className='header__item-icon specialSize' />
                       )}
                       <div className='header__wish-block'>
                       {wishlists?.length ? (
@@ -113,11 +113,11 @@ export default function SubHeaderComponent() {
                   <div className='header__item-basket specialPosition'>
                     {basket?.length > 0 ? (
                         <Link to="/basket" onClick={() => { setPageInfo('cart')}} className="header__indicators-item--link">
-                          <img src="../../../src/assets/icons/header_basket.svg" alt="" className='header__item-icon specialSize'/>
-                          <img src="../../../src/assets/icons/hover_img.svg"  alt="" className={(pathname === "/basket" || pathname ==="/order") ? 'header__item-icon--icon-active' : 'header__item-icon--icon'} style={ styles.headerMessage} />
+                          <img src="./assets/icons/header_basket.svg" alt="" className='header__item-icon specialSize'/>
+                          <img src="./assets/icons/hover_img.svg"  alt="" className={(pathname === "/basket" || pathname ==="/order") ? 'header__item-icon--icon-active' : 'header__item-icon--icon'} style={ styles.headerMessage} />
                         </Link>
                     ): (
-                      <img src="../../../src/assets/icons/header_basket.svg" alt="" className='header__item-icon specialSize'/>
+                      <img src="./assets/icons/header_basket.svg" alt="" className='header__item-icon specialSize'/>
                     )}
                     <div className='header__basket-block'>
                     {basket?.length ? (
@@ -135,20 +135,20 @@ export default function SubHeaderComponent() {
                         </Link>
                       ): (
                         <Link to="/info" onClick={() => { setPageInfo('profile form')}} className="header__indicators-item--link">
-                          <img src="../../../src/assets/icons/header_user.svg"  alt="" className='header__item-icon' />
-                          <img src="../../../src/assets/icons/hover_img.svg"  alt="" className={pathname === "/info" ? 'header__item-icon--icon-active image-padding' :  'header__item-icon--icon'} 
+                          <img src="./assets/icons/header_user.svg"  alt="" className='header__item-icon' />
+                          <img src="./assets/icons/hover_img.svg"  alt="" className={pathname === "/info" ? 'header__item-icon--icon-active image-padding' :  'header__item-icon--icon'} 
                           style={styles.headerMessage} />
                         </Link>
                       )}              
                   </div>
                   <div className='header__indicators-item' onClick={() => {logoutAcount();}}>
-                    <img src="../../../src/assets/icons/log-out.svg" alt="" className='header__item-icon'/>
+                    <img src="./assets/icons/log-out.svg" alt="" className='header__item-icon'/>
                   </div>
               </div>
           ):(
             <div className="header__content-indicators login-icon-item">              
                 <Link to="/login" onClick={() => {setPageInfo('Login page');}} className="header__indicators-item--link">
-                  <img src="../../../src/assets/icons/log-in.svg" alt="" className='header__item-icon login-icon' />                
+                  <img src="./assets/icons/log-in.svg" alt="" className='header__item-icon login-icon' />                
                 </Link>
               </div>
           )}          

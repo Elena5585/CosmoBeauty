@@ -47,10 +47,10 @@ export default function HeaderIntroComponent() {
 
   return (
 	<div className='header-intro'>
-		<img src="../../../src/assets/damask_rose-background.png" alt="" className='header-intro_bg-decor'/>
-		<img src="../../../src/assets/damask_rose-background.png" alt="" className='header-intro_bg-decor second-left'/>        
-		<img src="../../../src/assets/damask_rose-background.png" alt="" className='header-intro__bg-decor left-right' />
-		<img src="../../../src/assets/damask_rose-background.png" alt="" className='header-intro__bg-decor right' />
+		<img src="./assets/damask_rose-background.png" alt="" className='header-intro_bg-decor'/>
+		<img src="./assets/damask_rose-background.png" alt="" className='header-intro_bg-decor second-left'/>        
+		<img src="./assets/damask_rose-background.png" alt="" className='header-intro__bg-decor left-right' />
+		<img src="./assets/damask_rose-background.png" alt="" className='header-intro__bg-decor right' />
 		<div className='header-intro-content'>
 		<h3 className='header-intro__content-title' style={styles.titleStyle}>{changePageName(pathname)}</h3>
 		<p className='header-intro__content-tracker' style={styles.headerText}>Home - <span id='tracker-red'>{changePageName(pathname)}</span></p>

@@ -35,8 +35,8 @@ export default function AboutPage() {
         <div className='about__intro-advantages'>
           <div className='about__advantages-item'>
             <div className='about__item-image--block'>
-              <img src= '../../../src/assets/icons/about/delivery.svg' alt=""  className='about__block-img'/>
-              <img src='../../../src/assets/icons/about/bg_advantages.svg' alt="" className='about__block-img--background'/>              
+              <img src= './assets/icons/about/delivery.svg' alt=""  className='about__block-img'/>
+              <img src='./assets/icons/about/bg_advantages.svg' alt="" className='about__block-img--background'/>              
             </div>
             <div className='about__item-info'>
                 <h5 className='about__info-title' style={styles.titleStyle}>Free Shipping</h5>
@@ -45,8 +45,8 @@ export default function AboutPage() {
           </div>
           <div className='about__advantages-item helpline-contacts'>
             <div className='about__item-image--block'>
-              <img src="../../../src/assets/icons/about/phone.svg" alt=""  className='about__block-img'/>
-              <img src='../../../src/assets/icons/about/bg_advantages.svg' alt="" className='about__block-img--background'/>              
+              <img src="./assets/icons/about/phone.svg" alt=""  className='about__block-img'/>
+              <img src='./assets/icons/about/bg_advantages.svg' alt="" className='about__block-img--background'/>              
             </div>
             <div className='about__item-info'>
                 <h5 className='about__info-title' style={styles.titleStyle}>Helpline</h5>
@@ -57,8 +57,8 @@ export default function AboutPage() {
           </div>
           <div className='about__advantages-item'>
             <div className='about__item-image--block'>
-              <img src="../../../src/assets/icons/about/support.svg" alt=""  className='about__block-img'/>
-              <img src='../../../src/assets/icons/about/bg_advantages.svg' alt="" className='about__block-img--background'/>              
+              <img src="./assets/icons/about/support.svg" alt=""  className='about__block-img'/>
+              <img src='./assets/icons/about/bg_advantages.svg' alt="" className='about__block-img--background'/>              
             </div>
             <div className='about__item-info'>
                 <h5 className='about__info-title' style={styles.titleStyle}>24x7 Extensive</h5>
@@ -68,7 +68,7 @@ export default function AboutPage() {
         </div>
       </section>
       <section className='about__promotion'>
-        <img src="../../../src/assets/pink_powder.png" alt="" className='about__promotion-decor'/>
+        <img src="./assets/pink_powder.png" alt="" className='about__promotion-decor'/>
           <div className='about__promotion-block'>
             <p className='about__block-logo' style={styles.logoStyle}>Promotion block</p>
             <h3 className='about__block-title' style={styles.titleStyle}>Welcome to CosmoBeauty</h3>
@@ -84,28 +84,28 @@ export default function AboutPage() {
             <div className='about__trackers-item'>
               <div className='about__trackers-block--digit'>
                 <p className='about__block-digit_info' style={styles.headerMessage}>2300<sup>+</sup></p>
-                <img src="../../../src/assets/icons/about/bg__trackers.svg" alt="" className='about__block-digit_img'/>
+                <img src="./assets/icons/about/bg__trackers.svg" alt="" className='about__block-digit_img'/>
               </div>
               <p className='about__block-digit-text' style={styles.titleStyle}>Products</p>
             </div>
             <div className='about__trackers-item'>
               <div className='about__trackers-block--digit'>
                 <p className='about__block-digit_info add-padding' style={styles.headerMessage}>108</p>
-                <img src="../../../src/assets/icons/about/bg__trackers.svg" alt="" className='about__block-digit_img'/>
+                <img src="./assets/icons/about/bg__trackers.svg" alt="" className='about__block-digit_img'/>
               </div>
               <p className='about__block-digit-text' style={styles.titleStyle}>Brands</p>
             </div>
             <div className='about__trackers-item'>
               <div className='about__trackers-block--digit'>
                 <p className='about__block-digit_info add-padding' style={styles.headerMessage}>32</p>
-                <img src="../../../src/assets/icons/about/bg__trackers.svg" alt="" className='about__block-digit_img'/>
+                <img src="./assets/icons/about/bg__trackers.svg" alt="" className='about__block-digit_img'/>
               </div>
               <p className='about__block-digit-text' style={styles.titleStyle}>partners</p>
             </div>
             <div className='about__trackers-item'>
               <div className='about__trackers-block--digit'>
                 <p className='about__block-digit_info' style={styles.headerMessage}>618<sup>+</sup></p>
-                <img src="../../../src/assets/icons/about/bg__trackers.svg" alt="" className='about__block-digit_img'/>
+                <img src="./assets/icons/about/bg__trackers.svg" alt="" className='about__block-digit_img'/>
               </div>
               <p className='about__block-digit-text' style={styles.titleStyle}>Customers</p>
             </div>
@@ -113,8 +113,8 @@ export default function AboutPage() {
           </div>
       </section>
       <section className='about__success'>          
-          <img src="../../../src/assets/about-success.png" alt="" className='about__success-woman' />   
-          <img src="../../../src/assets/eye-shadow-crushed-samples-isolated-on-white.png" alt="" className='about__success-decor'/> 
+          <img src="./assets/about-success.png" alt="" className='about__success-woman' />   
+          <img src="./assets/eye-shadow-crushed-samples-isolated-on-white.png" alt="" className='about__success-decor'/> 
           <div className='about__success-content'>
               <p className='about__success-content--logo' style={styles.logoStyle}>Success story</p>
               <h2 className='about__success-content--title' style={styles.titleStyle}>CosmoBeauty develops

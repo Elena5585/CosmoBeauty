@@ -29,7 +29,7 @@ export const styles = {
     activeStyle:{display: 'flex'},
     activeQuantityStyle:{display: 'inline-block'},
     passiveStyle: {display: 'none'},
-    headerLinkActive: {backgroundImage:"url('../../../src/assets/icons/hover_img.svg')", fontFamily: 'Lato', fontWeight: 400},
-    redTitle: {backgroundImage:"url('../../../src/assets/icons/discount_devider.svg')"},
+    headerLinkActive: {backgroundImage:"url('./assets/icons/hover_img.svg')", fontFamily: 'Lato', fontWeight: 400},
+    redTitle: {backgroundImage:"url('./assets/icons/discount_devider.svg')"},
    
 }

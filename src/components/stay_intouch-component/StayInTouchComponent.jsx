@@ -45,8 +45,8 @@ export default function StayInTouchComponent() {
   return (
     <div className='touch'>
         <div className='touch__content'>          
-          <img src="../../../src/assets/icons/touch_bg-image.svg" alt="" className='touch__content-bg-image' />
-          <img src="../../../src/assets/bodycare/Bouquet-Fragola-Edt.png" alt="" className='touch__content-img' />
+          <img src="./assets/icons/touch_bg-image.svg" alt="" className='touch__content-bg-image' />
+          <img src="./assets/bodycare/Bouquet-Fragola-Edt.png" alt="" className='touch__content-img' />
           <div className='touch__content-block'>
             <h3 className='touch__block-title' style={styles.titleStyle}>Stay in touch</h3>
             <p className='touch__block-text' style={styles.headerText}>Nourish your skin with toxin-free cosmetic products</p>
