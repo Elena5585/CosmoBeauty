@@ -1,7 +1,11 @@
 
-# Getting Started with Create React App
+# COSMOBEAUTY(E-commerce application)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Single Page Application(React)
+- HTML, CSS, SCSS, Javascript, React
+- Adaptive to different device screens, mobile-friendly application
+
+
 
 ## Available Scripts
 
