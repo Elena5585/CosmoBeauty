@@ -114,6 +114,7 @@ import '../src/assets/powder_home.png';
 import '../src/assets/shutterstock_pink-blush-PhotoRoom.png-PhotoRoom.png';
 import '../src/assets/woman_home3.png';
 import '../src/assets/young-beautiful-sexy-hipster-woman-eating-candy-lollipop.png';
+import '../src/assets/CosmoBeauty-github.png';
 
 
 export default function images() {
