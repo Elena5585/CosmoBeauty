@@ -23,50 +23,50 @@ export default function ShopCategoryComponent() {
 
     function setBodyCare(){
         dispatch(clearSaleNewStatusAction());
-        dispatch(getSearchedBodyCareCardsAction());
-        dispatch(setPageQuantityAction()); 
         dispatch(changeCategoryAction('bodycare')); 
         dispatch(changeCategoryStatusAction('bodycare'));
+        dispatch(getSearchedBodyCareCardsAction());
+        dispatch(setPageQuantityAction());        
         dispatch(getPageItemsAction(1))
     };
     function setHairCare(){
         dispatch(clearSaleNewStatusAction());
-        dispatch(getSearchedHairCareCardsAction()); 
-        dispatch(setPageQuantityAction()); 
         dispatch(changeCategoryAction('haircare')); 
-        dispatch(changeCategoryStatusAction('haircare')); 
+        dispatch(changeCategoryStatusAction('haircare'));
+        dispatch(getSearchedHairCareCardsAction()); 
+        dispatch(setPageQuantityAction());         
         dispatch(getPageItemsAction(1))
     };
     function setSkinCare(){
         dispatch(clearSaleNewStatusAction());
-        dispatch(getSearchedSkinCareCardsAction()); 
-        dispatch(setPageQuantityAction()); 
         dispatch(changeCategoryAction('skincare')); 
         dispatch(changeCategoryStatusAction('skincare')); 
+        dispatch(getSearchedSkinCareCardsAction()); 
+        dispatch(setPageQuantityAction());         
         dispatch(getPageItemsAction(1))
     };
     function setSPA(){
         dispatch(clearSaleNewStatusAction());
-        dispatch(getSearchedSpaCardsAction()); 
-        dispatch(setPageQuantityAction()); 
         dispatch(changeCategoryAction('spa')); 
         dispatch(changeCategoryStatusAction('spa')); 
+        dispatch(getSearchedSpaCardsAction()); 
+        dispatch(setPageQuantityAction());         
         dispatch(getPageItemsAction(1))
     };
     function setMakeUp(){
         dispatch(clearSaleNewStatusAction());
-        dispatch(getSearchedMakeupCardsAction()); 
-        dispatch(setPageQuantityAction()); 
         dispatch(changeCategoryAction('makeup')); 
-        dispatch(changeCategoryStatusAction('makeup')); 
+        dispatch(changeCategoryStatusAction('makeup'));
+        dispatch(getSearchedMakeupCardsAction()); 
+        dispatch(setPageQuantityAction());          
         dispatch(getPageItemsAction(1))
     };
     function setAll(){
         dispatch(clearSaleNewStatusAction());
-        dispatch(getSearchedCardsAction(cards)); 
-        dispatch(setPageQuantityAction()); 
         dispatch(changeCategoryAction('all')); 
         dispatch(changeCategoryStatusAction('all')); 
+        dispatch(getSearchedCardsAction(cards)); 
+        dispatch(setPageQuantityAction());        
         dispatch(getPageItemsAction(1))
     };
 
