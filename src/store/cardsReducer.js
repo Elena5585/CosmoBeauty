@@ -11,6 +11,7 @@ const GET_SPA = "GET_SPA";
 const GET_SEARCH = "GET_SEARCH";
 const CHANGE_NEW_STATUS = "CHANGE_NEW_STATUS";
 const CHANGE_SALE_STATUS = "CHANGE_SALE_STATUS";
+const CLEAR_SALE_NEW_STATUS = "CLEAR_SALE_NEW_STATUS";
 const SET_DEFAUILT_SALE_NEW_STATUS = "SET_DEFAUILT_SALE_NEW_STATUS";
 const CHANGE_CATEGORY_STATUS = "CHANGE_CATEGORY_STATUS";
 const GET_SEARCH_BY_PRICE = "GET_SEARCH_BY_PRICE";
@@ -120,6 +121,7 @@ export const cardsReducer = (state = defaultState, action) => {
                                 current_page: 1};
         case CHANGE_NEW_STATUS: return {...state, new_status: !state.new_status};
         case CHANGE_SALE_STATUS: return {...state, sale_status: !state.sale_status}; 
+        case CLEAR_SALE_NEW_STATUS: return {...state, new_status: false, sale_status: false};
         case SET_DEFAUILT_SALE_NEW_STATUS: return {...state, new_status: false, sale_status: false};
         case CHANGE_CATEGORY_STATUS : return {...state, category_status: action.payload};                           
         case GET_SEARCH_BY_PRICE: return {...state, searchedCards: state.cards.filter((card) => card.price >= action.payload && card.price <= action.payload2).slice(0, 12),
@@ -205,6 +207,9 @@ export const changeNewStatusAction = () => {
 };
 export const changeSaleStatusAction = () => {
     return { type: CHANGE_SALE_STATUS}
+};
+export const clearSaleNewStatusAction = () => {
+    return { type: CLEAR_SALE_NEW_STATUS}
 };
 export const setDefaultNewSaleStatusAction = () => {
     return { type: SET_DEFAUILT_SALE_NEW_STATUS}

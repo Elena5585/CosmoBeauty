@@ -23,6 +23,7 @@ import { getCardsAction,
          pageDecrementAction,
          changeNewStatusAction,
          changeSaleStatusAction,
+         clearSaleNewStatusAction,
          changeCategoryStatusAction, 
          setDefaultNewSaleStatusAction,
          getSearchAction} from '../../store/cardsReducer.js';
@@ -50,8 +51,7 @@ export default function ShopPage() {
   
    function setAll(){   
     dispatch(getSearchedCardsAction(cards));
-    dispatch(changeNewStatusAction());
-    dispatch(changeSaleStatusAction());
+    dispatch(clearSaleNewStatusAction());
     setIsNew(false);
     setIsSale(false);
     dispatch(setPageQuantityAction());
