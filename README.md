@@ -5,6 +5,8 @@
 - HTML, CSS, SCSS, Javascript, React
 - Adaptive to different device screens, mobile-friendly application
 
+![Screenshot](https://github.com/Elena5585/CosmoBeauty/blob/main/src/assets/CosmoBeauty-github.png)
+
 
 
 ## Available Scripts
