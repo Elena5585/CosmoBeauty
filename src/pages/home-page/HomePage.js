@@ -193,16 +193,8 @@ export default function HomePage() {
               ))}              
             </div>
             <div className='trends__cards-arrows' style={searchedTrends.length < 2 ? styles.passiveStyle : styles.activeStyle}>
-                <div className='trends__cards-arrow--left' style={styles.headerText}>
-                  <svg class="arrow-left-4" viewBox="0 0 100 85">
-                  <polygon points="58.263,0.056 100,41.85 58.263,83.641 30.662,83.641 62.438,51.866 0,51.866 0,31.611 62.213,31.611 30.605,0 58.263,0.056" />
-                  </svg>
-                </div>                
-                <div className='trends__cards-arrow--right' style={styles.headerText}>
-                  <svg class="arrow-right-4" viewBox="0 0 100 85">
-                    <polygon points="58.263,0.056 100,41.85 58.263,83.641 30.662,83.641 62.438,51.866 0,51.866 0,31.611 62.213,31.611 30.605,0 58.263,0.056" />
-                  </svg>
-                </div>
+                <div className='trends__cards-arrow--left' style={styles.headerText}>&#129040;</div>                
+                <div className='trends__cards-arrow--right' style={styles.headerText}>&#129042;</div>
             </div>            
           </div>        
         </section>
