@@ -11,7 +11,8 @@ import { getSearchedBodyCareCardsAction,
          changeCategoryAction,  
          getPageItemsAction, 
          setDefaultNewSaleStatusAction, 
-         changeCategoryStatusAction } from '../../../store/cardsReducer.js';
+         changeCategoryStatusAction,
+         clearSaleNewStatusAction } from '../../../store/cardsReducer.js';
 import { styles } from '../../../styles/styles.js';
 import './shopCategory.scss';
 
@@ -21,6 +22,7 @@ export default function ShopCategoryComponent() {
     
 
     function setBodyCare(){
+        dispatch(clearSaleNewStatusAction());
         dispatch(getSearchedBodyCareCardsAction());
         dispatch(setPageQuantityAction()); 
         dispatch(changeCategoryAction('bodycare')); 
@@ -28,6 +30,7 @@ export default function ShopCategoryComponent() {
         dispatch(getPageItemsAction(1))
     };
     function setHairCare(){
+        dispatch(clearSaleNewStatusAction());
         dispatch(getSearchedHairCareCardsAction()); 
         dispatch(setPageQuantityAction()); 
         dispatch(changeCategoryAction('haircare')); 
@@ -35,6 +38,7 @@ export default function ShopCategoryComponent() {
         dispatch(getPageItemsAction(1))
     };
     function setSkinCare(){
+        dispatch(clearSaleNewStatusAction());
         dispatch(getSearchedSkinCareCardsAction()); 
         dispatch(setPageQuantityAction()); 
         dispatch(changeCategoryAction('skincare')); 
@@ -42,6 +46,7 @@ export default function ShopCategoryComponent() {
         dispatch(getPageItemsAction(1))
     };
     function setSPA(){
+        dispatch(clearSaleNewStatusAction());
         dispatch(getSearchedSpaCardsAction()); 
         dispatch(setPageQuantityAction()); 
         dispatch(changeCategoryAction('spa')); 
@@ -49,6 +54,7 @@ export default function ShopCategoryComponent() {
         dispatch(getPageItemsAction(1))
     };
     function setMakeUp(){
+        dispatch(clearSaleNewStatusAction());
         dispatch(getSearchedMakeupCardsAction()); 
         dispatch(setPageQuantityAction()); 
         dispatch(changeCategoryAction('makeup')); 
@@ -56,6 +62,7 @@ export default function ShopCategoryComponent() {
         dispatch(getPageItemsAction(1))
     };
     function setAll(){
+        dispatch(clearSaleNewStatusAction());
         dispatch(getSearchedCardsAction(cards)); 
         dispatch(setPageQuantityAction()); 
         dispatch(changeCategoryAction('all')); 
