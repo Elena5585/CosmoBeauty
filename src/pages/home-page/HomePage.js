@@ -225,8 +225,8 @@ export default function HomePage() {
               ))}              
             </div>
             <div className='trends__cards-arrows' style={searchedTrends.length < 2 ? styles.passiveStyle : styles.activeStyle}>
-                <div className='trends__cards-arrow--left' style={styles.headerText} disabled={!canScrollLeft} onClick={() => scrollContainerBy(-500)}>←</div>                
-                <div className='trends__cards-arrow--right' style={styles.headerText} disabled={!canScrollRight} onClick={() => scrollContainerBy(500)}>→</div>
+                <div className='trends__cards-arrow--left' style={styles.headerText} disabled={!canScrollLeft} onClick={() => scrollContainerBy(-450)}>←</div>                
+                <div className='trends__cards-arrow--right' style={styles.headerText} disabled={!canScrollRight} onClick={() => scrollContainerBy(450)}>→</div>
             </div>            
           </div>        
         </section>
