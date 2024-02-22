@@ -193,8 +193,8 @@ export default function HomePage() {
               ))}              
             </div>
             <div className='trends__cards-arrows' style={searchedTrends.length < 2 ? styles.passiveStyle : styles.activeStyle}>
-                <div className='trends__cards-arrow--left' style={styles.headerText}>&#129040;</div>                
-                <div className='trends__cards-arrow--right' style={styles.headerText}>&#129042;</div>
+                <div className='trends__cards-arrow--left' style={styles.headerText}>←</div>                
+                <div className='trends__cards-arrow--right' style={styles.headerText}>→</div>
             </div>            
           </div>        
         </section>

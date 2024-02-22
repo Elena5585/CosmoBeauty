@@ -116,12 +116,12 @@ export default function ShopItemPage() {
       <div className='product__block-navigator'>
         <Link to="/shop" className='product__block-navigator--item' style={styles.headerMessage}
             onClick={() => {setPageInfo('shop');}}
-            >Back to Shop Page &#11148;
+            >Back to Shop Page ▼
         </Link>             
         {localStorage?.getItem('isAuth') === 'true' && (
           <Link to="/basket" className='product__block-navigator--item basket-navigator' style={styles.headerMessage}
             onClick={() => {setPageInfo('cart');}}
-            >Go To Basket Page &#11149;
+            >Go To Basket Page ▼
         </Link>
         )} 
       </div>     
