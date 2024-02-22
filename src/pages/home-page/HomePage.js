@@ -1,6 +1,7 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import { useSelector, useDispatch} from 'react-redux';
 import { Link } from 'react-router-dom';
+import debounce from "lodash.debounce";
 import axios from 'axios';
 import SubHeaderComponent from '../../components/subheader-component/SubHeaderComponent.jsx';
 import StayInTouchComponent from '../../components/stay_intouch-component/StayInTouchComponent.jsx';
@@ -23,6 +24,37 @@ import './styles/new.scss';
 export default function HomePage() {
 
   const dispatch = useDispatch();
+
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(false);
+
+  const listRef = useRef(null);
+
+  const checkForScrollPosition = () => {
+    const { current } = listRef;
+    if (current) {
+      const { scrollLeft, scrollWidth, clientWidth } = current;
+      setCanScrollLeft(scrollLeft > 0);
+      setCanScrollRight(scrollLeft !== scrollWidth - clientWidth);
+    }
+  };
+
+  const debounceCheckForScrollPosition = debounce(checkForScrollPosition, 200);
+
+  const scrollContainerBy = (distance) =>
+    listRef.current?.scrollBy({ left: distance, behavior: "smooth" });
+
+  useEffect(() => {
+    const { current } = listRef;
+    checkForScrollPosition();
+    current?.addEventListener("scroll", debounceCheckForScrollPosition);
+
+    return () => {
+      current?.removeEventListener("scroll", debounceCheckForScrollPosition);
+      debounceCheckForScrollPosition.cancel();
+    };
+  }, []);
+
   
   const {cards, newItems, newCollection, viewed} = useSelector(state => state.cardsReducer);  
   const categories = ['Body care', 'Hair care', 'Make up', 'Skin care', 'SPA', 'All'];
@@ -159,7 +191,7 @@ export default function HomePage() {
             ))}
           </div>
           <div className="trend__cards">
-            <div className="trend__cards-block" style={searchedTrends.length < 4 ? styles.cardsStyle : { justifyContent: "start" }}>
+            <div className="trend__cards-block" style={searchedTrends.length < 4 ? styles.cardsStyle : { justifyContent: "start" }} ref={listRef}>
               {searchedTrends?.map((card) => (
                 <Link to="/product" className="trend__block-card" key={card?.id} onClick={() => goToProductCard(card)}>
                   <div className="trend__card-img">
@@ -193,8 +225,8 @@ export default function HomePage() {
               ))}              
             </div>
             <div className='trends__cards-arrows' style={searchedTrends.length < 2 ? styles.passiveStyle : styles.activeStyle}>
-                <div className='trends__cards-arrow--left' style={styles.headerText}>←</div>                
-                <div className='trends__cards-arrow--right' style={styles.headerText}>→</div>
+                <div className='trends__cards-arrow--left' style={styles.headerText} disabled={!canScrollLeft} onClick={() => scrollContainerBy(-400)}>←</div>                
+                <div className='trends__cards-arrow--right' style={styles.headerText} disabled={!canScrollRight} onClick={() => scrollContainerBy(400)}>→</div>
             </div>            
           </div>        
         </section>
